@@ -97,10 +97,27 @@ h1 { font-size:28px; font-weight:600; margin-bottom:4px; }
 .today-section h3 { font-size:16px; font-weight:600; color:var(--cp-accent); margin-bottom:12px; display:flex; align-items:center; gap:8px; }
 .today-meal { padding:12px; border-radius:10px; background:var(--cp-surface-soft); margin-bottom:8px; transition:background .15s; border-left:3px solid var(--cp-accent); display:flex; align-items:flex-start; gap:12px; }
 .today-meal:hover { background:var(--cp-accent-soft); }
-.today-meal-check { width:22px; height:22px; accent-color:var(--cp-success); cursor:pointer; margin-top:2px; flex-shrink:0; }
+.today-meal-checks { display:flex; flex-direction:column; gap:4px; margin-top:2px; flex-shrink:0; }
+.today-meal-check-row { display:flex; align-items:center; gap:4px; font-size:10px; font-weight:600; letter-spacing:.5px; color:var(--cp-text-muted); }
+.today-meal-check-row input[type="checkbox"] { width:18px; height:18px; accent-color:var(--cp-success); cursor:pointer; margin:0; }
+.today-meal-check-row.tati { color:var(--cp-accent); }
+.today-meal-check-row.khalid { color:#2563eb; }
+html[data-theme="dark"] .today-meal-check-row.khalid { color:#60a5fa; }
 .today-meal-content { flex:1; cursor:pointer; }
-.today-meal.checked { opacity:.55; border-left-color:var(--cp-success); }
-.today-meal.checked .today-meal-name { text-decoration:line-through; }
+.today-meal.tati-checked { border-left-color:var(--cp-success); }
+.today-meal.tati-checked .today-meal-name { text-decoration:line-through; text-decoration-color:var(--cp-accent); }
+.today-meal.khalid-checked .today-meal-name { text-decoration:line-through; text-decoration-color:#2563eb; }
+.today-meal.tati-checked.khalid-checked { opacity:.55; }
+.macro-tracker { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px; }
+.macro-tracker-card { background:var(--cp-surface); border:1px solid var(--cp-border); border-radius:12px; padding:14px; box-shadow:0 0 2px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.14); }
+.macro-tracker-card.tati { border-left:4px solid var(--cp-accent); }
+.macro-tracker-card.khalid { border-left:4px solid #2563eb; }
+.macro-tracker-name { font-size:12px; text-transform:uppercase; letter-spacing:.5px; color:var(--cp-text-muted); font-weight:600; }
+.macro-tracker-name .who { color:var(--cp-text); font-size:14px; }
+.macro-tracker-totals { font-size:20px; font-weight:600; margin-top:6px; }
+.macro-tracker-detail { font-size:12px; color:var(--cp-text-soft); margin-top:4px; }
+.macro-tracker-remaining { font-size:11px; color:var(--cp-success); margin-top:4px; font-weight:500; }
+.macro-tracker-remaining.over { color:var(--cp-warning); }
 .today-meal-type { font-size:11px; text-transform:uppercase; color:var(--cp-text-muted); letter-spacing:.5px; font-weight:600; }
 .today-meal-name { font-size:15px; font-weight:500; margin:4px 0; }
 .today-meal-meta { font-size:12px; color:var(--cp-text-soft); }
@@ -596,7 +613,10 @@ function renderCalendar() {
 function renderRecipes() {
   const {recipes, dressings} = week();
   const dressingsHTML = `<div class="recipe-card" style="grid-column: 1 / -1;">
-    <div class="recipe-title">🥗 Weekly Batch Dressings</div>
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:8px;">
+      <div class="recipe-title">🥗 Weekly Batch Dressings</div>
+      <button class="print-btn" style="padding:4px 10px; font-size:12px;" onclick="printRecipe('dressings')">🖨️ Print</button>
+    </div>
     <div style="color:var(--cp-text-muted); font-size:13px; margin-bottom:12px;">Batch in mason jars during Sunday prep.</div>
     ${dressings.map(d => `
       <div style="margin-top:16px; padding:12px; background:var(--cp-surface-soft); border-radius:10px;">
@@ -611,7 +631,10 @@ function renderRecipes() {
   </div>`;
   document.getElementById('recipeGrid').innerHTML = dressingsHTML + recipes.map(r => `
     <div class="recipe-card" id="recipe-${r.id}">
-      <div class="recipe-title">${r.name}</div>
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:8px;">
+        <div class="recipe-title">${r.name}</div>
+        <button class="print-btn" style="padding:4px 10px; font-size:12px; flex-shrink:0;" onclick="printRecipe('${r.id}')">🖨️ Print</button>
+      </div>
       <div><span class="recipe-time">⏱ ${r.time}</span>${r.prep ? `<span class="recipe-prep-badge">🔪 ${r.prep}</span>` : ''}</div>
       <div style="margin-top:8px;">
         <span class="macro-pill">${r.macros.cal} cal</span>
@@ -627,6 +650,44 @@ function renderRecipes() {
       <ol class="recipe-list recipe-instructions">${r.instructions.map(i => `<li>${i}</li>`).join('')}</ol>
     </div>
   `).join('');
+}
+
+function printRecipe(id) {
+  const {recipes, dressings} = week();
+  let html = '';
+  if (id === 'dressings') {
+    html = `<h1>Weekly Batch Dressings</h1>` + dressings.map(d => `
+      <h2>${d.name}</h2>
+      <p><em>Yield: ${d.yield}</em></p>
+      <h3>Ingredients</h3><ul>${d.ingredients.map(i => `<li>${i}</li>`).join('')}</ul>
+      <h3>Uses</h3><ul>${d.uses.map(u => `<li>${u}</li>`).join('')}</ul>
+    `).join('<hr>');
+  } else {
+    const r = recipes.find(x => x.id === id);
+    if (!r) return;
+    html = `
+      <h1>${r.name}</h1>
+      <p><strong>⏱ ${r.time}</strong>${r.prep ? ` · 🔪 ${r.prep}` : ''}</p>
+      <p>${r.macros.cal} cal · ${r.macros.p}g protein · ${r.macros.c}g carbs · ${r.macros.f}g fat · ${r.macros.fib}g fiber</p>
+      ${r.note ? `<p><em>Note: ${r.note}</em></p>` : ''}
+      <h2>Ingredients</h2>
+      <ul>${r.ingredients.map(i => `<li>${i}</li>`).join('')}</ul>
+      <h2>Instructions</h2>
+      <ol>${r.instructions.map(i => `<li>${i}</li>`).join('')}</ol>
+    `;
+  }
+  const w = window.open('', '_blank', 'width=700,height=800');
+  w.document.write(`<html><head><title>Print recipe</title><style>
+    body { font-family: Segoe UI, Aptos, Calibri, sans-serif; max-width: 640px; margin: 24px auto; padding: 0 20px; line-height: 1.5; color: #242424; }
+    h1 { color: #b11f4b; font-size: 24px; }
+    h2 { color: #b11f4b; font-size: 16px; text-transform: uppercase; letter-spacing: .5px; margin-top: 20px; border-bottom: 1px solid #dedede; padding-bottom: 4px; }
+    ul, ol { padding-left: 22px; }
+    li { padding: 3px 0; }
+    hr { margin: 20px 0; border: none; border-top: 1px solid #dedede; }
+    p { margin: 8px 0; }
+    @media print { body { max-width: none; margin: 0; padding: 12px; } }
+  </style></head><body>${html}<script>window.onload = () => window.print();<\/script></body></html>`);
+  w.document.close();
 }
 
 function renderGrocery() {
@@ -695,12 +756,24 @@ function renderToday() {
     </div>
     <div class="today-section">
       <h3>🍽️ Eat today</h3>
+      <div class="macro-tracker" id="macroTracker"></div>
       ${todayMeals.map((m, i) => {
-        const key = `mealate_${today}_${m.type}_${i}`;
-        const checked = localStorage.getItem(key) === '1';
+        const tKey = `ate_T_${today}_${m.type}_${i}`;
+        const kKey = `ate_K_${today}_${m.type}_${i}`;
+        const tChecked = localStorage.getItem(tKey) === '1';
+        const kChecked = localStorage.getItem(kKey) === '1';
         return `
-        <div class="today-meal${checked ? ' checked' : ''}" id="meal-row-${i}">
-          <input type="checkbox" class="today-meal-check" ${checked ? 'checked' : ''} onchange="toggleAte('${key}', ${i})" title="Mark as eaten" />
+        <div class="today-meal${tChecked ? ' tati-checked' : ''}${kChecked ? ' khalid-checked' : ''}" id="meal-row-${i}">
+          <div class="today-meal-checks">
+            <label class="today-meal-check-row tati" title="Tati ate this">
+              <input type="checkbox" ${tChecked ? 'checked' : ''} onchange="toggleAte('${tKey}', ${i}, 'tati')" />
+              <span>T</span>
+            </label>
+            <label class="today-meal-check-row khalid" title="Khalid ate this">
+              <input type="checkbox" ${kChecked ? 'checked' : ''} onchange="toggleAte('${kKey}', ${i}, 'khalid')" />
+              <span>K</span>
+            </label>
+          </div>
           <div class="today-meal-content" onclick="jumpToRecipe('${m.recipe}')">
             <div class="today-meal-type">${m.type}</div>
             <div class="today-meal-name">${m.name}</div>
@@ -731,13 +804,48 @@ function renderToday() {
       </div>
     </div>` : ''}
   `;
+  updateMacroTracker();
 }
 
-function toggleAte(key, i) {
+function toggleAte(key, i, who) {
   const on = localStorage.getItem(key) === '1';
   if (on) localStorage.removeItem(key); else localStorage.setItem(key, '1');
   const row = document.getElementById('meal-row-' + i);
-  if (row) row.classList.toggle('checked');
+  if (row) row.classList.toggle(who + '-checked');
+  updateMacroTracker();
+}
+
+function updateMacroTracker() {
+  const tracker = document.getElementById('macroTracker');
+  if (!tracker) return;
+  const today = getTodayISO();
+  const meals = week().meals.filter(m => m.date === today);
+  const targetT = 1450; // Tati weight-loss target
+  const targetK = 2200; // Khalid rough maintenance target
+  let tCal=0, tP=0, kCal=0, kP=0;
+  meals.forEach((m, i) => {
+    const tKey = `ate_T_${today}_${m.type}_${i}`;
+    const kKey = `ate_K_${today}_${m.type}_${i}`;
+    if (localStorage.getItem(tKey) === '1') { tCal += m.cal; tP += m.p; }
+    if (localStorage.getItem(kKey) === '1') { kCal += m.cal; kP += m.p; }
+  });
+  const tRem = targetT - tCal, kRem = targetK - kCal;
+  const tRemClass = tRem < 0 ? 'over' : '';
+  const kRemClass = kRem < 0 ? 'over' : '';
+  tracker.innerHTML = `
+    <div class="macro-tracker-card tati">
+      <div class="macro-tracker-name"><span class="who">Tati</span> · target ${targetT}</div>
+      <div class="macro-tracker-totals">${tCal} cal</div>
+      <div class="macro-tracker-detail">${tP}g protein</div>
+      <div class="macro-tracker-remaining ${tRemClass}">${tRem >= 0 ? tRem + ' remaining' : Math.abs(tRem) + ' over'}</div>
+    </div>
+    <div class="macro-tracker-card khalid">
+      <div class="macro-tracker-name"><span class="who">Khalid</span> · target ${targetK}</div>
+      <div class="macro-tracker-totals">${kCal} cal</div>
+      <div class="macro-tracker-detail">${kP}g protein</div>
+      <div class="macro-tracker-remaining ${kRemClass}">${kRem >= 0 ? kRem + ' remaining' : Math.abs(kRem) + ' over'}</div>
+    </div>
+  `;
 }
 
 function showPanel(id, btn) {
