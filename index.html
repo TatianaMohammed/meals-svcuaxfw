@@ -348,7 +348,7 @@ const WEEKS = [
     dailyTargets: {cal:"~1,450", p:"~110g", c:"~120g", f:"~50g", fib:"≥30g"},
     meals: [
       // MON 8/17 — ~1,385 cal · 103g P
-      {date:"2026-08-17",day:"Monday",type:"Breakfast",name:"🥤 Green Protein Smoothie (no banana, no avocado)",cal:215,p:29,c:12,f:6,fib:5,time:"5m",recipe:"green-smoothie2"},
+      {date:"2026-08-17",day:"Monday",type:"Breakfast",name:"🥤 Green Protein Smoothie (already had)",cal:215,p:29,c:12,f:6,fib:5,time:"5m",recipe:"green-smoothie2"},
       {date:"2026-08-17",day:"Monday",type:"Snack 1",name:"🍎 Envy Apple + 1 tbsp Peanut Butter",cal:180,p:5,c:22,f:9,fib:4,time:"1m",recipe:"envy-apple-pb"},
       {date:"2026-08-17",day:"Monday",type:"Lunch",name:"🇮🇳 Paneer Tikka Masala + Cauli Rice (HR salvage)",cal:400,p:28,c:20,f:22,fib:6,time:"8m",recipe:"paneer-tikka2"},
       {date:"2026-08-17",day:"Monday",type:"Snack 2",name:"🥝 Kiwi + ½ oz Parmesan",cal:120,p:7,c:12,f:6,fib:3,time:"1m",recipe:"kiwi-parm"},
@@ -356,7 +356,7 @@ const WEEKS = [
       {date:"2026-08-17",day:"Monday",type:"Dinner",name:"🐟 Rainbow Salmon Curry Bowl w/ Zucchini (HR salvage + fresh salmon)",cal:470,p:34,c:15,f:20,fib:5,time:"13m",recipe:"rainbow-salmon-curry"},
 
       // TUE 8/18 — ~1,430 cal · 108g P
-      {date:"2026-08-18",day:"Tuesday",type:"Breakfast",name:"🥤 Mixed Berry Protein Smoothie (no banana, ½ tbsp AB)",cal:245,p:30,c:18,f:6,fib:5,time:"5m",recipe:"berry-smoothie2"},
+      {date:"2026-08-18",day:"Tuesday",type:"Breakfast",name:"🥤 Grape Green Protein Smoothie (from freezer pack)",cal:285,p:33,c:20,f:5,fib:7,time:"1m",recipe:"green-smoothie2"},
       {date:"2026-08-18",day:"Tuesday",type:"Snack 1",name:"🍎 Envy Apple + 1 tbsp Peanut Butter",cal:180,p:5,c:22,f:9,fib:4,time:"1m",recipe:"envy-apple-pb"},
       {date:"2026-08-18",day:"Tuesday",type:"Lunch",name:"🍳 Egg Bake Slice + Mixed Greens + Cherry Tomatoes",cal:400,p:30,c:12,f:24,fib:4,time:"3m",recipe:"egg-bake2"},
       {date:"2026-08-18",day:"Tuesday",type:"Snack 2",name:"Hummus + Bell Pepper + Purple Cabbage scoops",cal:135,p:5,c:14,f:6,fib:5,time:"2m",recipe:"simple-snack2"},
@@ -404,14 +404,25 @@ const WEEKS = [
       {date:"2026-08-23",day:"Sunday",type:"Dinner",name:"🍗 Roasted Chicken Legs + Sweet Potato + Brussels (eat 2, shred 2)",cal:440,p:42,c:32,f:15,fib:8,time:"45m",recipe:"roasted-legs2"}
     ],
     recipes: [
-      {id:"green-smoothie2",name:"🥤 Green Protein Smoothie (weight-loss version)",time:"5m",macros:{cal:215,p:29,c:12,f:6,fib:5},
-       ingredients:["1 scoop Ritual protein","5g creatine","1 cup almond milk","1 cup spinach","1 tsp fresh ginger","1 tbsp flax","Ice"],
-       instructions:["Blend 30-45 sec until smooth."],
-       note:"Banana and avocado REMOVED to hit weight-loss deficit. Add ½ frozen banana if you need staying power (+50 cal)."},
-      {id:"berry-smoothie2",name:"🥤 Mixed Berry Protein Smoothie (weight-loss version)",time:"5m",macros:{cal:245,p:30,c:18,f:6,fib:5},
-       ingredients:["1 scoop Ritual","5g creatine","1 cup almond milk","½ cup frozen berries","Handful spinach","½ tbsp almond butter","1 tbsp flax","Ice"],
-       instructions:["Blend smooth."],
-       note:"Banana removed, AB halved. Adds ~50 cal to add ½ banana back if hungry."},
+      {id:"green-smoothie2",name:"🥤 Grape Green Protein Smoothie (pre-pack version)",time:"1m assembly (packs prep'd Sun)",prep:"3 PACKS FRIDAY BATCH",macros:{cal:285,p:33,c:20,f:5,fib:7},
+       ingredients:[
+         "**FREEZER PACK (per bag):** 1 cup frozen sour green grapes","1 cup fresh baby spinach","1 tbsp chia seeds","1 tsp fresh grated ginger (or 1 frozen ginger cube)",
+         "**DAY-OF (add fresh):** ¾ cup almond milk","¼ cup Greek yogurt","1 scoop Ritual protein powder","5g creatine monohydrate"
+       ],
+       instructions:[
+         "**PREP THE PACKS (do once):** Wash grapes and dry thoroughly. Freeze grapes in a single layer on a sheet pan for 2 hours (prevents clumping in bag).",
+         "Once grapes are solid, portion 1 cup frozen grapes + 1 cup fresh spinach + 1 tbsp chia + 1 tsp ginger into each of 3 quart-size freezer bags (label + date).",
+         "Freeze bags flat until ready to use (good for 4 weeks).",
+         "**DAY-OF (60 seconds):** Dump 1 frozen pack into blender.",
+         "Add ¾ cup almond milk + ¼ cup Greek yogurt + protein scoop + 5g creatine.",
+         "Blend 45-60 seconds until completely smooth.",
+         "Drink immediately (chia will thicken further if it sits)."
+       ],
+       note:"Banana + avocado REMOVED for weight loss. Frozen grapes replace both — provide creaminess + natural sweetness with zero added sugar. Sour grapes cut through spinach earthiness. Greek yogurt fixes the watery problem you had Monday. ¾ cup almond milk (not 1 cup) also thickens. Protein powder added day-of prevents freezer clumping."},
+      {id:"berry-smoothie2",name:"🥤 Mixed Berry Protein Smoothie (thick version)",time:"5m",macros:{cal:275,p:32,c:22,f:6,fib:7},
+       ingredients:["1 scoop Ritual protein","5g creatine","¾ cup almond milk (not 1 cup — this was making it watery)","¼ cup Greek yogurt","½ cup frozen mixed berries","1 tbsp chia seeds","Handful spinach","Ice"],
+       instructions:["Blend 45-60 sec until smooth.","If still too thin, add 3-4 more ice cubes and blend again."],
+       note:"Banana removed for weight loss. Almond milk reduced to ¾ cup. Greek yogurt + chia thicken it. Can also pre-pack (berries + spinach + chia in bag, add fresh day-of)."},
       {id:"envy-apple-pb",name:"🍎 Envy Apple + 1 tbsp Peanut Butter (weight-loss)",time:"1m",macros:{cal:180,p:5,c:22,f:9,fib:4},
        ingredients:["1 Envy apple sliced","1 tbsp peanut butter (halved from HR default)"],
        instructions:["Slice + dip."],
@@ -532,7 +543,7 @@ const WEEKS = [
     ],
     prepAhead: {
       "2026-08-16": {tonight:["⚠️ START chicken stock at noon (3h simmer)","Soak red lentils for bread","Buy fresh salmon","Bake lentil bread + egg bake","Shred chicken + strain stock","Batch 2 dressings","Assemble Mon lunch (paneer + tikka easy)"], tomorrowAM:["Blend green smoothie","Grab Envy apple + PB"]},
-      "2026-08-17": {tonight:["Thaw 1 fresh salmon portion (if frozen — it's fresh so fridge just fine)","Confirm HR veggie mix + curry sauce are good","Pull HR kit for Tue dinner"], tomorrowAM:["Blend berry smoothie","Pack Tue lunch (egg bake + greens + dressing)"]},
+      "2026-08-17": {tonight:["🍇 **Freeze grapes** — wash, dry, single-layer on sheet pan, freezer 2 hrs","🥤 **Assemble 3 smoothie packs** (Tue/Wed/Thu) — 1 cup frozen grapes + 1 cup spinach + 1 tbsp chia + 1 tsp ginger per bag","Confirm HR curry sauce + veggie mix are good","Pull HR kit for Tue dinner (Brussels + potatoes only — save salmon fillet)","Pull 1 fresh salmon fillet to fridge for Tue dinner"], tomorrowAM:["Blend grape smoothie pack (60 sec)","Pack Tue lunch (egg bake + greens + dressing)"]},
       "2026-08-18": {tonight:["Assemble Thu overnight oats jar","Pull Beyond Meat + peppers to fridge","Verify quinoa + shredded chicken portions"], tomorrowAM:["Reheat egg bake + lox","Kiwi + AB snack"]},
       "2026-08-19": {tonight:["Verify beef chili ingredients + chicken stock ready","Assemble Sun overnight oats jar early? No — do Sat night"], tomorrowAM:["Grab overnight oats + cashews","Envy apple + PB"]},
       "2026-08-20": {tonight:["Batch beef chili tonight → Fri D + Sun L","Portion into 6 containers","Assemble Sat morning food"], tomorrowAM:["Egg bake + boiled egg","Parm crisps + cashews"]},
