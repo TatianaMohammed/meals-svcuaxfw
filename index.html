@@ -821,7 +821,7 @@ function updateMacroTracker() {
   const today = getTodayISO();
   const meals = week().meals.filter(m => m.date === today);
   const targetT = 1450; // Tati weight-loss target
-  const targetK = 2200; // Khalid rough maintenance target
+  const targetK = 1800; // Khalid weight-loss target (6'0", 189→175 lb goal, ~1 lb/wk)
   let tCal=0, tP=0, kCal=0, kP=0;
   meals.forEach((m, i) => {
     const tKey = `ate_T_${today}_${m.type}_${i}`;
