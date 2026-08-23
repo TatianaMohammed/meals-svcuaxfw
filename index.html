@@ -221,124 +221,6 @@ html[data-theme="dark"] .today-meal-check-row.khalid { color:#60a5fa; }
 
 const WEEKS = [
   // -----------------------------------------------------------
-  // WEEK 1 — Aug 12–16, 2026 (partial — Wed launch)
-  // -----------------------------------------------------------
-  {
-    id: "2026-08-12",
-    label: "Aug 12–16, 2026",
-    subtitle: "GF · High-protein · Anti-inflammatory · Solo week",
-    dailyTargets: {cal:"~1,600", p:"~120g", c:"~150g", f:"~55g", fib:"≥30g"},
-    meals: [
-      {date:"2026-08-12",day:"Wednesday",type:"Breakfast",name:"1 Hard-Boiled Egg (actual)",cal:80,p:6,c:1,f:5,fib:0,time:"—",recipe:"simple-snack"},
-      {date:"2026-08-12",day:"Wednesday",type:"Lunch",name:"🥩 Beef Chili + Tortilla Española + Broccoli (actual)",cal:630,p:40,c:45,f:28,fib:10,time:"—",recipe:"beef-chili"},
-      {date:"2026-08-12",day:"Wednesday",type:"Dinner",name:"🇮🇳 Paneer Tikka Masala + Cauliflower Rice (HR kit)",cal:460,p:30,c:22,f:26,fib:6,time:"8m",recipe:"paneer-tikka"},
-      {date:"2026-08-13",day:"Thursday",type:"Breakfast",name:"🥤 Mixed Berry Protein Smoothie + Creatine",cal:340,p:33,c:32,f:10,fib:7,time:"5m",recipe:"berry-smoothie"},
-      {date:"2026-08-13",day:"Thursday",type:"Snack 1",name:"🥝 Kiwi + Greek Yogurt Bowl",cal:220,p:17,c:26,f:4,fib:6,time:"2m",recipe:"kiwi-yogurt-bowl"},
-      {date:"2026-08-13",day:"Thursday",type:"Lunch",name:"🍛 Coconut Curry Chicken Bowl w/ Zucchini",cal:480,p:40,c:32,f:20,fib:6,time:"13m",recipe:"coconut-curry-chicken"},
-      {date:"2026-08-13",day:"Thursday",type:"Snack 2",name:"🚫 Skip — banking cal for dinner drink",cal:0,p:0,c:0,f:0,fib:0,time:"—",recipe:"simple-snack"},
-      {date:"2026-08-13",day:"Thursday",type:"Dinner",name:"🍔 Burger Master (out)",cal:720,p:35,c:45,f:34,fib:3,time:"Order out",recipe:"burger-master"},
-      {date:"2026-08-14",day:"Friday",type:"Breakfast",name:"🥤 Green Protein Smoothie + Creatine",cal:335,p:32,c:30,f:12,fib:8,time:"5m",recipe:"green-smoothie"},
-      {date:"2026-08-14",day:"Friday",type:"Snack 1",name:"🥝 Kiwi + Lentil Bread + Almond Butter",cal:260,p:11,c:32,f:12,fib:10,time:"2m",recipe:"kiwi-lentil-bread"},
-      {date:"2026-08-14",day:"Friday",type:"Lunch",name:"🍛 Coconut Curry Chicken leftover",cal:480,p:40,c:32,f:20,fib:6,time:"3m",recipe:"coconut-curry-chicken"},
-      {date:"2026-08-14",day:"Friday",type:"Snack 2",name:"2 Hard-Boiled Eggs",cal:160,p:13,c:1,f:11,fib:0,time:"0m",recipe:"simple-snack"},
-      {date:"2026-08-14",day:"Friday",type:"Dinner",name:"🥩 Beef Chili + Avocado (batch 6)",cal:470,p:38,c:42,f:16,fib:14,time:"25m",recipe:"beef-chili"},
-      {date:"2026-08-15",day:"Saturday",type:"Breakfast",name:"🍳 Spinach Feta CC Egg Bake + Berries",cal:380,p:29,c:18,f:22,fib:4,time:"1m",recipe:"egg-bake"},
-      {date:"2026-08-15",day:"Saturday",type:"Snack 1",name:"Hummus + Cucumber + Bell Pepper",cal:170,p:7,c:18,f:8,fib:5,time:"2m",recipe:"simple-snack"},
-      {date:"2026-08-15",day:"Saturday",type:"Lunch",name:"🥩 Beef Chili leftover + Avocado",cal:470,p:38,c:42,f:16,fib:14,time:"3m",recipe:"beef-chili"},
-      {date:"2026-08-15",day:"Saturday",type:"Snack 2",name:"🥝 Kiwi + Cashews",cal:200,p:5,c:22,f:12,fib:4,time:"1m",recipe:"simple-snack"},
-      {date:"2026-08-15",day:"Saturday",type:"Dinner",name:"🍗 Za'atar Chicken + Broccoli + Goat Cheese + Quinoa",cal:490,p:44,c:32,f:20,fib:6,time:"20m",recipe:"zaatar-chicken-goat"},
-      {date:"2026-08-16",day:"Sunday",type:"Breakfast",name:"GF Mixed Berry Almond Overnight Oats",cal:340,p:22,c:42,f:10,fib:8,time:"0m",recipe:"gf-overnight-oats"},
-      {date:"2026-08-16",day:"Sunday",type:"Snack 1",name:"🥝 Kiwi + Greek Yogurt Bowl",cal:220,p:17,c:26,f:4,fib:6,time:"2m",recipe:"kiwi-yogurt-bowl"},
-      {date:"2026-08-16",day:"Sunday",type:"Lunch",name:"🍳 Egg Bake Slice + Mixed Greens + Cherry Tomatoes",cal:400,p:30,c:12,f:24,fib:4,time:"3m",recipe:"egg-bake"},
-      {date:"2026-08-16",day:"Sunday",type:"Snack 2",name:"Lentil Bread + Almond Butter",cal:240,p:11,c:22,f:12,fib:7,time:"1m",recipe:"lentil-bread-ab"},
-      {date:"2026-08-16",day:"Sunday",type:"Dinner",name:"🍗 Herb Roasted Chicken Thighs + Brussels + Sweet Potato",cal:485,p:42,c:35,f:18,fib:8,time:"45m",recipe:"roasted-thighs"}
-    ],
-    recipes: [
-      {id:"beef-chili",name:"🥩 Beef Chili + Avocado",time:"25m, 6 servings",macros:{cal:470,p:38,c:42,f:16,fib:14},
-       ingredients:["1 tbsp olive oil","1 onion + 1 bell pepper diced","3 garlic","1 lb ground beef","2 tbsp chili powder + 1 tbsp cumin","1 tbsp tomato paste","1½ cups cooked black beans","1 can kidney beans","1 jar red pasta sauce","1 cup broth","Avocado + Greek yogurt + cilantro"],
-       instructions:["Sauté onion + pepper 5 min. Garlic 30 sec.","Brown beef 5 min. Spices + paste 1 min.","Add beans + sauce + broth. Simmer 20 min.","Top."]},
-      {id:"paneer-tikka",name:"🇮🇳 Paneer Tikka Masala + Cauli Rice (HR kit)",time:"8m",macros:{cal:460,p:30,c:22,f:26,fib:6},
-       ingredients:["HR Tikka Masala Sauce pouch","HR Riced Cauliflower","6 oz paneer cubed","1 tbsp olive oil","Cilantro"],
-       instructions:["Microwave cauli 90 sec.","Sauté paneer 2-3 min golden.","Add sauce, warm.","Over cauli + cilantro."]},
-      {id:"berry-smoothie",name:"🥤 Mixed Berry Protein Smoothie + Creatine",time:"5m",macros:{cal:340,p:33,c:32,f:10,fib:7},
-       ingredients:["1 scoop Ritual","5g creatine","1 cup almond milk","½ cup frozen berries","½ frozen banana","Spinach","1 tbsp almond butter","1 tbsp flax","Ice"],
-       instructions:["Blend 30-45 sec smooth."]},
-      {id:"green-smoothie",name:"🥤 Green Protein Smoothie + Creatine",time:"5m",macros:{cal:335,p:32,c:30,f:12,fib:8},
-       ingredients:["1 scoop Ritual","5g creatine","1 cup almond milk","½ frozen banana","1 cup spinach","½ avocado","1 tsp ginger","1 tbsp flax","Ice"],
-       instructions:["Blend smooth."]},
-      {id:"kiwi-yogurt-bowl",name:"🥝 Kiwi + Greek Yogurt Bowl",time:"2m",macros:{cal:220,p:17,c:26,f:4,fib:6},
-       ingredients:["¾ cup Greek yogurt","1 diced kiwi","1 tsp chia","Honey drizzle"],
-       instructions:["Layer."]},
-      {id:"coconut-curry-chicken",name:"🍛 Coconut Curry Chicken Bowl w/ Zucchini",time:"13m, 2 servings",macros:{cal:480,p:40,c:32,f:20,fib:6},
-       ingredients:["HR Coconut Curry Sauce","HR Zucchini","8-10 oz shredded chicken","¾ cup quinoa per bowl"],
-       instructions:["Slice zucchini, sauté 3-4 min.","Warm chicken 2 min.","Drizzle sauce in bowls.","Layer: quinoa → chicken → zucchini → sauce."]},
-      {id:"burger-master",name:"🍔 Burger Master (eating out)",time:"Order out",macros:{cal:720,p:35,c:45,f:34,fib:3},
-       ingredients:["GF bun Deluxe","Extra lettuce + tomato","Mustard over mayo","1 drink (wine/vodka soda/GF beer)"],
-       instructions:["Protein first.","Skip fries/rings.","Side salad if pushed."]},
-      {id:"kiwi-lentil-bread",name:"🥝 Kiwi + Lentil Bread + Almond Butter",time:"2m",macros:{cal:260,p:11,c:32,f:12,fib:10},
-       ingredients:["1 kiwi","1 slice lentil bread","1 tbsp almond butter"],
-       instructions:["Spread + slice + eat."]},
-      {id:"egg-bake",name:"🍳 Spinach Feta CC Egg Bake",time:"45m bake, 4 servings",prep:"SUNDAY BATCH",macros:{cal:330,p:27,c:8,f:20,fib:2},
-       ingredients:["8 eggs","¾ cup cottage cheese (blended smooth)","4 cups spinach wilted","½ cup feta","2 green onions","Garlic powder + salt + pepper + turmeric"],
-       instructions:["375°F. Blend cottage cheese smooth.","Whisk w/ eggs + spices.","Fold spinach + feta + onions.","8×8 dish, bake 30-35 min. Cut 4."]},
-      {id:"zaatar-chicken-goat",name:"🍗 Za'atar Chicken + Broccoli + Goat Cheese + Quinoa",time:"20m",macros:{cal:490,p:44,c:32,f:20,fib:6},
-       ingredients:["6-8 oz shredded chicken","1 tbsp za'atar","2 cups broccoli","¾ cup quinoa","1 oz goat cheese","Lemon"],
-       instructions:["Toss chicken w/ za'atar + oil.","Roast broccoli 425°F 12 min.","Pan-warm chicken 3 min.","Plate + goat cheese + lemon."]},
-      {id:"gf-overnight-oats",name:"GF Mixed Berry Overnight Oats",time:"5m + overnight",macros:{cal:340,p:22,c:42,f:10,fib:8},
-       ingredients:["½ cup GF oats","¾ cup almond milk","½ cup Greek yogurt","1 tbsp chia + flax","½ cup berries","Cinnamon + vanilla"],
-       instructions:["Mix in jar. Overnight. Top w/ cashews AM."]},
-      {id:"lentil-bread-ab",name:"Lentil Bread + Almond Butter",time:"1m",macros:{cal:240,p:11,c:22,f:12,fib:7},
-       ingredients:["1 slice lentil bread","1 tbsp almond butter"],
-       instructions:["Spread + eat."]},
-      {id:"roasted-thighs",name:"🍗 Herb Roasted Chicken Thighs + Brussels + Sweet Potato",time:"45m hands-off, 4 servings",macros:{cal:485,p:42,c:35,f:18,fib:8},
-       ingredients:["4 chicken thighs","1.5 lbs Brussels","2 sweet potatoes","3 tbsp olive oil","Za'atar + garlic + salt","Lemon"],
-       instructions:["425°F. Toss veg.","Rub chicken.","Roast 35-40 min.","Lemon."]},
-      {id:"simple-snack",name:"Simple snacks (rotation)",time:"1-3m",macros:{cal:170,p:10,c:15,f:9,fib:4},
-       ingredients:["Apple + AB","2 hard-boiled eggs","Hummus + veg","Lox + lentil bread + peppers"],
-       instructions:["Pick one."]}
-    ],
-    dressings: [
-      {name:"Batch #1: Lemon-Oregano Vinaigrette",yield:"½ cup",
-       ingredients:["6 tbsp olive oil","2 tbsp lemon juice","1 tsp Dijon","1 tsp oregano","1 garlic","Salt + pepper"],
-       uses:["Salad drizzle","Chicken bowls","Any greens"]},
-      {name:"Batch #2: Miso-Tahini Creamy",yield:"⅓ cup",
-       ingredients:["2 tbsp miso","2 tbsp tahini","1 tbsp rice vinegar","1 tsp honey","1 tsp ginger","3-4 tbsp warm water"],
-       uses:["Salmon bowls","Veggie dip","Za'atar chicken"]}
-    ],
-    grocery: {
-      "🛒 Trader Joe's / Regular grocery (~$20)": {
-        "Produce":["Spinach 16 oz","Avocados × 2","Mixed greens","Bell peppers × 2","Cucumber","Brussels 1 lb","Parsley + cilantro","Lemons × 3"],
-        "Dairy / Eggs":["Eggs × 1 dozen"]
-      },
-      "✅ Already have (skip)": {
-        "Freezer":["Ribeye × 3","Ground beef × 3 lbs","Chicken legs × 23","Turkey bacon","Frozen bananas + berries"],
-        "Fridge":["Paneer","Cottage cheese","Greek yogurt","Goat cheese","Parm","Cheeses","Lox","Kiwis × 6-7","Almond milk","Hummus"],
-        "HR kits":["Coconut Curry Sauce","Zucchini","Tikka Masala Sauce","Riced Cauliflower"],
-        "Pantry":["GF oats","Quinoa","Basmati","Lentils","Moong","GF pasta × 3","Black beans","Chickpeas","Kidney","Red sauce","Enchilada sauce","Miso","Almond butter","Tahini","Tamari","Chia · flax","Almonds · cashews","Spices","Saffron","Mint","Ritual protein","Creatine"]
-      }
-    },
-    prepSteps: [
-      {time:"0:00",title:"Preheat & set up",items:["375°F for egg bake","Boil water for 6 eggs","Quinoa: 1 cup + 2 cups water"]},
-      {time:"0:05",title:"🍳 Egg bake batch",items:["Wilt spinach","Blend cottage cheese smooth","Whisk w/ eggs + spices","Bake 30-35 min"]},
-      {time:"0:15",title:"🌾 Overnight oats × 3 jars",items:["Combine in mason jars","Fridge"]},
-      {time:"0:25",title:"🥚 Eggs done",items:["Ice bath, peel, fridge"]},
-      {time:"0:40",title:"🥕 Roast veg",items:["Sheet: sweet potato + broccoli + peppers","425°F 20-25 min"]},
-      {time:"0:50",title:"🥗 Batch 2 dressings",items:["Lemon-Oregano jar","Miso-Tahini jar"]},
-      {time:"1:00",title:"🍗 Shred chicken",items:["Pull ~20 oz","4 labeled containers"]},
-      {time:"1:10",title:"🌾 Portion quinoa",items:["4-5 × ¾ cup containers"]},
-      {time:"1:20",title:"🥒 Chop produce",items:["Wash + dry berries","Dice cucumber, halve tomatoes","Pepper strips"]},
-      {time:"1:30",title:"🧀 Parm crisps",items:["350°F 5-7 min","12 mounds"]},
-      {time:"2:00",title:"DONE ✅",items:["4 egg bake · 3 oats jars · 6 eggs · 4 quinoa · 20 oz chicken · roasted veg · 12 Parm crisps · 2 dressings"]}
-    ],
-    prepAhead: {
-      "2026-08-13": {tonight:["Verify shredded chicken","Overnight oats jars stocked"], tomorrowAM:["Blend berry smoothie","Grab kiwi bowl"]},
-      "2026-08-14": {tonight:["Batch beef chili for Fri D","Overnight oats for Sun"], tomorrowAM:["Blend green smoothie","Kiwi + lentil bread"]},
-      "2026-08-15": {tonight:["Overnight oats for Sun","Pull chicken thighs for Sun D"], tomorrowAM:["Reheat egg bake","Chili leftover for lunch"]},
-      "2026-08-16": {tonight:["📋 Review week","🛒 Plan next week (Aug 17-23) from remaining freezer/pantry","👨‍🍳 Sunday prep for next week — see Sunday Prep tab"], tomorrowAM:["🎉 Week 2 begins!"]}
-    }
-  },
-
-  // -----------------------------------------------------------
   // WEEK 2 — Aug 17–23, 2026
   // -----------------------------------------------------------
   {
@@ -937,6 +819,64 @@ let currentWeekIdx = findWeekIdxContaining(getTodayISO());
 
 function week() { return WEEKS[currentWeekIdx]; }
 
+// ============================================================
+// FAVORITES — persist to localStorage + email to alfieparents@gmail.com
+// ============================================================
+const FAV_EMAIL = 'alfieparents@gmail.com';
+const FAV_KEY = 'mealplan_favorites_v1';
+
+function loadFavorites() {
+  try { return JSON.parse(localStorage.getItem(FAV_KEY) || '[]'); }
+  catch(e) { return []; }
+}
+function saveFavorites(favs) { localStorage.setItem(FAV_KEY, JSON.stringify(favs)); }
+function isFavorite(id) { return loadFavorites().some(f => f.id === id); }
+
+function findRecipeAcrossWeeks(id) {
+  for (const w of WEEKS) {
+    const r = (w.recipes || []).find(x => x.id === id);
+    if (r) return {recipe: r, weekLabel: w.label};
+  }
+  return null;
+}
+
+function toggleFavorite(id) {
+  const favs = loadFavorites();
+  const idx = favs.findIndex(f => f.id === id);
+  if (idx >= 0) {
+    favs.splice(idx, 1);
+    saveFavorites(favs);
+    renderRecipes();
+    return;
+  }
+  const found = findRecipeAcrossWeeks(id);
+  if (!found) return;
+  const r = found.recipe;
+  favs.push({id, name: r.name, added: new Date().toISOString()});
+  saveFavorites(favs);
+  const subject = `⭐ Favorite recipe: ${r.name.replace(/[^\x00-\x7F]/g,'').trim()}`;
+  const body = [
+    `Hi! Tatiana just favorited a recipe from her meal plan.`,
+    ``,
+    `Recipe: ${r.name}`,
+    `From week: ${found.weekLabel}`,
+    `Time: ${r.time}${r.prep ? ' · Prep: ' + r.prep : ''}`,
+    `Macros: ${r.macros.cal} cal · ${r.macros.p}g protein · ${r.macros.c}g carbs · ${r.macros.f}g fat · ${r.macros.fib}g fiber`,
+    r.note ? `Note: ${r.note}` : '',
+    ``,
+    `INGREDIENTS`,
+    ...r.ingredients.map(i => `- ${i}`),
+    ``,
+    `INSTRUCTIONS`,
+    ...r.instructions.map((i, n) => `${n+1}. ${i}`),
+    ``,
+    `— From Tatiana's meal plan dashboard`
+  ].filter(Boolean).join('\n');
+  const mailto = `mailto:${FAV_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailto;
+  renderRecipes();
+}
+
 function changeWeek(delta) {
   const next = currentWeekIdx + delta;
   if (next < 0 || next >= WEEKS.length) return;
@@ -1026,7 +966,10 @@ function renderRecipes() {
     <div class="recipe-card" id="recipe-${r.id}">
       <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:8px;">
         <div class="recipe-title">${r.name}</div>
-        <button class="print-btn" style="padding:4px 10px; font-size:12px; flex-shrink:0;" onclick="printRecipe('${r.id}')">🖨️ Print</button>
+        <div style="display:flex; gap:6px; flex-shrink:0;">
+          <button class="print-btn fav-btn" style="padding:4px 10px; font-size:12px;" onclick="toggleFavorite('${r.id}')" title="Add to favorites (emails to alfieparents@gmail.com)">${isFavorite(r.id) ? '⭐' : '☆'}</button>
+          <button class="print-btn" style="padding:4px 10px; font-size:12px;" onclick="printRecipe('${r.id}')">🖨️ Print</button>
+        </div>
       </div>
       <div><span class="recipe-time">⏱ ${r.time}</span>${r.prep ? `<span class="recipe-prep-badge">🔪 ${r.prep}</span>` : ''}</div>
       <div style="margin-top:8px;">
