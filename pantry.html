@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pantry Inventory</title>
+<style>
+:root {
+  --cp-bg:#0e0f11; --cp-surface:#17181c; --cp-surface-soft:#1e2025;
+  --cp-border:#2a2c33; --cp-text:#e6e6e6; --cp-text-muted:#a0a3ab;
+  --cp-accent:#7fb800; --cp-accent-hover:#95d200; --cp-accent-fg:#0e0f11;
+  --cp-success:#3ab979; --cp-warning:#e3a53b; --cp-danger:#e5484d;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:var(--cp-bg); color:var(--cp-text); line-height:1.5; }
+.container { max-width:1400px; margin:0 auto; padding:24px 32px; }
+header { background:var(--cp-surface); border-bottom:1px solid var(--cp-border); padding:24px 0; }
+header .container { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+h1 { font-size:28px; font-weight:600; margin-bottom:4px; }
+.subtitle { color:var(--cp-text-muted); font-size:14px; }
+.nav-links { display:flex; gap:8px; flex-wrap:wrap; }
+.nav-link { background:var(--cp-surface-soft); border:1px solid var(--cp-border); color:var(--cp-text); padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:600; font-size:14px; white-space:nowrap; }
+.nav-link:hover { background:var(--cp-border); }
+.count-badge { display:inline-block; background:var(--cp-accent); color:var(--cp-accent-fg); padding:2px 10px; border-radius:10px; font-size:12px; font-weight:600; margin-left:8px; vertical-align:middle; }
+
+.add-panel { background:var(--cp-surface); border:1px solid var(--cp-border); border-radius:14px; padding:20px; margin-top:24px; }
+.add-title { font-size:14px; font-weight:600; color:var(--cp-accent); text-transform:uppercase; letter-spacing:.5px; margin-bottom:12px; }
+.add-form { display:grid; grid-template-columns: 2fr 1.5fr 1fr 2fr auto; gap:10px; align-items:end; }
+@media (max-width: 900px) { .add-form { grid-template-columns: 1fr 1fr; } }
+.field label { display:block; font-size:11px; color:var(--cp-text-muted); text-transform:uppercase; letter-spacing:.4px; margin-bottom:4px; }
+.field input, .field select { width:100%; background:var(--cp-surface-soft); border:1px solid var(--cp-border); color:var(--cp-text); padding:9px 12px; border-radius:8px; font-size:14px; font-family:inherit; }
+.field input:focus, .field select:focus { outline:none; border-color:var(--cp-accent); }
+.add-btn { background:var(--cp-accent); color:var(--cp-accent-fg); border:none; padding:10px 18px; border-radius:8px; cursor:pointer; font-weight:600; font-size:14px; font-family:inherit; white-space:nowrap; }
+.add-btn:hover { background:var(--cp-accent-hover); }
+
+.toolbar { display:flex; gap:10px; margin-top:20px; flex-wrap:wrap; align-items:center; }
+.search-box { flex:1; min-width:200px; background:var(--cp-surface-soft); border:1px solid var(--cp-border); color:var(--cp-text); padding:9px 12px; border-radius:8px; font-size:14px; font-family:inherit; }
+.tool-btn { background:transparent; border:1px solid var(--cp-border); color:var(--cp-text); padding:9px 14px; border-radius:8px; cursor:pointer; font-size:13px; font-family:inherit; }
+.tool-btn:hover { background:var(--cp-surface-soft); }
+.tool-btn.primary { background:var(--cp-accent); color:var(--cp-accent-fg); border-color:var(--cp-accent); font-weight:600; }
+.tool-btn.primary:hover { background:var(--cp-accent-hover); }
+.tool-btn.danger:hover { color:var(--cp-danger); border-color:var(--cp-danger); }
+
+.filter-chips { display:flex; gap:6px; margin-top:16px; flex-wrap:wrap; }
+.chip { background:var(--cp-surface-soft); border:1px solid var(--cp-border); color:var(--cp-text); padding:6px 12px; border-radius:20px; cursor:pointer; font-size:12px; font-family:inherit; }
+.chip:hover { border-color:var(--cp-accent); }
+.chip.active { background:var(--cp-accent); color:var(--cp-accent-fg); border-color:var(--cp-accent); font-weight:600; }
+.chip .chip-count { opacity:.7; margin-left:4px; font-size:11px; }
+
+.section { margin-top:32px; }
+.section-title { font-size:14px; font-weight:600; color:var(--cp-accent); text-transform:uppercase; letter-spacing:.5px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center; }
+.section-title .sec-count { color:var(--cp-text-muted); font-weight:400; font-size:12px; }
+.items { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:10px; }
+.item { background:var(--cp-surface); border:1px solid var(--cp-border); border-radius:10px; padding:12px 14px; display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
+.item.low { border-color:var(--cp-warning); border-left-width:4px; }
+.item.out { opacity:.5; border-color:var(--cp-danger); border-left-width:4px; }
+.item-main { flex:1; min-width:0; }
+.item-name { font-weight:600; font-size:14px; color:var(--cp-text); word-break:break-word; }
+.item-meta { font-size:12px; color:var(--cp-text-muted); margin-top:2px; }
+.item-notes { font-size:11px; color:var(--cp-text-muted); font-style:italic; margin-top:4px; }
+.item-actions { display:flex; gap:4px; flex-shrink:0; }
+.icon-btn { background:transparent; border:1px solid var(--cp-border); color:var(--cp-text-muted); width:28px; height:28px; border-radius:6px; cursor:pointer; font-size:12px; font-family:inherit; display:flex; align-items:center; justify-content:center; padding:0; }
+.icon-btn:hover { color:var(--cp-text); border-color:var(--cp-text-muted); }
+.icon-btn.warn:hover { color:var(--cp-warning); border-color:var(--cp-warning); }
+.icon-btn.danger:hover { color:var(--cp-danger); border-color:var(--cp-danger); }
+
+.empty { text-align:center; padding:60px 20px; color:var(--cp-text-muted); }
+.empty h2 { color:var(--cp-text); margin-bottom:12px; font-size:20px; }
+
+.modal-bg { display:none; position:fixed; inset:0; background:rgba(0,0,0,.65); z-index:100; align-items:center; justify-content:center; padding:20px; }
+.modal-bg.open { display:flex; }
+.modal { background:var(--cp-surface); border:1px solid var(--cp-border); border-radius:14px; padding:24px; max-width:600px; width:100%; max-height:90vh; overflow:auto; }
+.modal h3 { font-size:16px; margin-bottom:12px; }
+.modal textarea { width:100%; min-height:300px; background:var(--cp-bg); border:1px solid var(--cp-border); color:var(--cp-text); padding:12px; border-radius:8px; font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:12px; resize:vertical; }
+.modal-actions { display:flex; gap:10px; justify-content:flex-end; margin-top:16px; }
+
+.stamp { font-size:11px; color:var(--cp-text-muted); margin-top:8px; text-align:right; }
+</style>
+</head>
+<body>
+<header><div class="container">
+  <div>
+    <h1>🥫 Pantry Inventory<span class="count-badge" id="countBadge">0</span></h1>
+    <div class="subtitle">What's on hand right now. Scout uses this for meal planning.</div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">← Meal Plan</a>
+    <a href="favorites.html" class="nav-link">⭐ Favorites</a>
+  </div>
+</div></header>
+
+<div class="container">
+
+  <div class="add-panel">
+    <div class="add-title">➕ Add item</div>
+    <div class="add-form">
+      <div class="field">
+        <label for="newName">Name</label>
+        <input type="text" id="newName" placeholder="e.g. Kalamata olives" autocomplete="off" />
+      </div>
+      <div class="field">
+        <label for="newCategory">Category</label>
+        <select id="newCategory"></select>
+      </div>
+      <div class="field">
+        <label for="newQty">Qty (optional)</label>
+        <input type="text" id="newQty" placeholder="e.g. 2 cans" autocomplete="off" />
+      </div>
+      <div class="field">
+        <label for="newNotes">Notes (optional)</label>
+        <input type="text" id="newNotes" placeholder="e.g. use this week" autocomplete="off" />
+      </div>
+      <button class="add-btn" onclick="addItem()">Add</button>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <input type="text" class="search-box" id="searchBox" placeholder="🔍 Search items..." oninput="render()" />
+    <button class="tool-btn" onclick="toggleShowOut()"><span id="showOutLabel">Show out-of-stock</span></button>
+    <button class="tool-btn primary" onclick="openCopyForScout()">📋 Copy for Scout</button>
+    <button class="tool-btn danger" onclick="clearAll()">Clear all</button>
+  </div>
+
+  <div class="filter-chips" id="filterChips"></div>
+
+  <div id="content"></div>
+
+  <div class="stamp" id="stamp"></div>
+</div>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <h3 id="modalTitle">Copy for Scout</h3>
+    <div class="subtitle" style="margin-bottom:12px;">Paste this back to Scout so it knows what's in your kitchen. Also useful for backup.</div>
+    <textarea id="modalText" readonly></textarea>
+    <div class="modal-actions">
+      <button class="tool-btn" onclick="closeModal()">Close</button>
+      <button class="tool-btn primary" onclick="copyModalText()">Copy to clipboard</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const PANTRY_KEY = 'mealplan_pantry_v1';
+const SEEDED_KEY = 'mealplan_pantry_seeded_v1';
+const PREFS_KEY  = 'mealplan_pantry_prefs_v1';
+
+const CATEGORIES = [
+  { id:'freezer',   label:'❄️ Freezer' },
+  { id:'fridge',    label:'🧊 Fridge' },
+  { id:'produce',   label:'🥬 Produce' },
+  { id:'grains',    label:'🌾 Grains & Pasta' },
+  { id:'oils',      label:'🫒 Oils & Sauces' },
+  { id:'nuts',      label:'🥜 Nuts & Seeds' },
+  { id:'snacks',    label:'🥨 Snacks' },
+  { id:'canned',    label:'🥫 Canned & Jarred' },
+  { id:'spices',    label:'🧂 Spices' },
+  { id:'herbs',     label:'🌿 Fresh Herbs' },
+  { id:'hungryroot',label:'📦 Hungryroot' },
+  { id:'supp',      label:'💊 Supplements' },
+  { id:'other',     label:'📦 Other' },
+];
+
+// -------- storage helpers --------
+function load()  { try { return JSON.parse(localStorage.getItem(PANTRY_KEY) || '[]'); } catch(e) { return []; } }
+function save(items) { localStorage.setItem(PANTRY_KEY, JSON.stringify(items)); }
+function loadPrefs() { try { return JSON.parse(localStorage.getItem(PREFS_KEY) || '{}'); } catch(e) { return {}; } }
+function savePrefs(p) { localStorage.setItem(PREFS_KEY, JSON.stringify(p)); }
+
+let items = load();
+let prefs = Object.assign({ filter:'all', showOut:false }, loadPrefs());
+
+// -------- seed from current inventory (first load only) --------
+function seedIfEmpty() {
+  if (localStorage.getItem(SEEDED_KEY)) return;
+  if (items.length > 0) { localStorage.setItem(SEEDED_KEY, '1'); return; }
+  const seed = [
+    // Freezer
+    { name:'Ribeye steak',              category:'freezer', qty:'3',            notes:'SAVING — not this week' },
+    { name:'Ground beef (90% lean)',    category:'freezer', qty:'4 lbs',        notes:'' },
+    { name:'Beef cubes',                category:'freezer', qty:'~1 lb',        notes:'stews' },
+    { name:'Beyond Meat',               category:'freezer', qty:'1 pkg',        notes:'' },
+    { name:'Grilled chicken legs (mom\'s)', category:'freezer', qty:'~23',      notes:'' },
+    { name:'Turkey bacon',              category:'freezer', qty:'1 lb',        notes:'' },
+    { name:'Frozen bananas',            category:'freezer', qty:'lots',        notes:'smoothies' },
+    { name:'Frozen mixed berries',      category:'freezer', qty:'lots',        notes:'smoothies, oats' },
+    { name:'Coconut curry sauce cubes', category:'freezer', qty:'~1 tray',     notes:'drizzle over bowls/marinades' },
+    { name:'Homemade chicken stock',    category:'freezer', qty:'4+ cups',     notes:'chili, stew' },
+    // Fridge
+    { name:'Paneer',              category:'fridge', qty:'',       notes:'' },
+    { name:'Cottage cheese',      category:'fridge', qty:'',       notes:'' },
+    { name:'Greek yogurt',        category:'fridge', qty:'32 oz',  notes:'running low' },
+    { name:'Goat cheese',         category:'fridge', qty:'',       notes:'' },
+    { name:'Parmesan',            category:'fridge', qty:'lots',   notes:'parm crisps + snacks' },
+    { name:'Cheddar',             category:'fridge', qty:'',       notes:'' },
+    { name:'Mozzarella',          category:'fridge', qty:'',       notes:'' },
+    { name:'Feta',                category:'fridge', qty:'',       notes:'' },
+    { name:'Lox',                 category:'fridge', qty:'',       notes:'TTC-safe' },
+    { name:'Almond milk',         category:'fridge', qty:'',       notes:'' },
+    { name:'Hummus',              category:'fridge', qty:'',       notes:'' },
+    { name:'Minced garlic (jar)', category:'fridge', qty:'',       notes:'' },
+    // Produce
+    { name:'Bell peppers (mixed)', category:'produce', qty:'6',    notes:'' },
+    { name:'Spinach',              category:'produce', qty:'',     notes:'' },
+    { name:'Red cabbage',          category:'produce', qty:'',     notes:'' },
+    { name:'Iceberg lettuce',      category:'produce', qty:'~3/4 head', notes:'Tati-only (Khalid dislikes)' },
+    { name:'Fresh cilantro',       category:'produce', qty:'',     notes:'' },
+    { name:'Broccoli',             category:'produce', qty:'',     notes:'' },
+    { name:'Sweet potatoes',       category:'produce', qty:'lots', notes:'' },
+    { name:'Purple Japanese potato', category:'produce', qty:'',   notes:'floating — hash or roast' },
+    { name:'Baby/gold potatoes',   category:'produce', qty:'',     notes:'HR leftover' },
+    { name:'Cherry tomatoes',      category:'produce', qty:'',     notes:'' },
+    { name:'Serrano peppers',      category:'produce', qty:'3',    notes:'' },
+    { name:'Peaches',              category:'produce', qty:'3',    notes:'' },
+    { name:'Apples',               category:'produce', qty:'bunch',notes:'' },
+    { name:'Kiwis',                category:'produce', qty:'6-7',  notes:'' },
+    { name:'Grapes',               category:'produce', qty:'',     notes:'' },
+    { name:'Asparagus',            category:'produce', qty:'',     notes:'⚠️ eat soon or freeze' },
+    // Grains
+    { name:'GF oats',              category:'grains', qty:'', notes:'' },
+    { name:'Quinoa',               category:'grains', qty:'', notes:'' },
+    { name:'Rice',                 category:'grains', qty:'', notes:'' },
+    { name:'Basmati rice',         category:'grains', qty:'', notes:'' },
+    { name:'Red lentils',          category:'grains', qty:'', notes:'' },
+    { name:'Green lentils',        category:'grains', qty:'', notes:'' },
+    { name:'Moong beans',          category:'grains', qty:'', notes:'' },
+    { name:'Instant rice',         category:'grains', qty:'2 packs', notes:'' },
+    { name:'GF pasta',             category:'grains', qty:'3 boxes', notes:'' },
+    { name:'GF pancake mix',       category:'grains', qty:'', notes:'' },
+    { name:'Rice crackers',        category:'grains', qty:'', notes:'' },
+    // Oils & Sauces
+    { name:'Olive oil',            category:'oils', qty:'', notes:'' },
+    { name:'Avocado oil',          category:'oils', qty:'', notes:'' },
+    { name:'Sesame oil',           category:'oils', qty:'', notes:'' },
+    { name:'Red wine vinegar',     category:'oils', qty:'', notes:'' },
+    { name:'Miso paste',           category:'oils', qty:'', notes:'' },
+    { name:'Peanut sauce',         category:'oils', qty:'', notes:'' },
+    { name:'Peanut butter',        category:'oils', qty:'', notes:'' },
+    { name:'Almond butter',        category:'oils', qty:'', notes:'' },
+    { name:'Tamari',               category:'oils', qty:'', notes:'' },
+    { name:'Coconut aminos',       category:'oils', qty:'', notes:'' },
+    { name:'Tahini',               category:'oils', qty:'', notes:'verify' },
+    { name:'Herbed butter (HR)',   category:'oils', qty:'', notes:'Hungryroot leftover' },
+    // Nuts & Seeds
+    { name:'Chia seeds',    category:'nuts', qty:'', notes:'' },
+    { name:'Flax',          category:'nuts', qty:'', notes:'' },
+    { name:'Almonds',       category:'nuts', qty:'', notes:'' },
+    { name:'Cashews',       category:'nuts', qty:'', notes:'' },
+    // Snacks
+    { name:'Rice cakes',    category:'snacks', qty:'', notes:'' },
+    // Canned & Jarred
+    { name:'Kalamata olives',      category:'canned', qty:'', notes:'' },
+    { name:'Cooked black beans',   category:'canned', qty:'', notes:'⚠️ use this week' },
+    { name:'Chickpeas (canned)',   category:'canned', qty:'1', notes:'' },
+    { name:'Kidney beans (canned)',category:'canned', qty:'1', notes:'' },
+    { name:'Black beans (canned)', category:'canned', qty:'1', notes:'' },
+    { name:'Refried beans',        category:'canned', qty:'4', notes:'' },
+    { name:'Split pea soup',       category:'canned', qty:'1', notes:'' },
+    { name:'French onion soup',    category:'canned', qty:'1', notes:'' },
+    { name:'Cream of celery',      category:'canned', qty:'1', notes:'' },
+    { name:'Pumpkin puree',        category:'canned', qty:'2', notes:'' },
+    { name:'Veg broth',            category:'canned', qty:'1', notes:'' },
+    { name:'Enchilada sauce',      category:'canned', qty:'1', notes:'' },
+    // Spices
+    { name:'Saffron', category:'spices', qty:'', notes:'' },
+    { name:'All the spices (assorted)', category:'spices', qty:'', notes:'' },
+    // Fresh herbs
+    { name:'Mint',      category:'herbs', qty:'', notes:'' },
+    { name:'Basil',     category:'herbs', qty:'', notes:'garden' },
+    { name:'Thyme',     category:'herbs', qty:'', notes:'garden' },
+    { name:'Marjoram',  category:'herbs', qty:'', notes:'garden' },
+    { name:'Lovage',    category:'herbs', qty:'', notes:'garden' },
+    { name:'Rosemary',  category:'herbs', qty:'', notes:'garden (verify)' },
+    // Supplements
+    { name:'Ritual Essential Protein', category:'supp', qty:'', notes:'' },
+    { name:'Creatine monohydrate',     category:'supp', qty:'', notes:'' },
+    { name:'Prenatal vitamin',         category:'supp', qty:'', notes:'' },
+  ];
+  const now = Date.now();
+  items = seed.map((s, i) => ({
+    id: 'seed-' + now + '-' + i,
+    name: s.name, category: s.category, qty: s.qty || '', notes: s.notes || '',
+    low: false, out: false,
+    added: now, updated: now,
+  }));
+  save(items);
+  localStorage.setItem(SEEDED_KEY, '1');
+}
+
+// -------- ui population --------
+function fillCategoryDropdown() {
+  const sel = document.getElementById('newCategory');
+  sel.innerHTML = CATEGORIES.map(c => `<option value="${c.id}">${c.label}</option>`).join('');
+}
+
+function renderChips() {
+  const chipsEl = document.getElementById('filterChips');
+  const counts = {};
+  items.forEach(i => { counts[i.category] = (counts[i.category] || 0) + 1; });
+  const chips = [{ id:'all', label:'All' }, ...CATEGORIES.filter(c => counts[c.id] > 0 || prefs.filter === c.id)];
+  chipsEl.innerHTML = chips.map(c => {
+    const count = c.id === 'all' ? items.length : (counts[c.id] || 0);
+    const active = prefs.filter === c.id ? ' active' : '';
+    return `<button class="chip${active}" onclick="setFilter('${c.id}')">${c.label}<span class="chip-count">${count}</span></button>`;
+  }).join('');
+}
+
+function setFilter(id) {
+  prefs.filter = id;
+  savePrefs(prefs);
+  render();
+}
+
+function toggleShowOut() {
+  prefs.showOut = !prefs.showOut;
+  savePrefs(prefs);
+  render();
+}
+
+// -------- add / edit / remove --------
+function addItem() {
+  const name = document.getElementById('newName').value.trim();
+  if (!name) { document.getElementById('newName').focus(); return; }
+  const category = document.getElementById('newCategory').value;
+  const qty = document.getElementById('newQty').value.trim();
+  const notes = document.getElementById('newNotes').value.trim();
+  const now = Date.now();
+  items.push({
+    id: 'item-' + now + '-' + Math.random().toString(36).slice(2, 8),
+    name, category, qty, notes,
+    low:false, out:false,
+    added:now, updated:now,
+  });
+  save(items);
+  document.getElementById('newName').value = '';
+  document.getElementById('newQty').value = '';
+  document.getElementById('newNotes').value = '';
+  document.getElementById('newName').focus();
+  render();
+}
+
+function editItem(id) {
+  const it = items.find(i => i.id === id);
+  if (!it) return;
+  const name = prompt('Item name:', it.name);
+  if (name === null) return;
+  const qty = prompt('Quantity (optional):', it.qty || '');
+  if (qty === null) return;
+  const notes = prompt('Notes (optional):', it.notes || '');
+  if (notes === null) return;
+  it.name = name.trim() || it.name;
+  it.qty = qty.trim();
+  it.notes = notes.trim();
+  it.updated = Date.now();
+  save(items);
+  render();
+}
+
+function toggleLow(id) {
+  const it = items.find(i => i.id === id);
+  if (!it) return;
+  it.low = !it.low;
+  it.updated = Date.now();
+  save(items);
+  render();
+}
+
+function toggleOut(id) {
+  const it = items.find(i => i.id === id);
+  if (!it) return;
+  it.out = !it.out;
+  it.updated = Date.now();
+  save(items);
+  render();
+}
+
+function removeItem(id) {
+  const it = items.find(i => i.id === id);
+  if (!it) return;
+  if (!confirm(`Remove "${it.name}"?`)) return;
+  items = items.filter(i => i.id !== id);
+  save(items);
+  render();
+}
+
+function clearAll() {
+  if (!confirm('Clear ALL pantry items? This cannot be undone.')) return;
+  items = [];
+  save(items);
+  render();
+}
+
+// -------- render --------
+function render() {
+  document.getElementById('countBadge').textContent = items.length;
+  document.getElementById('showOutLabel').textContent = prefs.showOut ? 'Hide out-of-stock' : 'Show out-of-stock';
+
+  renderChips();
+
+  const q = (document.getElementById('searchBox').value || '').toLowerCase().trim();
+  const content = document.getElementById('content');
+
+  if (items.length === 0) {
+    content.innerHTML = `<div class="empty">
+      <h2>Your pantry is empty</h2>
+      <p>Add items using the form above.</p>
+    </div>`;
+    document.getElementById('stamp').textContent = '';
+    return;
+  }
+
+  const visible = items.filter(i => {
+    if (!prefs.showOut && i.out) return false;
+    if (prefs.filter !== 'all' && i.category !== prefs.filter) return false;
+    if (q) {
+      const hay = (i.name + ' ' + (i.qty || '') + ' ' + (i.notes || '')).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+
+  if (visible.length === 0) {
+    content.innerHTML = `<div class="empty"><h2>No matches</h2><p>Try a different filter or search term.</p></div>`;
+  } else {
+    // Group by category, preserve CATEGORIES order
+    const groups = {};
+    visible.forEach(i => { (groups[i.category] = groups[i.category] || []).push(i); });
+    content.innerHTML = CATEGORIES
+      .filter(c => groups[c.id])
+      .map(c => {
+        const list = groups[c.id]
+          .slice()
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map(i => renderItem(i))
+          .join('');
+        return `<div class="section">
+          <div class="section-title">${c.label}<span class="sec-count">${groups[c.id].length}</span></div>
+          <div class="items">${list}</div>
+        </div>`;
+      }).join('');
+  }
+
+  const lastUpdated = items.reduce((m, i) => Math.max(m, i.updated || 0), 0);
+  document.getElementById('stamp').textContent = lastUpdated
+    ? `Last updated: ${new Date(lastUpdated).toLocaleString()}` : '';
+}
+
+function renderItem(i) {
+  const cls = 'item' + (i.out ? ' out' : (i.low ? ' low' : ''));
+  const qtyMeta = i.qty ? `<div class="item-meta">${escapeHtml(i.qty)}</div>` : '';
+  const notesMeta = i.notes ? `<div class="item-notes">${escapeHtml(i.notes)}</div>` : '';
+  const lowTitle = i.low ? 'Unmark low stock' : 'Mark low stock';
+  const outTitle = i.out ? 'Mark back in stock' : 'Mark out of stock';
+  return `<div class="${cls}">
+    <div class="item-main">
+      <div class="item-name">${escapeHtml(i.name)}</div>
+      ${qtyMeta}${notesMeta}
+    </div>
+    <div class="item-actions">
+      <button class="icon-btn warn" title="${lowTitle}" onclick="toggleLow('${i.id}')">${i.low ? '★' : '☆'}</button>
+      <button class="icon-btn"      title="Edit"        onclick="editItem('${i.id}')">✎</button>
+      <button class="icon-btn danger" title="${outTitle}" onclick="toggleOut('${i.id}')">${i.out ? '↩' : '∅'}</button>
+      <button class="icon-btn danger" title="Delete"    onclick="removeItem('${i.id}')">✕</button>
+    </div>
+  </div>`;
+}
+
+function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])); }
+
+// -------- copy for scout (markdown export) --------
+function openCopyForScout() {
+  const grouped = {};
+  items.forEach(i => { (grouped[i.category] = grouped[i.category] || []).push(i); });
+  const lines = [];
+  lines.push('# Pantry Inventory — Tatiana');
+  lines.push('');
+  lines.push(`*Exported from pantry dashboard on ${new Date().toLocaleString()}*`);
+  lines.push('');
+  CATEGORIES.forEach(c => {
+    if (!grouped[c.id]) return;
+    lines.push(`## ${c.label}`);
+    grouped[c.id]
+      .slice()
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .forEach(i => {
+        const flags = [];
+        if (i.low) flags.push('LOW');
+        if (i.out) flags.push('OUT');
+        const flagStr = flags.length ? ` **[${flags.join('/')}]**` : '';
+        const bits = [i.name];
+        if (i.qty) bits.push(`(${i.qty})`);
+        if (i.notes) bits.push(`— ${i.notes}`);
+        lines.push(`- ${bits.join(' ')}${flagStr}`);
+      });
+    lines.push('');
+  });
+  document.getElementById('modalText').value = lines.join('\n');
+  document.getElementById('modalBg').classList.add('open');
+}
+
+function closeModal() { document.getElementById('modalBg').classList.remove('open'); }
+
+async function copyModalText() {
+  const ta = document.getElementById('modalText');
+  ta.select();
+  try {
+    await navigator.clipboard.writeText(ta.value);
+    const btn = event.target;
+    const orig = btn.textContent;
+    btn.textContent = '✓ Copied';
+    setTimeout(() => { btn.textContent = orig; }, 1200);
+  } catch(e) {
+    document.execCommand('copy');
+  }
+}
+
+// -------- keyboard: Enter in name field adds item --------
+document.addEventListener('DOMContentLoaded', () => {
+  fillCategoryDropdown();
+  seedIfEmpty();
+  items = load();
+  render();
+  ['newName', 'newQty', 'newNotes'].forEach(id => {
+    document.getElementById(id).addEventListener('keydown', e => {
+      if (e.key === 'Enter') { e.preventDefault(); addItem(); }
+    });
+  });
+  document.getElementById('modalBg').addEventListener('click', e => {
+    if (e.target.id === 'modalBg') closeModal();
+  });
+});
+</script>
+</body>
+</html>
