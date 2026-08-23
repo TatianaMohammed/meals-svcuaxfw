@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Favorite Recipes</title>
+<style>
+:root {
+  --cp-bg:#0e0f11; --cp-surface:#17181c; --cp-surface-soft:#1e2025;
+  --cp-border:#2a2c33; --cp-text:#e6e6e6; --cp-text-muted:#a0a3ab;
+  --cp-accent:#7fb800; --cp-accent-hover:#95d200; --cp-accent-fg:#0e0f11;
+  --cp-success:#3ab979; --cp-warning:#e3a53b; --cp-danger:#e5484d;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:var(--cp-bg); color:var(--cp-text); line-height:1.5; }
+.container { max-width:1400px; margin:0 auto; padding:24px 32px; }
+header { background:var(--cp-surface); border-bottom:1px solid var(--cp-border); padding:24px 0; }
+header .container { display:flex; justify-content:space-between; align-items:center; gap:16px; }
+h1 { font-size:28px; font-weight:600; margin-bottom:4px; }
+.subtitle { color:var(--cp-text-muted); font-size:14px; }
+.back-link { background:var(--cp-surface-soft); border:1px solid var(--cp-border); color:var(--cp-text); padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:600; font-size:14px; white-space:nowrap; }
+.back-link:hover { background:var(--cp-border); }
+.count-badge { display:inline-block; background:var(--cp-accent); color:var(--cp-accent-fg); padding:2px 10px; border-radius:10px; font-size:12px; font-weight:600; margin-left:8px; vertical-align:middle; }
+.empty { text-align:center; padding:80px 20px; color:var(--cp-text-muted); }
+.empty h2 { color:var(--cp-text); margin-bottom:12px; font-size:22px; }
+.empty a { color:var(--cp-accent); text-decoration:none; font-weight:600; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:20px; margin-top:24px; }
+.card { background:var(--cp-surface); border:1px solid var(--cp-border); border-radius:14px; padding:20px; box-shadow:0 0 2px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.14); }
+.card-head { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; margin-bottom:8px; }
+.card-title { font-size:16px; font-weight:600; color:var(--cp-text); flex:1; }
+.remove-btn { background:transparent; border:1px solid var(--cp-border); color:var(--cp-text-muted); padding:4px 10px; border-radius:8px; cursor:pointer; font-size:12px; font-family:inherit; }
+.remove-btn:hover { color:var(--cp-danger); border-color:var(--cp-danger); }
+.time { display:inline-block; background:var(--cp-surface-soft); border:1px solid var(--cp-border); padding:2px 8px; border-radius:8px; font-size:11px; color:var(--cp-text-muted); margin-right:4px; }
+.prep-badge { display:inline-block; background:var(--cp-warning); color:#0e0f11; padding:2px 8px; border-radius:8px; font-size:11px; font-weight:600; margin-right:4px; }
+.pill { display:inline-block; background:var(--cp-surface-soft); border:1px solid var(--cp-border); padding:2px 8px; border-radius:8px; font-size:11px; color:var(--cp-text); margin:4px 4px 0 0; }
+.note { background:var(--cp-surface-soft); border-left:3px solid var(--cp-accent); padding:8px 12px; margin:12px 0; border-radius:6px; font-size:12px; color:var(--cp-text-muted); font-style:italic; }
+.section-title { font-size:12px; font-weight:600; color:var(--cp-accent); text-transform:uppercase; letter-spacing:.5px; margin:16px 0 6px; }
+.list { list-style:none; padding-left:0; }
+.list li { padding:4px 0 4px 20px; position:relative; font-size:13px; color:var(--cp-text); border-bottom:1px dashed var(--cp-border); }
+.list li:last-child { border-bottom:none; }
+.list li::before { content:"•"; position:absolute; left:6px; color:var(--cp-accent); }
+.instructions { counter-reset: step; }
+.instructions li { padding-left:28px; }
+.instructions li::before { content: counter(step); counter-increment: step; position:absolute; left:0; top:4px; background:var(--cp-accent); color:var(--cp-accent-fg); width:20px; height:20px; border-radius:50%; text-align:center; font-size:11px; font-weight:600; line-height:20px; }
+.card-meta { font-size:11px; color:var(--cp-text-muted); margin-top:12px; padding-top:12px; border-top:1px solid var(--cp-border); }
+.toolbar { display:flex; gap:12px; margin-top:16px; align-items:center; }
+.print-all { background:var(--cp-accent); color:var(--cp-accent-fg); border:none; padding:8px 14px; border-radius:8px; cursor:pointer; font-weight:600; font-size:13px; font-family:inherit; }
+.print-all:hover { background:var(--cp-accent-hover); }
+.clear-btn { background:transparent; border:1px solid var(--cp-border); color:var(--cp-text-muted); padding:8px 14px; border-radius:8px; cursor:pointer; font-size:13px; font-family:inherit; }
+.clear-btn:hover { color:var(--cp-danger); border-color:var(--cp-danger); }
+@media print { .back-link, .remove-btn, .toolbar { display:none; } .card { break-inside:avoid; } }
+</style>
+</head>
+<body>
+<header><div class="container">
+  <div>
+    <h1>⭐ Favorite Recipes<span class="count-badge" id="countBadge">0</span></h1>
+    <div class="subtitle">Saved from your weekly meal plan. Stored locally in this browser.</div>
+  </div>
+  <a href="index.html" class="back-link">← Back to Meal Plan</a>
+</div></header>
+
+<div class="container">
+  <div class="toolbar" id="toolbar" style="display:none;">
+    <button class="print-all" onclick="window.print()">🖨️ Print All</button>
+    <button class="clear-btn" onclick="clearAll()">Clear all favorites</button>
+  </div>
+  <div id="grid"></div>
+</div>
+
+<script>
+const FAV_KEY = 'mealplan_favorites_v1';
+
+function load() {
+  try { return JSON.parse(localStorage.getItem(FAV_KEY) || '[]'); }
+  catch(e) { return []; }
+}
+function save(favs) { localStorage.setItem(FAV_KEY, JSON.stringify(favs)); }
+
+function removeFav(id) {
+  const favs = load().filter(f => f.id !== id);
+  save(favs);
+  render();
+}
+
+function clearAll() {
+  if (!confirm('Remove all favorites?')) return;
+  save([]);
+  render();
+}
+
+function render() {
+  const favs = load();
+  document.getElementById('countBadge').textContent = favs.length;
+  document.getElementById('toolbar').style.display = favs.length ? 'flex' : 'none';
+  const grid = document.getElementById('grid');
+  if (favs.length === 0) {
+    grid.innerHTML = `<div class="empty">
+      <h2>No favorites yet</h2>
+      <p>Head to the <a href="index.html">meal plan</a> and click the ☆ button on any recipe to save it here.</p>
+    </div>`;
+    return;
+  }
+  const sorted = [...favs].sort((a,b) => (b.added || '').localeCompare(a.added || ''));
+  grid.className = 'grid';
+  grid.innerHTML = sorted.map(f => `
+    <div class="card">
+      <div class="card-head">
+        <div class="card-title">${escapeHtml(f.name)}</div>
+        <button class="remove-btn" onclick="removeFav('${f.id}')" title="Remove from favorites">✕ Remove</button>
+      </div>
+      <div>
+        ${f.time ? `<span class="time">⏱ ${escapeHtml(f.time)}</span>` : ''}
+        ${f.prep ? `<span class="prep-badge">🔪 ${escapeHtml(f.prep)}</span>` : ''}
+      </div>
+      ${f.macros ? `<div style="margin-top:8px;">
+        <span class="pill">${f.macros.cal} cal</span>
+        <span class="pill">${f.macros.p}g protein</span>
+        <span class="pill">${f.macros.c}g carbs</span>
+        <span class="pill">${f.macros.f}g fat</span>
+        <span class="pill">${f.macros.fib}g fiber</span>
+      </div>` : ''}
+      ${f.note ? `<div class="note">${escapeHtml(f.note)}</div>` : ''}
+      ${f.ingredients && f.ingredients.length ? `<div class="section-title">Ingredients</div>
+        <ul class="list">${f.ingredients.map(i => `<li>${escapeHtml(i)}</li>`).join('')}</ul>` : ''}
+      ${f.instructions && f.instructions.length ? `<div class="section-title">Instructions</div>
+        <ol class="list instructions">${f.instructions.map(i => `<li>${escapeHtml(i)}</li>`).join('')}</ol>` : ''}
+      <div class="card-meta">
+        ${f.weekLabel ? `Saved from: ${escapeHtml(f.weekLabel)} · ` : ''}Added ${f.added ? new Date(f.added).toLocaleDateString() : ''}
+      </div>
+    </div>
+  `).join('');
+}
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+render();
+</script>
+</body>
+</html>
