@@ -659,9 +659,9 @@ const WEEKS = [
       // SUN 8/30 — SOLO · Lazy · Anti-inflam pantry mode · Sets up Monday
       {date:"2026-08-30",day:"Sunday",type:"Breakfast",name:"🍠🍳 Sweet Potato + Spinach + Cheddar Egg Bake (batch 6 — first slice today)",cal:270,p:20,c:14,f:14,fib:2,time:"5m active · 35m bake",recipe:"sweetpotato-eggbake"},
       {date:"2026-08-30",day:"Sunday",type:"Snack 1",name:"🧀 Cheddar Cubes + Bell Pepper Strips",cal:200,p:12,c:8,f:14,fib:2,time:"2m",recipe:"cheddar-pepper-snack"},
-      {date:"2026-08-30",day:"Sunday",type:"Lunch",name:"🫘 Dal Leftover + Soft-Boiled Egg + Spinach",cal:500,p:26,c:60,f:14,fib:12,time:"5m",recipe:"red-lentil-dal"},
+      {date:"2026-08-30",day:"Sunday",type:"Lunch",name:"🥗 Big Salad + Hummus + Cheddar + Boiled Egg (fridge-clean)",cal:480,p:26,c:28,f:26,fib:8,time:"5m",recipe:"big-salad-sun"},
       {date:"2026-08-30",day:"Sunday",type:"Snack 2",name:"🍇 Frozen Grapes + 15 Cashews",cal:200,p:5,c:26,f:10,fib:2,time:"1m",recipe:"grapes-cashews"},
-      {date:"2026-08-30",day:"Sunday",type:"Dinner",name:"🍗 Sheet-Pan Chicken Legs + Sweet Potato + Asparagus (sets up Mon lunch)",cal:520,p:42,c:32,f:22,fib:8,time:"40m mostly hands-off",recipe:"roasted-legs3"}
+      {date:"2026-08-30",day:"Sunday",type:"Dinner",name:"🍗 TJ's Rotisserie Chicken + Roasted Asparagus + Sweet Potato (30m, mostly hands-off)",cal:520,p:42,c:32,f:22,fib:8,time:"30m mostly hands-off",recipe:"tj-rotisserie-dinner"}
     ],
     recipes: [
       {id:"egg-bake-lox-avo",name:"🍳 Egg Bake Slice + Lox + Avocado + Berries",time:"3 min · 1 serving",macros:{cal:420,p:34,c:10,f:26,fib:4},
@@ -810,13 +810,65 @@ const WEEKS = [
       {date:"2026-08-31",day:"Monday",type:"Snack 1",name:"🧀 Cheddar Cubes + Bell Pepper Strips (no dishes)",cal:200,p:12,c:8,f:14,fib:2,time:"2m",recipe:"cheddar-pepper-snack"},
       {date:"2026-08-31",day:"Monday",type:"Lunch",name:"🍠 Shredded Chicken + Sweet Potato + Roasted Asparagus (1 bowl, cold or warm)",cal:460,p:38,c:36,f:16,fib:8,time:"3m (all pre-cooked)",recipe:"chicken-sweetpotato-bowl"},
       {date:"2026-08-31",day:"Monday",type:"Snack 2",name:"🍇 Frozen Grape + Berry Smoothie Bowl (mini)",cal:280,p:25,c:32,f:6,fib:6,time:"4m",recipe:"grape-berry-bowl"},
-      {date:"2026-08-31",day:"Monday",type:"Dinner",name:"🥘 One-Pot Beyond Beef + Quinoa Skillet w/ Asparagus + Bell Pepper (ONE PAN)",cal:520,p:32,c:52,f:18,fib:10,time:"20m",recipe:"beyond-quinoa-skillet"}
+      {date:"2026-08-31",day:"Monday",type:"Dinner",name:"🥘 One-Pot Ground Beef + Quinoa Skillet w/ Asparagus + Bell Pepper (ONE PAN)",cal:540,p:38,c:50,f:20,fib:9,time:"20m",recipe:"beef-quinoa-skillet"},
+
+      // TUE 9/1 — Khalid home. Rotisserie leftover lemony pasta
+      {date:"2026-09-01",day:"Tuesday",type:"Breakfast",name:"🍠🍳 Sweet Potato Egg Bake + Lox + Berries",cal:400,p:32,c:16,f:22,fib:4,time:"2m",recipe:"sweetpotato-eggbake"},
+      {date:"2026-09-01",day:"Tuesday",type:"Snack 1",name:"🍎 Envy Apple + 1 tbsp PB",cal:240,p:6,c:22,f:14,fib:4,time:"1m",recipe:"grapes-cashews"},
+      {date:"2026-09-01",day:"Tuesday",type:"Lunch",name:"🥘 Beef Quinoa Skillet Leftover (T) / Rotisserie Chicken Bowl (K)",cal:520,p:38,c:48,f:20,fib:9,time:"3m reheat",recipe:"beef-quinoa-skillet"},
+      {date:"2026-09-01",day:"Tuesday",type:"Snack 2",name:"🧀 Cheddar + Bell Pepper Strips",cal:200,p:12,c:8,f:14,fib:2,time:"2m",recipe:"cheddar-pepper-snack"},
+      {date:"2026-09-01",day:"Tuesday",type:"K Snack",name:"🍫 Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar-w4",khalidOnly:true},
+      {date:"2026-09-01",day:"Tuesday",type:"Dinner",name:"🍝 Lemon Asparagus GF Pasta + Rotisserie Chicken — thyme + basil",cal:530,p:38,c:52,f:16,fib:6,time:"15m",recipe:"lemon-asparagus-pasta"},
+
+      // WED 9/2 — Stuffed peppers night (use ground beef + peppers + quinoa)
+      {date:"2026-09-02",day:"Wednesday",type:"Breakfast",name:"🍠🍳 Sweet Potato Egg Bake + Berries",cal:310,p:22,c:24,f:14,fib:4,time:"1m",recipe:"sweetpotato-eggbake"},
+      {date:"2026-09-02",day:"Wednesday",type:"Snack 1",name:"🍇 Frozen Grapes + 15 Cashews",cal:200,p:5,c:26,f:10,fib:2,time:"1m",recipe:"grapes-cashews"},
+      {date:"2026-09-02",day:"Wednesday",type:"Lunch",name:"🍝 Pasta Leftover + Extra Spinach",cal:520,p:36,c:52,f:16,fib:7,time:"3m",recipe:"lemon-asparagus-pasta"},
+      {date:"2026-09-02",day:"Wednesday",type:"Snack 2",name:"Hummus + Bell Pepper + Cucumber",cal:170,p:5,c:16,f:8,fib:5,time:"2m",recipe:"grapes-cashews"},
+      {date:"2026-09-02",day:"Wednesday",type:"K Snack",name:"🍫 Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar-w4",khalidOnly:true},
+      {date:"2026-09-02",day:"Wednesday",type:"Dinner",name:"🌶️ Ground Beef Stuffed Bell Peppers + Quinoa (batch 6 halves)",cal:520,p:36,c:44,f:20,fib:8,time:"35m mostly hands-off",recipe:"beef-stuffed-peppers-w4"},
+
+      // THU 9/3 — Sheet pan chicken + brussels
+      {date:"2026-09-03",day:"Thursday",type:"Breakfast",name:"🍠🍳 Sweet Potato Egg Bake + 1 oz Lox + Berries",cal:400,p:32,c:16,f:22,fib:4,time:"2m",recipe:"sweetpotato-eggbake"},
+      {date:"2026-09-03",day:"Thursday",type:"Snack 1",name:"🍎 Envy Apple + ½ oz Parm chunk",cal:240,p:12,c:20,f:12,fib:4,time:"1m",recipe:"grapes-cashews"},
+      {date:"2026-09-03",day:"Thursday",type:"Lunch",name:"🌶️ Stuffed Peppers Leftover (2 halves)",cal:520,p:36,c:44,f:20,fib:8,time:"5m reheat",recipe:"beef-stuffed-peppers-w4"},
+      {date:"2026-09-03",day:"Thursday",type:"Snack 2",name:"🥝 Kiwi + Greek Yogurt + Chia",cal:220,p:17,c:24,f:5,fib:6,time:"2m",recipe:"grapes-cashews"},
+      {date:"2026-09-03",day:"Thursday",type:"K Snack",name:"🍫 Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar-w4",khalidOnly:true},
+      {date:"2026-09-03",day:"Thursday",type:"Dinner",name:"🍗 Sheet-Pan Lemon-Garlic Chicken + Brussels + Sweet Potato — thyme",cal:510,p:44,c:34,f:18,fib:8,time:"40m mostly hands-off",recipe:"sheetpan-chicken-brussels"},
+
+      // FRI 9/4 — Pasta primavera (green lentils for protein)
+      {date:"2026-09-04",day:"Friday",type:"Breakfast",name:"🍠🍳 Sweet Potato Egg Bake + Berries",cal:310,p:22,c:24,f:14,fib:4,time:"1m",recipe:"sweetpotato-eggbake"},
+      {date:"2026-09-04",day:"Friday",type:"Snack 1",name:"🐟 Lox + Cucumber + 3 Rice Crackers",cal:170,p:12,c:12,f:6,fib:1,time:"2m",recipe:"grapes-cashews"},
+      {date:"2026-09-04",day:"Friday",type:"Lunch",name:"🍗 Shredded Chicken + Brussels + Spinach + Miso-Tahini",cal:470,p:40,c:14,f:26,fib:6,time:"5m",recipe:"chicken-brussels-bowl"},
+      {date:"2026-09-04",day:"Friday",type:"Snack 2",name:"🧀 Parm Crisps + 15 Cashews",cal:200,p:11,c:5,f:14,fib:2,time:"1m",recipe:"grapes-cashews"},
+      {date:"2026-09-04",day:"Friday",type:"K Snack",name:"🍫 Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar-w4",khalidOnly:true},
+      {date:"2026-09-04",day:"Friday",type:"Dinner",name:"🍝 GF Pasta Primavera + Green Lentils — asparagus + peppers + basil",cal:540,p:26,c:78,f:12,fib:14,time:"20m",recipe:"pasta-primavera-lentils"},
+
+      // SAT 9/5 — Weekend batch cook / green lentil salad
+      {date:"2026-09-05",day:"Saturday",type:"Breakfast",name:"🥑 2 Eggs Over Sweet Potato Hash + Avocado",cal:420,p:22,c:26,f:24,fib:6,time:"12m",recipe:"sweetpotato-hash"},
+      {date:"2026-09-05",day:"Saturday",type:"Snack 1",name:"🍇 Frozen Grapes + 15 Cashews",cal:200,p:5,c:26,f:10,fib:2,time:"1m",recipe:"grapes-cashews"},
+      {date:"2026-09-05",day:"Saturday",type:"Lunch",name:"🫘 Green Lentil + Roasted Veg Salad + Feta",cal:480,p:22,c:52,f:18,fib:14,time:"10m (uses batch lentils)",recipe:"green-lentil-salad"},
+      {date:"2026-09-05",day:"Saturday",type:"Snack 2",name:"Hummus + Bell Pepper + Cucumber",cal:170,p:5,c:16,f:8,fib:5,time:"2m",recipe:"grapes-cashews"},
+      {date:"2026-09-05",day:"Saturday",type:"Dinner",name:"🥩 Ribeye or Beef Cubes + Roasted Brussels + Sweet Potato",cal:560,p:44,c:30,f:26,fib:6,time:"25m",recipe:"ribeye-brussels"},
+
+      // SUN 9/6 — Weekly reset
+      {date:"2026-09-06",day:"Sunday",type:"Breakfast",name:"🥤 Green Grape Protein Smoothie",cal:280,p:25,c:32,f:6,fib:6,time:"4m",recipe:"grape-berry-bowl"},
+      {date:"2026-09-06",day:"Sunday",type:"Snack 1",name:"🍞 Lentil Bread + AB + Kiwi",cal:340,p:15,c:30,f:16,fib:8,time:"3m",recipe:"grapes-cashews"},
+      {date:"2026-09-06",day:"Sunday",type:"Lunch",name:"🫘 Green Lentil Salad Leftover + Boiled Egg",cal:500,p:28,c:52,f:20,fib:14,time:"5m",recipe:"green-lentil-salad"},
+      {date:"2026-09-06",day:"Sunday",type:"Snack 2",name:"🥝 Kiwi + Greek Yogurt + Chia",cal:220,p:17,c:24,f:5,fib:6,time:"2m",recipe:"grapes-cashews"},
+      {date:"2026-09-06",day:"Sunday",type:"Dinner",name:"🍗 Roasted Chicken Legs (batch 6) + Roasted Asparagus + Sweet Potato — thyme + marjoram",cal:510,p:42,c:32,f:22,fib:8,time:"45m mostly hands-off",recipe:"sheetpan-chicken-brussels"}
     ],
     recipes: [
       {id:"sweetpotato-eggbake",name:"🍠🍳 Sweet Potato + Spinach + Cheddar Egg Bake (batch 6 slices)",time:"5 min prep · 35 min bake · 1 dish",macros:{cal:270,p:20,c:14,f:14,fib:2},
        ingredients:["8 large eggs","¼ cup 2% milk or plain Greek yogurt","1 medium sweet potato, peeled + coarsely grated (~1½ cups) — use-up star","2 cups fresh spinach, roughly chopped","½ cup shredded sharp cheddar (use-up)","2 green onions, thinly sliced (or ¼ small onion, grated)","1 clove garlic, grated","1 tsp fresh thyme (garden) or ½ tsp dried","½ tsp turmeric (anti-inflam boost)","¾ tsp salt","¼ tsp pepper","1 tbsp olive oil for the pan"],
        instructions:["Preheat oven 375°F. Grease an 8x8 or 9x9 baking dish with olive oil","Squeeze grated sweet potato in a clean towel to remove excess water","In a bowl, whisk eggs + milk + salt + pepper + turmeric","Stir in sweet potato, spinach, cheddar, green onion, garlic, thyme","Pour into greased dish, spread evenly","Bake 30-35 min until set in the center and slightly golden","Cool 5 min, cut into 6 squares","Store: fridge airtight up to 5 days, or freeze slices individually"],
        note:"🌿 ANTI-INFLAM: eggs (choline) + spinach (folate) + sweet potato (beta-carotene) + turmeric. Per slice = 270 cal / 20g P / 14g C / 14g F. Serve with berries or extra veg to boost fiber. Uses up: sweet potato + cheddar + spinach. TTC-safe. GF."},
+
+      {id:"tj-rotisserie-dinner",name:"🍗 TJ's Rotisserie Chicken + Roasted Asparagus + Sweet Potato",time:"30 min · mostly hands-off · 1 sheet pan + carve board",macros:{cal:520,p:42,c:32,f:22,fib:8},
+       ingredients:["1 TJ's rotisserie chicken (or 12 oz pre-cooked chicken strips)","1 bunch asparagus, trimmed (~1 lb — USE UP)","1 medium sweet potato, cubed","2 tbsp olive oil","Salt, pepper, garlic powder","Fresh thyme + marjoram (garden)","Optional: crumbled cheddar or feta on top"],
+       instructions:["Preheat oven 425°F","Toss asparagus + sweet potato cubes with olive oil, salt, pepper, garlic powder on ONE sheet pan","Roast 22-25 min, tossing halfway (sweet potato needs the full time)","While that's roasting: carve rotisserie chicken — plate a portion for tonight, pull ~6 oz of white/dark meat into shreds for Mon lunch, save remaining for Tue","Plate: chicken + roasted veg. Top with fresh herbs.","Save half the roasted asparagus in fridge → Mon lunch bowl"],
+       note:"🌿 ANTI-INFLAM + LAZY MODE: asparagus (glutathione + folate) + sweet potato (beta-carotene) + olive oil (oleocanthal). Rotisserie = zero chicken cooking. ONE sheet pan for the veg. Sets up Mon lunch."},
+
 
       {id:"grape-berry-bowl",name:"🍇 Frozen Grape + Berry Smoothie Bowl",time:"4 min · 1 serving",macros:{cal:340,p:30,c:38,f:8,fib:8},
        ingredients:["1 scoop Ritual protein","5g creatine","¾ cup unsweetened almond milk","¼ cup plain 2% Greek yogurt","½ cup frozen grapes","¼ cup frozen mixed berries","1 tbsp chia","1 handful spinach","Top: 1 tbsp cashews + a few extra frozen grapes"],
@@ -829,19 +881,71 @@ const WEEKS = [
        note:"Zero dishes. Uses: cheddar + bell pepper. Cheese in moderation is anti-inflam (CLA + K2)."},
 
       {id:"chicken-sweetpotato-bowl",name:"🍠 Shredded Chicken + Sweet Potato + Roasted Asparagus Bowl",time:"3 min assembly",macros:{cal:460,p:38,c:36,f:16,fib:8},
-       ingredients:["5-6 oz shredded chicken (from Sun 8/30 roast)","½ roasted sweet potato (roasted alongside Sun dinner — see prepAhead)","1 cup roasted asparagus (from tonight's Beyond Beef skillet batch — see note)","1 tbsp olive oil","Squeeze lemon","Fresh basil + thyme (garden)","Optional: shaved parm or crumbled feta"],
-       instructions:["Layer chicken → sweet potato (sliced) → asparagus in a bowl","Drizzle olive oil + lemon","Herbs on top","Eat cold or 60-sec microwave"],
-       note:"🌿 ANTI-INFLAM: sweet potato (beta-carotene) + asparagus (glutathione + folate) + olive oil (oleocanthal). ZERO cooking at lunchtime — all components pre-made. Uses: chicken shreds, asparagus, sweet potato (use-up — plenty in stock)."},
+       ingredients:["5-6 oz shredded rotisserie chicken (from Sun dinner carve)","½ roasted sweet potato (from Sun sheet pan)","1 cup roasted asparagus (from Sun sheet pan)","1 tbsp olive oil","Squeeze lemon","Fresh basil + thyme (garden)","Optional: shaved parm or crumbled feta"],
+       instructions:["Layer chicken → sweet potato → asparagus in a bowl","Drizzle olive oil + lemon","Herbs on top","Eat cold or 60-sec microwave"],
+       note:"🌿 ANTI-INFLAM: sweet potato (beta-carotene) + asparagus (glutathione + folate) + olive oil (oleocanthal). ZERO cooking at lunchtime — all pre-cooked from Sun sheet pan + rotisserie carve. Uses: rotisserie chicken shreds, asparagus, sweet potato."},
 
       {id:"grapes-cashews",name:"🍇 Frozen Grapes + Cashews",time:"1 min",macros:{cal:200,p:5,c:26,f:10,fib:2},
        ingredients:["1 cup frozen grapes","15 cashews"],
        instructions:["Portion into small bowl","Eat slowly — grapes stay cold, cashews add crunch"],
        note:"Uses: frozen grapes. Grapes = resveratrol (anti-inflam). Cashews = magnesium."},
 
-      {id:"beyond-quinoa-skillet",name:"🥘 One-Pot Beyond Beef + Quinoa Skillet w/ Asparagus + Bell Pepper",time:"5 min prep · 15 min cook · ONE PAN",macros:{cal:520,p:32,c:52,f:18,fib:10},
-       ingredients:["½ pkg Beyond Beef","1 tbsp sesame oil","1 red bell pepper, diced","1 cup asparagus, cut into 1-inch pieces (USE UP — anti-inflam star)","½ cup quinoa, rinsed","1 cup chicken broth (from freezer stock)","1 tbsp coconut aminos","1 clove garlic, minced","1-inch knob ginger, grated","1 big handful spinach","Top: fresh basil + thyme (garden), 1 tbsp cashews, drizzle peanut sauce"],
-       instructions:["Heat sesame oil in a deep skillet or dutch oven over medium-high","Brown Beyond Beef, breaking up (5 min)","Add bell pepper + asparagus + garlic + ginger — sauté 2 min","Stir in quinoa + broth + coconut aminos","Cover, reduce heat, simmer 12-15 min until quinoa fluffs & liquid absorbed","Kill heat. Stir in spinach — it wilts from residual heat","Top with basil, thyme, cashews. Drizzle peanut sauce","Optional: sprinkle sharp cheddar (uses up cheddar + adds calcium)"],
-       note:"🥇 YOUR FAVORITE — swapped zucchini → asparagus (use-up + anti-inflam). Ginger + turmeric (add ½ tsp) = anti-inflam boost. ONE pan. TTC-safe. Batch enough to have leftovers for Tue lunch."}
+      {id:"big-salad-sun",name:"🥗 Big Salad + Hummus + Cheddar + Boiled Egg",time:"5 min · 1 serving",macros:{cal:480,p:26,c:28,f:26,fib:8},
+       ingredients:["3 cups spinach or mixed greens","1 soft-boiled egg (or 2 hard-boiled)","2 tbsp hummus","1 oz sharp cheddar, cubed","½ cucumber, diced","½ bell pepper, sliced","¼ cup kalamata olives","1 tbsp olive oil + squeeze lemon","Salt, pepper, fresh basil (garden)"],
+       instructions:["Layer greens in a bowl","Top with veg, olives, egg, cheddar, dollop of hummus","Drizzle olive oil + lemon","Season + top with basil"],
+       note:"🌿 ANTI-INFLAM + FRIDGE-CLEAN: uses up bell pepper + cheddar + garden herbs. No cooking needed (except boil an egg). TTC-safe. GF."},
+
+      {id:"beef-quinoa-skillet",name:"🥘 One-Pot Ground Beef + Quinoa Skillet w/ Asparagus + Bell Pepper",time:"5 min prep · 15 min cook · ONE PAN",macros:{cal:540,p:38,c:50,f:20,fib:9},
+       ingredients:["½ lb 90% lean ground beef (from freezer, thaw Sun night)","1 tbsp sesame oil","1 red bell pepper, diced","1 cup asparagus, cut into 1-inch pieces (USE UP — anti-inflam star)","½ cup quinoa, rinsed","1 cup chicken broth (from freezer stock)","1 tbsp coconut aminos","1 clove garlic, minced","1-inch knob ginger, grated","½ tsp turmeric (anti-inflam boost)","1 big handful spinach","Top: fresh basil + thyme (garden), 1 tbsp cashews, drizzle peanut sauce","Optional: sprinkle sharp cheddar"],
+       instructions:["Heat sesame oil in a deep skillet or dutch oven over medium-high","Brown ground beef, breaking up (5 min). Drain excess fat if needed","Add bell pepper + asparagus + garlic + ginger + turmeric — sauté 2 min","Stir in quinoa + broth + coconut aminos","Cover, reduce heat, simmer 12-15 min until quinoa fluffs & liquid absorbed","Kill heat. Stir in spinach — wilts from residual heat","Top with basil, thyme, cashews. Drizzle peanut sauce","Optional: cheddar sprinkle (uses up cheddar + adds calcium)"],
+       note:"🥇 YOUR FAVORITE — subbed ground beef for Beyond Beef (using freezer stock — no store run needed). Ginger + turmeric = anti-inflam. ONE pan. TTC-safe. Batch enough for Tue lunch leftover."},
+
+      {id:"protein-bar-w4",name:"🍫 Protein Bar (Khalid)",time:"1 min",macros:{cal:200,p:20,c:15,f:7,fib:5},
+       ingredients:["1 protein bar (Barebells, David Bar, Built Bar, Quest, or RXBAR)"],
+       instructions:["Open. Eat."],
+       note:"Khalid afternoon top-up."},
+
+      {id:"lemon-asparagus-pasta",name:"🍝 Lemon Asparagus GF Pasta + Rotisserie Chicken",time:"15 min · 2 servings",macros:{cal:530,p:38,c:52,f:16,fib:6},
+       ingredients:["6 oz GF pasta (penne or fusilli)","1 bunch asparagus, cut in 1-inch pieces (USE UP)","6 oz shredded rotisserie chicken","2 tbsp olive oil","2 cloves garlic, minced","Zest + juice of 1 lemon","¼ cup grated Parm","2 cups spinach","Fresh basil + thyme (garden)","Red pepper flakes (opt)","Salt, pepper"],
+       instructions:["Boil pasta in salted water. When 4 min left, add asparagus to the same pot","Reserve ½ cup pasta water. Drain","In the empty pot: warm olive oil + garlic 30 sec, add lemon zest + juice","Return pasta + asparagus + chicken + spinach. Toss with a splash of pasta water","Off heat: stir in Parm, torn basil + thyme. Season."],
+       note:"🌿 ANTI-INFLAM: asparagus (glutathione + folate) + olive oil + garlic + herbs. Uses up: asparagus, rotisserie chicken. Batches for Wed lunch."},
+
+      {id:"beef-stuffed-peppers-w4",name:"🌶️ Ground Beef Stuffed Bell Peppers + Quinoa (batch 6 halves)",time:"10 min prep · 25 min bake · 3 servings",macros:{cal:520,p:36,c:44,f:20,fib:8},
+       ingredients:["1 lb 90% lean ground beef","3 large bell peppers, halved lengthwise, seeded (USE UP)","1 cup cooked quinoa","1 small onion, diced","2 cloves garlic","1 tsp cumin","1 tsp smoked paprika","½ tsp turmeric (anti-inflam)","1 can diced tomatoes (14 oz) OR marinara","½ cup shredded cheddar (USE UP)","Fresh basil (garden)","Salt, pepper"],
+       instructions:["400°F. Arrange pepper halves cut-side up in a baking dish","Brown beef with onion + garlic. Add spices + tomatoes. Simmer 3 min. Stir in quinoa","Spoon filling into pepper halves. Top with cheddar","Cover with foil, bake 20 min. Uncover, bake 5 min more","Top with basil"],
+       note:"🌿 Uses up 3 bell peppers + cheddar + quinoa. Batches 6 halves = Wed D + Thu L (2 halves each meal). TTC-safe. GF."},
+
+      {id:"sheetpan-chicken-brussels",name:"🍗 Sheet-Pan Lemon-Garlic Chicken + Brussels + Sweet Potato",time:"10 min prep · 30-35 min roast · 1 pan",macros:{cal:510,p:44,c:34,f:18,fib:8},
+       ingredients:["4 chicken thighs or 4 legs (thawed — pull Wed pm)","1 lb Brussels sprouts, halved (USE UP)","1 medium sweet potato, cubed","3 tbsp olive oil","3 cloves garlic, minced","Zest + juice of 1 lemon","Fresh thyme + marjoram (garden)","Salt, pepper, paprika"],
+       instructions:["425°F","Toss chicken + Brussels + sweet potato with olive oil, garlic, lemon, herbs, salt, pepper","Spread on ONE sheet pan (chicken skin-side up)","Roast 30-35 min until chicken hits 175°F and Brussels are crispy","Squeeze extra lemon before serving"],
+       note:"🌿 ANTI-INFLAM: Brussels (sulforaphane) + garlic + olive oil + herbs. Uses up Brussels + sweet potato. Save 2 chicken portions → shred for Fri L."},
+
+      {id:"pasta-primavera-lentils",name:"🍝 GF Pasta Primavera + Green Lentils",time:"20 min · 3 servings",macros:{cal:540,p:26,c:78,f:12,fib:14},
+       ingredients:["6 oz GF pasta","½ cup green lentils","2 cups water for lentils","1 bunch asparagus, cut in 1-inch pieces (USE UP)","2 bell peppers, sliced (USE UP)","2 tbsp olive oil","3 cloves garlic","Zest + juice 1 lemon","¼ cup grated Parm","Fresh basil + marjoram (garden)","Red pepper flakes","Salt, pepper"],
+       instructions:["Simmer green lentils 20-25 min until tender. Drain","Meanwhile boil pasta. In last 3 min add asparagus + peppers to pasta water","Reserve ½ cup pasta water. Drain","Warm olive oil + garlic, add lemon","Toss pasta + veg + lentils + splash pasta water","Off heat: Parm, herbs, red pepper flakes"],
+       note:"🌿 Plant-forward anti-inflam. Green lentils = 18g protein/cup + iron + folate. Uses up asparagus + bell peppers + GF pasta + green lentils."},
+
+      {id:"chicken-brussels-bowl",name:"🍗 Shredded Chicken + Roasted Brussels + Spinach + Miso-Tahini",time:"5 min assembly",macros:{cal:470,p:40,c:14,f:26,fib:6},
+       ingredients:["6 oz shredded chicken (from Thu sheet pan)","1 cup roasted Brussels (Thu leftover)","2 cups spinach","½ avocado","2 tbsp Miso-Tahini","Lemon"],
+       instructions:["Layer spinach → chicken → Brussels → avocado","Drizzle Miso-Tahini + lemon"],
+       note:"Uses Thu leftovers. Zero cooking."},
+
+      {id:"sweetpotato-hash",name:"🥑 2 Eggs Over Sweet Potato Hash + Avocado",time:"12 min · 1 serving",macros:{cal:420,p:22,c:26,f:24,fib:6},
+       ingredients:["1 small sweet potato, cubed","2 eggs","¼ avocado","1 tbsp olive oil","½ tsp smoked paprika","Fresh thyme","Salt, pepper"],
+       instructions:["Sauté sweet potato in olive oil 8-10 min until tender + crispy","Push to side, crack eggs, cook to preference","Plate hash + eggs + avocado. Herbs on top"],
+       note:"Weekend brunch. Uses up sweet potato."},
+
+      {id:"green-lentil-salad",name:"🫘 Green Lentil + Roasted Veg Salad + Feta",time:"10 min (with pre-cooked lentils)",macros:{cal:480,p:22,c:52,f:18,fib:14},
+       ingredients:["1 cup cooked green lentils (batch Sat AM)","1 cup roasted veg leftovers (asparagus + peppers + brussels)","2 cups arugula or spinach","¼ cup crumbled feta","2 tbsp olive oil","1 tbsp red wine vinegar or lemon","1 tsp Dijon","Fresh basil + marjoram","Salt, pepper"],
+       instructions:["Whisk oil + vinegar + Dijon","Combine lentils + veg + greens + feta in a bowl","Dress. Top with herbs."],
+       note:"🌿 Anti-inflam plant-forward power lunch. Batch green lentils Sat AM (feeds Sat L + Sun L). Uses veg leftovers."},
+
+      {id:"ribeye-brussels",name:"🥩 Ribeye + Roasted Brussels + Sweet Potato",time:"25 min · 2 servings",macros:{cal:560,p:44,c:30,f:26,fib:6},
+       ingredients:["2 ribeye steaks (from freezer — pull Fri pm)","1 lb Brussels sprouts, halved (USE UP)","1 sweet potato, cubed","2 tbsp olive oil","Fresh thyme + garlic","Salt, pepper, butter for finishing"],
+       instructions:["425°F. Toss Brussels + sweet potato with olive oil, salt. Roast 25 min","Meanwhile sear ribeye in cast iron: 3-4 min/side to medium-rare","Rest 5 min. Slice against grain. Top with butter + thyme"],
+       note:"Saturday date-night indulgence — Khalid's home. Uses up Brussels + sweet potato + ribeye stockpile."},
+
+
     ],
     dressings: [
       {name:"Peanut sauce (jar — already have)",yield:"as needed",
@@ -858,7 +962,7 @@ const WEEKS = [
       }
     },
     prepSteps: [
-      {time:"Tonight (Sun 8/30)",title:"🌙 Sunday setup for solo Monday",items:["🍠🍳 BAKE THE EGG BAKE (5 min prep, 35 min bake — hands-off): sweet potato + spinach + cheddar. 6 slices covers Sun+Mon+Tue breakfasts","🍗 Sheet-pan chicken legs + 1 whole sweet potato + asparagus (roast together 400°F, 40 min, hands-off)","Shred 2 extra chicken legs while carving → labeled container for Mon lunch","Save half the roasted asparagus in fridge → Mon lunch bowl","Rinse ½ cup quinoa, store in small fridge bowl (Mon D prep saved)","Take Beyond Beef out of freezer → fridge to thaw for Mon dinner"]},
+      {time:"Tonight (Sun 8/30)",title:"🌙 Sunday setup for solo Monday",items:["🛒 TJ's run: rotisserie chicken (or pre-cooked chicken strips)","🍠🍳 BAKE THE EGG BAKE (5 min prep, 35 min bake — hands-off): sweet potato + spinach + cheddar. 6 slices covers Sun+Mon+Tue breakfasts","🍗 Sheet-pan: asparagus + cubed sweet potato @ 425°F for 22-25 min","Carve rotisserie: eat some tonight, shred ~6 oz for Mon lunch container, save the rest for Tue","Save half the roasted asparagus + sweet potato in fridge → Mon lunch bowl","Take ½ lb ground beef out of freezer → fridge to thaw for Mon dinner"]},
       {time:"Mon AM",title:"☀️ Zero-cook morning",items:["Blend smoothie bowl (4 min)","Grab cheddar + pepper strips for mid-morning","Chicken bowl is fully assembled at lunch — no cooking"]},
       {time:"Mon 6pm",title:"🍳 One-pan dinner",items:["Beyond Beef + quinoa skillet — 20 min start to finish","Cook extra — leftover = Tue lunch (already-cooked = zero utensils again)","Wash the ONE skillet + your bowl. Done."]}
     ],
@@ -1124,11 +1228,17 @@ function renderPrep() {
 }
 
 function renderToday() {
-  const w = week();
+  const today = getTodayISO();
+  // Find the week that contains today (across ALL weeks, not just the currently-selected one).
+  // This prevents a blank "Today" view when the user has navigated to a different week.
+  let w = week();
+  if (!w.meals.some(m => m.date === today)) {
+    const foundIdx = WEEKS.findIndex(wk => wk.meals.some(m => m.date === today));
+    if (foundIdx >= 0) w = WEEKS[foundIdx];
+  }
   const meals = w.meals;
   const prepAhead = w.prepAhead || {};
   const hideSnacks = document.getElementById('hideSnacksToday')?.checked;
-  const today = getTodayISO();
   const allTodayMeals = meals.filter(m => m.date === today);
   const todayMeals = hideSnacks ? allTodayMeals.filter(m => !m.type.toLowerCase().includes('snack')) : allTodayMeals;
   const snackCount = allTodayMeals.filter(m => m.type.toLowerCase().includes('snack')).length;
