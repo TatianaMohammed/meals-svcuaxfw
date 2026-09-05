@@ -227,379 +227,6 @@ html[data-theme="dark"] .today-meal-check-row.khalid { color:#60a5fa; }
 
 const WEEKS = [
   // -----------------------------------------------------------
-  // WEEK 2 — Aug 17–23, 2026
-  // -----------------------------------------------------------
-  {
-    id: "2026-08-17",
-    label: "Aug 17–23, 2026",
-    subtitle: "GF · TTC-safe · Rescue kits + Beyond Meat + beef stew · Solo week",
-    dailyTargets: {cal:"~1,450", p:"~110g", c:"~120g", f:"~50g", fib:"≥30g"},
-    meals: [
-      // MON 8/17 — ~1,385 cal · 103g P
-      {date:"2026-08-17",day:"Monday",type:"Breakfast",name:"🥤 Green Protein Smoothie (already had)",cal:215,p:29,c:12,f:6,fib:5,time:"5m",recipe:"green-smoothie2"},
-      {date:"2026-08-17",day:"Monday",type:"Snack 1",name:"🍎 Envy Apple + 1 tbsp Peanut Butter",cal:180,p:5,c:22,f:9,fib:4,time:"1m",recipe:"envy-apple-pb"},
-      {date:"2026-08-17",day:"Monday",type:"Lunch",name:"🇮🇳 Paneer Tikka Masala + Cauli Rice (HR salvage)",cal:400,p:28,c:20,f:22,fib:6,time:"8m",recipe:"paneer-tikka2"},
-      {date:"2026-08-17",day:"Monday",type:"Snack 2",name:"🥝 Kiwi + ½ oz Parmesan",cal:120,p:7,c:12,f:6,fib:3,time:"1m",recipe:"kiwi-parm"},
-      {date:"2026-08-17",day:"Monday",type:"K Snack",name:"?? Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar",khalidOnly:true},
-      {date:"2026-08-17",day:"Monday",type:"Dinner",name:"🐟 Rainbow Salmon Curry Bowl w/ Zucchini (HR salvage + fresh salmon)",cal:470,p:34,c:15,f:20,fib:5,time:"13m",recipe:"rainbow-salmon-curry"},
-
-      // TUE 8/18 — ~1,430 cal · 108g P
-      {date:"2026-08-18",day:"Tuesday",type:"Breakfast",name:"🥤 Grape Green Protein Smoothie (from freezer pack)",cal:285,p:33,c:20,f:5,fib:7,time:"1m",recipe:"green-smoothie2"},
-      {date:"2026-08-18",day:"Tuesday",type:"Snack 1",name:"🍎 Envy Apple + 1 tbsp Peanut Butter",cal:180,p:5,c:22,f:9,fib:4,time:"1m",recipe:"envy-apple-pb"},
-      {date:"2026-08-18",day:"Tuesday",type:"Lunch",name:"🍳 Egg Bake Slice + Mixed Greens + Cherry Tomatoes",cal:400,p:30,c:12,f:24,fib:4,time:"3m",recipe:"egg-bake2"},
-      {date:"2026-08-18",day:"Tuesday",type:"Snack 2",name:"Hummus + Bell Pepper + Purple Cabbage scoops",cal:135,p:5,c:14,f:6,fib:5,time:"2m",recipe:"simple-snack2"},
-      {date:"2026-08-18",day:"Tuesday",type:"K Snack",name:"?? Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar",khalidOnly:true},
-      {date:"2026-08-18",day:"Tuesday",type:"Dinner",name:"🐟 Pan-Seared Fresh Salmon + Iceberg Wedge (T) / Purple Cabbage Slaw (K) + HR Sides",cal:450,p:38,c:25,f:20,fib:6,time:"20m",recipe:"salmon-wedge"},
-
-      // WED 8/19 — ~1,435 cal · 115g P
-      {date:"2026-08-19",day:"Wednesday",type:"Breakfast",name:"🍳 Egg Bake Slice + 1 oz Lox",cal:400,p:32,c:8,f:24,fib:2,time:"2m",recipe:"egg-bake2"},
-      {date:"2026-08-19",day:"Wednesday",type:"Snack 1",name:"🥝 Kiwi + ½ tbsp Almond Butter",cal:120,p:3,c:16,f:5,fib:4,time:"1m",recipe:"simple-snack2"},
-      {date:"2026-08-19",day:"Wednesday",type:"Lunch",name:"🍣 Salmon Rice Bowl w/ Pan-Crisped Brussels (mid-week swap)",cal:540,p:39,c:40,f:24,fib:8,time:"15m",recipe:"salmon-rice-bowl"},
-      {date:"2026-08-19",day:"Wednesday",type:"Snack 2",name:"🧀 Parm Crisps + 10 Almonds",cal:155,p:9,c:4,f:12,fib:2,time:"1m",recipe:"parm-crisps2"},
-      {date:"2026-08-19",day:"Wednesday",type:"K Snack",name:"?? Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar",khalidOnly:true},
-      {date:"2026-08-19",day:"Wednesday",type:"Dinner",name:"🐟 HR Sheet-Pan Herb-Butter Tuna + Veggies (mid-week swap)",cal:460,p:32,c:9,f:33,fib:2,time:"15m",recipe:"hr-tuna-sheet-pan"},
-
-      // THU 8/20 — ~1,435 cal · 108g P
-      {date:"2026-08-20",day:"Thursday",type:"Breakfast",name:"GF Overnight Oats (no cashew topper, ½ cup berries)",cal:270,p:20,c:32,f:7,fib:7,time:"0m",recipe:"oats2"},
-      {date:"2026-08-20",day:"Thursday",type:"Snack 1",name:"🍎 Envy Apple + 1 tbsp Peanut Butter",cal:180,p:5,c:22,f:9,fib:4,time:"1m",recipe:"envy-apple-pb"},
-      {date:"2026-08-20",day:"Thursday",type:"Lunch",name:"🍛 Herby Red Lentil Dal + Zucchini (½ rice) + Egg (HR new)",cal:395,p:20,c:45,f:15,fib:8,time:"10m",recipe:"herby-dal"},
-      {date:"2026-08-20",day:"Thursday",type:"Snack 2",name:"🥝 Kiwi + Greek Yogurt + Chia",cal:190,p:17,c:22,f:4,fib:6,time:"2m",recipe:"simple-snack2"},
-      {date:"2026-08-20",day:"Thursday",type:"K Snack",name:"?? Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar",khalidOnly:true},
-      {date:"2026-08-20",day:"Thursday",type:"Dinner",name:"🥩 Beef Chili + ¼ Avocado + Cherry Tomato Topper + Yogurt",cal:400,p:36,c:38,f:12,fib:14,time:"25m",recipe:"beef-chili2"},
-
-      // FRI 8/21 — ~1,470 cal · 112g P
-      {date:"2026-08-21",day:"Friday",type:"Breakfast",name:"🍳 Egg Bake Slice + Hard-Boiled Egg",cal:410,p:34,c:8,f:26,fib:2,time:"2m",recipe:"egg-bake2"},
-      {date:"2026-08-21",day:"Friday",type:"Snack 1",name:"🧀 Parm Crisps + 10 Cashews",cal:155,p:9,c:5,f:12,fib:2,time:"1m",recipe:"parm-crisps2"},
-      {date:"2026-08-21",day:"Friday",type:"Lunch",name:"🍛 Herby Dal 2nd serving (½ rice) + Egg",cal:395,p:20,c:45,f:15,fib:8,time:"5m",recipe:"herby-dal"},
-      {date:"2026-08-21",day:"Friday",type:"Snack 2",name:"🐟 Lox + Cucumber + 3 Rice Crackers",cal:140,p:12,c:12,f:5,fib:1,time:"2m",recipe:"simple-snack2"},
-      {date:"2026-08-21",day:"Friday",type:"K Snack",name:"?? Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar",khalidOnly:true},
-      {date:"2026-08-21",day:"Friday",type:"Dinner",name:"🥩 Beef Chili Leftover + ¼ Avocado",cal:400,p:36,c:38,f:12,fib:14,time:"3m",recipe:"beef-chili2"},
-
-      // SAT 8/22 — ~1,415 cal · 110g P
-      {date:"2026-08-22",day:"Saturday",type:"Breakfast",name:"🍞 Lentil Bread (1 slice) + ½ tbsp AB + Kiwi",cal:220,p:10,c:24,f:9,fib:8,time:"3m",recipe:"lentil-bread-kiwi"},
-      {date:"2026-08-22",day:"Saturday",type:"Snack 1",name:"Hummus + Bell Pepper + Cucumber",cal:135,p:5,c:14,f:6,fib:5,time:"2m",recipe:"simple-snack2"},
-      {date:"2026-08-22",day:"Saturday",type:"Lunch",name:"🌶️ Beyond Meat Stuffed Peppers (moved from Wed)",cal:420,p:28,c:32,f:16,fib:8,time:"40m batch + reheat",recipe:"stuffed-peppers"},
-      {date:"2026-08-22",day:"Saturday",type:"Snack 2",name:"🍎 Envy Apple + ½ oz Parm chunk",cal:170,p:8,c:20,f:7,fib:4,time:"1m",recipe:"envy-apple-pb"},
-      {date:"2026-08-22",day:"Saturday",type:"K Snack",name:"?? Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar",khalidOnly:true},
-      {date:"2026-08-22",day:"Saturday",type:"Dinner",name:"🍲 Beef Stew (batch 3, veg-heavy)",cal:450,p:43,c:38,f:14,fib:8,time:"60m",recipe:"beef-stew"},
-
-      // SUN 8/23 — ~1,395 cal · 116g P
-      {date:"2026-08-23",day:"Sunday",type:"Breakfast",name:"GF Overnight Oats (no cashew topper)",cal:270,p:20,c:32,f:7,fib:7,time:"0m",recipe:"oats2"},
-      {date:"2026-08-23",day:"Sunday",type:"Snack 1",name:"🥝 Kiwi + Greek Yogurt + Chia",cal:190,p:17,c:22,f:4,fib:6,time:"2m",recipe:"simple-snack2"},
-      {date:"2026-08-23",day:"Sunday",type:"Lunch",name:"🥩 Beef Chili Leftover + ¼ Avocado",cal:400,p:36,c:38,f:12,fib:14,time:"3m",recipe:"beef-chili2"},
-      {date:"2026-08-23",day:"Sunday",type:"Snack 2",name:"🍞 Lentil Bread (1 slice) + ½ oz Parm",cal:170,p:10,c:16,f:8,fib:5,time:"2m",recipe:"simple-snack2"},
-      {date:"2026-08-23",day:"Sunday",type:"K Snack",name:"?? Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar",khalidOnly:true},
-      {date:"2026-08-23",day:"Sunday",type:"Dinner",name:"🐟 Roasted Salmon (batch 4) over leftover Thu Lentil-Rice-Spinach bowl + cilantro",cal:500,p:36,c:32,f:22,fib:8,time:"15m",recipe:"salmon-sheet-pan-824"}
-    ],
-    recipes: [
-      {id:"green-smoothie2",name:"🥤 Grape Green Protein Smoothie (pre-pack version)",time:"1m assembly (packs prep'd Sun)",prep:"3 PACKS FRIDAY BATCH",macros:{cal:285,p:33,c:20,f:5,fib:7},
-       ingredients:[
-         "**FREEZER PACK (per bag):** 1 cup frozen sour green grapes","1 cup fresh baby spinach","1 tbsp chia seeds","1 tsp fresh grated ginger (or 1 frozen ginger cube)",
-         "**DAY-OF (add fresh):** ¾ cup almond milk","¼ cup Greek yogurt","1 scoop Ritual protein powder","5g creatine monohydrate"
-       ],
-       instructions:[
-         "**PREP THE PACKS (do once):** Wash grapes and dry thoroughly. Freeze grapes in a single layer on a sheet pan for 2 hours (prevents clumping in bag).",
-         "Once grapes are solid, portion 1 cup frozen grapes + 1 cup fresh spinach + 1 tbsp chia + 1 tsp ginger into each of 3 quart-size freezer bags (label + date).",
-         "Freeze bags flat until ready to use (good for 4 weeks).",
-         "**DAY-OF (60 seconds):** Dump 1 frozen pack into blender.",
-         "Add ¾ cup almond milk + ¼ cup Greek yogurt + protein scoop + 5g creatine.",
-         "Blend 45-60 seconds until completely smooth.",
-         "Drink immediately (chia will thicken further if it sits)."
-       ],
-       note:"Banana + avocado REMOVED for weight loss. Frozen grapes replace both — provide creaminess + natural sweetness with zero added sugar. Sour grapes cut through spinach earthiness. Greek yogurt fixes the watery problem you had Monday. ¾ cup almond milk (not 1 cup) also thickens. Protein powder added day-of prevents freezer clumping."},
-      {id:"berry-smoothie2",name:"🥤 Mixed Berry Protein Smoothie (thick version)",time:"5 min",macros:{cal:275,p:32,c:22,f:6,fib:7},
-       ingredients:["1 scoop Ritual protein powder","5g creatine monohydrate","¾ cup unsweetened almond milk (not 1 cup — fixes watery issue)","¼ cup plain 2% Greek yogurt","½ cup frozen mixed berries","1 tbsp chia seeds","1 large handful fresh spinach","4-6 ice cubes"],
-       instructions:[
-         "**LIQUID FIRST:** Pour ¾ cup almond milk into blender — prevents protein powder from sticking to blade.",
-         "**ADD POWDERS:** Protein scoop + creatine on top of liquid.",
-         "**ADD REST:** Greek yogurt, frozen berries, chia, spinach, ice.",
-         "**BLEND:** High speed 45-60 sec until smooth and creamy.",
-         "**CHECK:** Too thin? Add 3-4 more ice cubes, blend 15 sec more. Too thick? Add 2 tbsp almond milk.",
-         "**DRINK IMMEDIATELY** — chia continues to thicken if left standing."
-       ],
-       note:"Watery fix: reduced almond milk ¾ cup + added Greek yogurt for creaminess + chia for thickening. Banana still removed for weight loss."},
-      {id:"envy-apple-pb",name:"🍎 Envy Apple + 1 tbsp Peanut Butter (weight-loss)",time:"2 min",macros:{cal:180,p:5,c:22,f:9,fib:4},
-       ingredients:["1 Envy apple (~150g)","1 tbsp natural peanut butter (ingredients should only be: peanuts + salt)"],
-       instructions:[
-         "**PREVENT BROWNING:** If slicing ahead, toss slices with a squeeze of lemon — keeps them fresh 4-6 hrs.",
-         "**SLICE:** Cut apple into 8 wedges. Core if you want.",
-         "**PORTION PB:** Measure 1 level tbsp peanut butter into a small ramekin — dipping controls the ratio better than smearing.",
-         "**EAT SLOWLY** — designed to sustain 2-3 hrs."
-       ],
-       note:"HR default = 2 tbsp PB (370 cal). Halved for weight loss. Envy holds up well when sliced — sub Honeycrisp if no Envy."},
-      {id:"paneer-tikka2",name:"🇮🇳 Paneer Tikka Masala + Cauli Rice (HR SALVAGE)",time:"8 min · 1 serving",macros:{cal:400,p:28,c:20,f:22,fib:6},
-       ingredients:["HR Tikka Masala Sauce pouch (last week)","HR Riced Cauliflower pouch (last week)","4-5 oz paneer, cut into 1-inch cubes","1 tbsp olive oil","1 tbsp chopped fresh cilantro","Squeeze of lemon"],
-       instructions:[
-         "**HEAT CAULI:** Tear a vent corner in the riced cauliflower pouch, microwave 90 sec, let sit 1 min, dump into bowl.",
-         "**SEAR PANEER:** Heat 1 tbsp olive oil in a nonstick skillet over medium-high until shimmering. Add paneer cubes in a single layer. DO NOT stir for 2 min — let one side get golden brown, then flip and sear 1-2 min more.",
-         "**ADD SAUCE:** Reduce heat to medium. Empty tikka masala pouch into skillet. Stir gently to coat paneer without breaking cubes. Warm 2 min until bubbling.",
-         "**PLATE:** Spoon paneer + sauce over cauli rice. Top w/ cilantro + lemon.",
-         "**EAT IMMEDIATELY** — paneer gets rubbery if reheated."
-       ],
-       note:"Reduced paneer 6→4-5 oz for weight loss. Sear paneer FIRST or it turns rubbery in the sauce — that's the critical step."},
-      {id:"kiwi-parm",name:"🥝 Kiwi + Parmesan Chunk",time:"2 min",macros:{cal:120,p:7,c:12,f:6,fib:3},
-       ingredients:["1 ripe kiwi (should give slightly to gentle pressure — hard = sour)","½ oz Parmigiano-Reggiano chunk (~domino-sized piece)"],
-       instructions:[
-         "**PREP KIWI:** Cut in half crosswise + scoop with a spoon like a mini bowl. OR peel + slice into rounds.",
-         "**BREAK PARM:** Use a small knife to break a rough chunk from the wedge — rustic pieces have better texture than uniform cubes.",
-         "**EAT TOGETHER** — sweet-tart kiwi cuts salty umami of Parm. Vitamin C in kiwi boosts iron absorption too."
-       ],
-       note:"Weight-loss = ½ oz Parm (was 1 oz). Kiwi should be soft to pressure — hard is unpleasantly sour."},
-      {id:"rainbow-salmon-curry",name:"🐟 Rainbow Salmon Curry Bowl w/ Zucchini (HR SALVAGE)",time:"18 min · 1 serving",macros:{cal:470,p:34,c:15,f:20,fib:5},
-       ingredients:["HR Coconut Curry Sauce pouch (last week)","HR Veggie Mix (last week — cook TONIGHT)","1 fresh salmon fillet (~6 oz)","1 medium zucchini, sliced ¼-inch rounds","1½ tbsp olive oil (divided)","Salt + pepper","½ tsp HR seasoning packet (or ½ tsp garlic powder)","Squeeze of fresh lemon"],
-       instructions:[
-         "**PREHEAT + PREP:** Oven to 400°F. Line a small sheet pan with foil.",
-         "**SEASON SALMON:** Pat salmon COMPLETELY dry with paper towel (dry = better browning). Place skin-side down on foil. Drizzle w/ ½ tbsp olive oil, salt/pep, seasoning packet. Rub to coat.",
-         "**BAKE SALMON:** 10-12 min until firm, opaque, easily flakes with fork. Internal temp 125-130°F for medium.",
-         "**COOK VEGGIE MIX (while salmon bakes):** Heat 1 tbsp olive oil in large skillet over medium-high. Add HR veggie mix + salt/pep. Sauté 3-5 min stirring occasionally until tender-crisp. Set aside.",
-         "**SAUTÉ ZUCCHINI:** Same skillet, add ½ tbsp oil if needed. Zucchini rounds in a single layer with salt/pep. 3-4 min per side until tender + lightly golden. Don't overcrowd.",
-         "**BUILD BOWL:** Drizzle 2-4 tbsp coconut curry sauce into bottom of wide bowl and spread up the sides (looks pretty + coats every bite).",
-         "**LAYER:** Veggie mix → zucchini rounds → flaked salmon on top. Drizzle remaining sauce over fish.",
-         "**FINISH:** Squeeze fresh lemon over everything. Eat immediately."
-       ],
-       note:"⚠️ PRIORITY MEAL tonight — HR veggie mix from last week is your most fragile item. Salmon must be fully cooked through for TTC (no rare center)."},
-      {id:"egg-bake2",name:"🍳 Spinach Feta Cottage Cheese Egg Bake w/ Cherry Tomatoes (batch Sun)",time:"45 min · 4 servings",prep:"SUNDAY BATCH",macros:{cal:345,p:27,c:10,f:20,fib:2},
-       ingredients:["8 large eggs","¾ cup cottage cheese (full-fat, small curd)","4 cups fresh baby spinach (about 5 oz bag)","1 cup cherry tomatoes, halved","½ cup crumbled feta","¼ cup red onion, finely diced (softened — see step 2)","1 tsp vinegar or lemon juice (to soften onion)","½ tsp garlic powder","½ tsp salt","¼ tsp black pepper","Pinch of turmeric (optional — TTC-safe color boost)","1 tsp olive oil (to grease dish + wilt spinach)"],
-       instructions:[
-         "**PREHEAT:** Preheat oven to 375°F. Grease an 8×8 inch baking dish with olive oil.",
-         "**SOFTEN RED ONION:** Finely dice ¼ cup red onion. Place in a small bowl, cover with cold water + 1 tsp vinegar or lemon juice. Let sit 10 min while you prep everything else — this mellows the sharp bite. Drain well and pat dry with paper towel before using.",
-         "**WILT SPINACH:** Heat 1 tsp olive oil in a dry skillet over medium heat. Add fresh spinach and stir constantly with tongs for 60-90 seconds until fully wilted (it will collapse to about ¼ of its original volume — should look like ~1 cup cooked). Transfer to a clean kitchen towel or fine mesh strainer. Squeeze OUT ALL water — this step is critical. Wet spinach = watery egg bake. Roughly chop the drained spinach.",
-         "**BLEND COTTAGE CHEESE:** Add cottage cheese to blender or food processor. Blend 30-45 seconds until COMPLETELY smooth (no visible curds). This is what makes the bake creamy instead of chunky.",
-         "**WHISK EGGS:** In a large bowl, crack 8 eggs and whisk vigorously 30 seconds until yolks + whites are fully combined and slightly frothy.",
-         "**COMBINE:** Add blended cottage cheese to eggs. Add garlic powder, salt, pepper, and turmeric. Whisk until fully combined.",
-         "**FOLD IN VEG + CHEESE:** Add drained/chopped spinach, feta crumbles, and drained softened red onion. Stir with a spatula until evenly distributed (don't overmix).",
-         "**POUR + TOP:** Pour mixture into greased 8×8 dish. Spread evenly. Scatter halved cherry tomatoes on top, cut-side up, pressing them lightly into the surface so they roast but remain visible.",
-         "**BAKE:** Bake 30-35 min until center is set (a knife inserted in center should come out clean), edges are lightly golden, and tomatoes have blistered/collapsed slightly.",
-         "**COOL + CUT:** Let cool on counter 10 min before cutting (helps it set firmer). Cut into 4 equal squares — try to get a few tomatoes in each square.",
-         "**STORE:** Store squares in individual airtight containers in fridge up to 5 days. Reheat 60-90 sec in microwave."
-       ],
-       note:"Red onion swap: soak in vinegar-water 10 min FIRST to soften and mellow — if you skip this, the raw sharpness will overpower the eggs. Cherry tomatoes go ON TOP not mixed in — that way they roast (concentrating flavor) instead of releasing water into the bake."},
-      {id:"simple-snack2",name:"Simple snacks (rotation)",time:"1-3 min",macros:{cal:200,p:12,c:16,f:10,fib:4},
-       ingredients:["**Rotate these throughout the week:**","🥒 Hummus + bell pepper + cucumber (2 tbsp hummus + 1 cup veg strips)","🥝 Kiwi + ½ tbsp almond butter","🥝 Kiwi + Greek yogurt (¾ cup) + 1 tsp chia","🐟 Lox (1 oz) + cucumber slices + 3 rice crackers","🍞 Lentil bread (1 slice) + ½ oz Parm chunk","🌸 Purple cabbage scoops + hummus"],
-       instructions:["Pick one from the list. Portion + eat."],
-       note:"Weight-loss portions. Rotate throughout the week for variety."},
-      {id:"smoky-salmon",name:"🐟 Smoky Roasted Salmon + Crispy Brussels + Potatoes (HR NEW)",time:"18 min · 2 servings",macros:{cal:480,p:32,c:35,f:20,fib:8},
-       ingredients:["HR salmon fillets (2 portions)","HR baby potatoes","HR Brussels sprouts","HR smoky seasoning packet","2 tbsp olive oil (divided)","Salt + pepper","Squeeze of lemon"],
-       instructions:[
-         "**COOK POTATOES FIRST:** HR potatoes → large microwave-safe bowl covered w/ plate. Microwave 3 min, stir, 2-4 more min until fork-tender. Rest covered 2-3 min.",
-         "**SEASON POTATOES:** Drizzle 1 tbsp olive oil + pinch salt/pep + half the HR seasoning packet. Toss to coat. Cover to keep warm.",
-         "**BAKE SALMON:** Oven to 400°F. Pat salmon dry, place skin-side down on foil-lined sheet pan. Drizzle w/ ½ tbsp olive oil, salt/pep, other half of seasoning. Bake 10-12 min until firm + opaque + flakes easily.",
-         "**CRISP BRUSSELS (parallel to salmon):** Heat 1 tbsp olive oil in a large skillet over medium-high until shimmering. Add Brussels CUT-SIDE DOWN in a single layer with salt/pep. DO NOT stir for 3 min — this is what makes them crispy. Then flip and cook 2-3 min more.",
-         "**PLATE:** Divide potatoes, Brussels, salmon between 2 plates. Squeeze fresh lemon over everything. Serve immediately."
-       ],
-       note:"HR recipe skips the salmon cook method — mine adds 400°F 10-12 min. Brussels MUST go cut-side down and NOT be moved for 3 min or they steam instead of crisp."},
-      {id:"hr-tuna-sheet-pan",name:"🐟 HR Sheet-Pan Herb-Butter Tuna + Veggies",time:"15 min · 2 servings",macros:{cal:460,p:32,c:9,f:33,fib:2},
-       ingredients:["2 HR tuna steaks (from Mon 8/17 delivery — day 3 in fridge, MUST cook 8/19)","HR slow-churned herb pasture butter","HR veggie mix (from kit)","1 tbsp olive oil","Salt · pepper"],
-       instructions:[
-         "**PREHEAT:** Oven to 400°F. Slice butter into thin pieces.",
-         "**PREP FISH:** Pat tuna dry. Line a sheet pan with foil. Shingle butter slices on top of the fish. Sprinkle w/ salt + pepper. Place in center of pan.",
-         "**PREP VEG:** Toss HR veggies with 1 tbsp olive oil + salt + pepper. Spread on pan around the tuna.",
-         "**BAKE:** 12–14 min until tuna is just cooked through and veg is tender.",
-         "**PLATE:** Divide tuna + veggies between 2 plates. Eat immediately."
-       ],
-       note:"HR delivered Mon 8/17 — tuna is day 3 in the fridge as of Wed 8/19, hard deadline tonight. 2 servings = Tati + Khalid, or eat 1 and save 1 for Thu lunch. Bumps Beyond Meat Stuffed Peppers to Sat lunch."},
-      {id:"salmon-rice-bowl",name:"🍣 Salmon Rice Bowl w/ Pan-Crisped Brussels (mid-week swap 8/19)",time:"15 min · 1 serving",macros:{cal:540,p:39,c:40,f:24,fib:8},
-       ingredients:["1 portion fresh salmon (~4-5 oz — last one, must go Wed per 2-day fridge rule)","~1 cup leftover Sat rice (day 4 = last safe day)","~6-8 raw Brussels sprouts from HR Mon delivery (unused — still good for days)","2 garlic cloves, minced","1 lemon (zest + juice)","1 tbsp olive oil (split ½ + ½)","Splash tamari or soy sauce","Salt · pepper","1-2 tbsp grated parm (optional)"],
-       instructions:[
-         "**PREP (3 min):** Trim + halve Brussels lengthwise (quarter if huge). Pat salmon dry, season w/ salt + pepper. Mince garlic. Zest lemon, then cut in half.",
-         "**CRISP BRUSSELS FIRST (5 min):** Heat ½ tbsp olive oil in skillet on medium-high. Lay Brussels CUT-SIDE DOWN in a single layer. DON'T MOVE for 3 min — this is where the crispy caramelization happens. Toss and cook 2 more min until tender. Transfer to plate.",
-         "**COOK SALMON (6-7 min):** Same pan. Lay salmon skin-side down. Cook 4 min undisturbed. Flip, cook 2-3 more min until it flakes. Squeeze half the lemon over it, let it rest on the plate w/ Brussels.",
-         "**FRY THE RICE (2-3 min):** Same pan, add ½ tbsp olive oil + garlic. Stir 30 sec. Add cold rice, press flat, let it sit 30 sec to crisp, then toss 2 min. Splash tamari, toss once more.",
-         "**PLATE:** Rice in bowl. Top w/ Brussels + flaked salmon. Squeeze other lemon half + zest + parm.",
-         "**WHY BRUSSELS:** Raw Brussels from Mon HR kit are still good (7-10 days raw). Spinach can wait — save it for a Thu smoothie or Fri egg-bake side."
-       ],
-       note:"Mid-week swap 8/18-19: no defrosted chicken, salmon is day 3 fridge (must go), rice is day 4 (last safe day), Brussels raw from Mon HR kit (still fresh)."},
-      {id:"coconut-chicken2-retired",name:"🍛 [RETIRED 8/18] Coconut Curry Chicken Bowl w/ Quinoa + Purple Cabbage",time:"— (replaced by salmon-rice-bowl)",macros:{cal:400,p:38,c:22,f:16,fib:6},
-       ingredients:["4 oz pre-shredded chicken leg meat (Sunday batch)","½ cup pre-cooked quinoa (Sunday portions)","2-3 tbsp coconut curry sauce (last week's HR pouch)","½ cup shredded purple cabbage (raw, for crunch)","¼ cup steamed broccoli OR sautéed bell pepper","1 tbsp chopped fresh cilantro","Squeeze of lime"],
-       instructions:[
-         "**WARM QUINOA + CHICKEN:** Combine ½ cup pre-cooked quinoa + 4 oz shredded chicken in microwave-safe bowl. Cover w/ damp paper towel. Microwave 60-90 sec until steaming.",
-         "**PREP CABBAGE:** While it warms, thinly shred ½ cup purple cabbage. Toss w/ pinch of salt + squeeze of lime — the salt breaks it down slightly for slaw texture.",
-         "**PREP VEG:** If broccoli: microwave 30 sec. If bell pepper: heat 1 tsp oil in skillet, sauté 2 min just to soften.",
-         "**BUILD BOWL:** Warm quinoa/chicken base → 2-3 tbsp coconut curry sauce drizzled on top → steamed veg → raw purple cabbage on the side.",
-         "**GARNISH:** Cilantro + another squeeze of lime.",
-         "**BACKUP SAUCE (if HR sauce is bad):** Whisk 1 tbsp peanut butter + 1 tbsp tamari + 1 tbsp coconut milk (or almond milk) + squeeze lime + pinch red pepper flakes."
-       ],
-       note:"Purple cabbage adds crunch + fiber + uses up stock. Sub-sauce recipe in case last-week's HR sauce has gone bad. Quinoa portion halved for weight loss."},
-      {id:"parm-crisps2",name:"🧀 Parm Crisps (batch Sunday)",time:"10 min bake · makes 12 crisps",prep:"BATCH SUNDAY",macros:{cal:155,p:9,c:4,f:12,fib:2},
-       ingredients:["¾ cup finely grated Parmigiano-Reggiano (grate yourself from wedge — pre-shredded has anti-caking agents that ruin the melt)","10 raw almonds or cashews per snack portion (added day-of)"],
-       instructions:[
-         "**PREHEAT:** Oven to 350°F. Line a large sheet pan with PARCHMENT (not foil — Parm sticks to foil).",
-         "**PORTION:** Using a measuring tablespoon, drop 12 heaping tbsp-mounds of grated Parm onto parchment, 2 inches apart (they spread as they melt).",
-         "**FLATTEN:** Gently press each mound with the back of a spoon into a thin 2-inch disc.",
-         "**BAKE:** 5-7 min until edges are golden brown and centers are set. Watch closely after 5 min — they go from perfect to burnt fast.",
-         "**COOL COMPLETELY:** Let cool on sheet pan 3-4 min until fully hardened. If soft after cooling, return to oven 1-2 min more.",
-         "**STORE:** Transfer to airtight container (parchment between layers). Keeps 5 days room temp.",
-         "**SERVE:** 3 crisps + 10 nuts = 1 snack portion."
-       ],
-       note:"PARCHMENT is critical, not foil. Grate Parm yourself — pre-shredded has anti-caking agents that ruin the melt. 12 crisps = 4 snacks across the week."},
-      {id:"stuffed-peppers",name:"🌶️ Beyond Meat Stuffed Bell Peppers (batch 3, eat 1, freeze 4 halves)",time:"40 min · 6 halves (3 peppers)",macros:{cal:360,p:26,c:32,f:14,fib:8},
-       ingredients:["3 large bell peppers (any color)","1 pkg (12 oz) Beyond Meat ground (crumble by hand if patties)","1 tbsp olive oil","½ medium yellow onion, diced","2 garlic cloves, minced","¾ cup cooked quinoa (Sunday prep)","½ cup marinara sauce","1 tsp Italian seasoning","½ tsp salt · ¼ tsp black pepper","¼ tsp red pepper flakes (optional)","¼ cup grated Parmesan (topping)","2 tbsp chopped fresh basil or parsley"],
-       instructions:[
-         "**PREHEAT:** Oven to 375°F.",
-         "**PREP PEPPERS:** Cut each pepper in half lengthwise (stem to base). Scoop out seeds + white ribs with a spoon. Arrange 6 halves cut-side up in 9×13 baking dish. Pour ¼ cup water into the bottom of the dish (steams peppers so they cook through without drying).",
-         "**SAUTÉ AROMATICS:** Heat 1 tbsp olive oil in large skillet over medium. Add diced onion, cook 3-4 min until soft. Add garlic, 30 sec until fragrant.",
-         "**BROWN BEYOND MEAT:** Increase to medium-high. Add Beyond crumbles + Italian seasoning + salt + pepper + red pepper flakes. Break up any chunks with wooden spoon. Cook 5-6 min until browned + no pink. (Beyond cooks faster than beef.)",
-         "**COMBINE FILLING:** Reduce heat to low. Stir in cooked quinoa + marinara until evenly coated. Taste + adjust salt.",
-         "**STUFF PEPPERS:** Divide filling evenly among 6 halves, mounding slightly. Sprinkle 2 tsp Parm on each.",
-         "**BAKE COVERED:** Cover dish tightly with foil. Bake 25 min.",
-         "**BAKE UNCOVERED:** Remove foil. Bake 5-7 more min until peppers are tender (knife slides in easily) + Parm is golden.",
-         "**GARNISH:** Sprinkle fresh basil or parsley.",
-         "**PORTION:** Eat 2 halves = 1 serving. Cool remaining 4 halves completely, wrap individually in foil, place in freezer bag. Freeze up to 3 months. Reheat from frozen: 400°F 20 min."
-       ],
-       note:"2 halves = 1 serving. Freezes beautifully for next week's lunches. Beyond ground behaves like ground beef but cooks 2-3 min faster — don't overcook or it dries out."},
-      {id:"oats2",name:"🌾 GF Overnight Oats (weight-loss version)",time:"5 min prep + overnight",macros:{cal:270,p:20,c:32,f:7,fib:7},
-       ingredients:["½ cup certified GF rolled oats (NOT steel cut, NOT instant)","¾ cup unsweetened almond milk","¼ cup plain 2% Greek yogurt","1 tbsp chia seeds","1 tbsp ground flax","½ tsp cinnamon","½ tsp vanilla extract","½ cup frozen mixed berries","Optional AM topper: 1 tbsp cashews or almonds (+70 cal)"],
-       instructions:[
-         "**PICK JAR:** 12-16 oz mason jar with lid. Bigger is easier to stir.",
-         "**ADD DRY:** Oats + chia + flax + cinnamon into jar.",
-         "**ADD WET:** Almond milk + Greek yogurt + vanilla.",
-         "**SHAKE HARD:** Lid on, shake vigorously 15 sec — this incorporates the chia (poor mixing = clumpy oats).",
-         "**ADD BERRIES:** Open jar + gently stir in frozen berries. They'll thaw overnight and release juice.",
-         "**REFRIGERATE:** Overnight, lid on. Good 6 hrs to 3 days.",
-         "**MORNING:** Stir. Too thick? Splash 1 tbsp almond milk. If topping w/ nuts, add now (don't add night before or they get soggy).",
-         "**EAT COLD** — no reheating needed."
-       ],
-       note:"Weight-loss version removes cashew topper (-70 cal). Add back if hungrier. Certified GF matters if you're strict. Do NOT use instant oats — they get gummy."},
-      {id:"herby-dal",name:"🍛 Herby Red Lentil Dal + Zucchini + ½ Rice + Egg (weight-loss)",time:"12 min · 1 serving",macros:{cal:395,p:20,c:45,f:15,fib:8},
-       ingredients:["HR Herby Red Lentil Dal pouch","HR Jasmine Rice pouch (use HALF today, refrigerate other half for Fri)","1 medium zucchini, sliced ¼-inch rounds","1 tbsp olive oil","Salt + pepper","1 hard-boiled OR soft-boiled egg","1 tbsp chopped fresh cilantro","Squeeze of lemon or lime"],
-       instructions:[
-         "**PREP EGG:** Hard-boiled from Sunday batch: peel + slice. Soft-boiled (better): boil water, gently drop room-temp egg in, cook exactly 6½ min, ice bath 2 min, peel — runny yolk = amazing sauce over dal.",
-         "**SAUTÉ ZUCCHINI:** Heat 1 tbsp olive oil in a skillet over medium-high until shimmering. Zucchini rounds in single layer, salt/pep. 2 min per side (4 min total) until tender + lightly golden.",
-         "**HEAT RICE:** Tear vent in HR rice pouch corner. Microwave 45 sec (that's HALF a pouch — pouch feeds 2). Scoop half into bowl. Reseal + refrigerate rest for Fri lunch.",
-         "**HEAT DAL:** Empty entire dal pouch into small microwave-safe bowl. Cover. Microwave 2-3 min until steaming.",
-         "**BUILD BOWL:** Rice base → dal spooned over half the rice → zucchini rounds on the other side → egg slices on top.",
-         "**FINISH:** Sprinkle cilantro + squeeze fresh lemon or lime."
-       ],
-       note:"HR rice pouch serves 2 → half today + half Friday. Rice is calorie-dense; halving hits weight-loss target. Egg bumps protein from 12 → 20g. Soft-boiled with runny yolk = highly recommended."},
-      {id:"beef-chili2",name:"🥩 Beef Chili + Avocado + Cherry Tomato + Yogurt (batch 6)",time:"35 min · 6 servings",macros:{cal:400,p:36,c:38,f:12,fib:14},
-       ingredients:["1 lb 90% lean ground beef","1 tbsp olive oil","1 medium yellow onion, diced","1 bell pepper, diced (any color)","3 garlic cloves, minced","2 tbsp chili powder","1 tbsp ground cumin","1 tsp smoked paprika","½ tsp cinnamon","½ tsp salt · ¼ tsp black pepper","1 tbsp tomato paste","1 can (15 oz) kidney beans, rinsed + drained","1 can (15 oz) black beans, rinsed + drained","1 jar (24 oz) marinara","1 cup homemade chicken stock (Sunday batch)","**Per bowl:** ¼ avocado sliced · ½ cup halved cherry tomatoes · 2 tbsp plain Greek yogurt · cilantro"],
-       instructions:[
-         "**HEAT + SAUTÉ AROMATICS:** 1 tbsp olive oil in a large Dutch oven over medium heat. Add diced onion + bell pepper. Sauté 5-6 min until soft. Add garlic, 30 sec until fragrant.",
-         "**BROWN BEEF:** Increase to medium-high. Add ground beef, break apart with wooden spoon. Cook 5-7 min until fully browned, no pink. Drain if excess fat > 1 tbsp.",
-         "**BLOOM SPICES:** Push meat to one side. On empty side: chili powder + cumin + smoked paprika + cinnamon + salt + pepper + tomato paste. Cook 60-90 sec stirring the spices INTO the fat — this 'blooms' them and transforms the flavor. Then stir into the meat.",
-         "**ADD LIQUIDS:** Add kidney beans, black beans, marinara, chicken stock. Stir. Scrape up browned bits from bottom.",
-         "**SIMMER:** Gentle simmer, reduce heat to medium-low, uncovered 20-25 min stirring occasionally until thickened. Taste + adjust salt.",
-         "**PORTION:** 6 containers. Cool completely before fridge (5 days) or freezer (3 months).",
-         "**TO SERVE:** Reheat 1 portion (~1 cup) 2-3 min in microwave. Top with ¼ avocado sliced, ½ cup halved cherry tomatoes, 2 tbsp Greek yogurt, cilantro."
-       ],
-       note:"Weight-loss cuts: avocado ¼ (was ½), cherry tomato topper bulks it up cal-free. Homemade chicken stock adds depth. Blooming spices in fat (step 3) is what separates OK chili from great chili."},
-      {id:"lentil-bread-kiwi",name:"🍞 Lentil Bread + AB + Kiwi (Sat breakfast)",time:"3 min",macros:{cal:220,p:10,c:24,f:9,fib:8},
-       ingredients:["1 slice homemade lentil bread (~1 oz, from Sunday batch)","½ tbsp almond butter","1 ripe kiwi, peeled + sliced"],
-       instructions:[
-         "**TOAST (optional):** Lightly toast lentil bread — 30 sec per side in dry skillet or 1 cycle in toaster. Brings out the earthy flavor.",
-         "**SPREAD:** Spread ½ tbsp almond butter evenly across the slice.",
-         "**TOP:** Arrange kiwi slices on top like little green medallions.",
-         "**EAT IMMEDIATELY** — or grab-and-go, holds 30 min."
-       ],
-       note:"Weight-loss version = 1 slice + ½ tbsp AB (was 2 slices + 1½ tbsp AB). Toasting is optional but recommended — the crunch is worth 30 sec."},
-      {id:"zaatar-chicken2",name:"🍗 Za'atar Chicken + Quinoa + Roasted Broccoli + Goat Cheese",time:"20 min · 1 serving",macros:{cal:440,p:44,c:28,f:16,fib:6},
-       ingredients:["6 oz pre-shredded chicken leg meat (Sunday batch)","2 cups broccoli florets (bite-sized)","¾ cup pre-cooked quinoa","1 tbsp za'atar spice blend","1½ tbsp olive oil (divided)","Salt + black pepper","1 oz crumbled goat cheese","½ lemon (juice + zest)"],
-       instructions:[
-         "**PREHEAT:** Oven to 425°F.",
-         "**ROAST BROCCOLI:** Toss broccoli w/ 1 tbsp olive oil + salt + pepper on a sheet pan. Spread in a SINGLE LAYER (crowded = steamed, spread = crispy). Roast 12-15 min until edges browned + tips crispy.",
-         "**SEASON CHICKEN (while broccoli roasts):** Toss shredded chicken w/ 1 tbsp za'atar + ½ tbsp olive oil + pinch salt. Massage spice into meat.",
-         "**WARM CHICKEN:** Small nonstick skillet over medium. Add za'atar chicken. Warm 3-4 min stirring until heated through and za'atar becomes fragrant.",
-         "**WARM QUINOA:** Microwave ¾ cup quinoa 45-60 sec until warm.",
-         "**PLATE:** Quinoa base → za'atar chicken → roasted broccoli.",
-         "**FINISH:** Crumble goat cheese over everything (melts slightly). Squeeze half a lemon, small pinch zest if you like it bright."
-       ],
-       note:"HIGH heat (425°F) is what makes broccoli crispy vs sad. Za'atar sub if none: 1 tsp thyme + ½ tsp sesame + extra lemon. Goat cheese melts partially — that's what you want."},
-      {id:"beef-stew",name:"🍲 Beef Stew w/ Homemade Chicken Stock (batch)",time:"1 hr 15 min mostly hands-off · 3 servings",macros:{cal:450,p:43,c:38,f:14,fib:8},
-       ingredients:["1 lb beef cubes (chuck or stew meat), patted VERY dry","1 tbsp GF flour or cornstarch","2 tbsp olive oil (divided)","Salt + black pepper","1 medium yellow onion, diced","3 garlic cloves, minced","1 tbsp tomato paste","3 medium carrots, chopped into 1-inch pieces","1 medium sweet potato, cubed ½-inch","1 bell pepper, chopped","4 cups homemade chicken stock (Sunday batch)","1 tsp dried thyme (or 1 tbsp fresh)","1 bay leaf","2 tbsp chopped fresh cilantro or parsley"],
-       instructions:[
-         "**SEASON + DUST BEEF:** Pat beef cubes VERY dry with paper towels (wet meat won't brown). Toss with ½ tsp salt + ¼ tsp pepper + 1 tbsp flour until each cube is lightly coated.",
-         "**SEAR BEEF (in batches):** Heat 1 tbsp olive oil in Dutch oven over medium-high until shimmering. Add HALF the beef in single layer w/ space between cubes (crowded = steamed, spread = seared). Sear 3-4 min per side to deep brown. Transfer to plate. Repeat w/ remaining beef + more oil.",
-         "**SAUTÉ AROMATICS:** Reduce heat to medium. Remaining 1 tbsp oil in pot. Add onion + pinch salt. Cook 5-6 min until soft, scraping up brown bits (fond) from beef — THAT is flavor. Add garlic + tomato paste, cook 60-90 sec until paste darkens.",
-         "**DEGLAZE + ADD LIQUID:** Pour in 4 cups chicken stock, stirring to scrape up any remaining fond. Return beef + resting juices to pot.",
-         "**ADD REMAINING VEG:** Carrots, sweet potato, bell pepper, thyme, bay leaf. Stir. Bring to simmer.",
-         "**SIMMER LOW + COVERED:** Reduce to low. Cover w/ lid slightly ajar (lets steam escape so stew thickens). Simmer 45-55 min until beef is fork-tender + veg soft.",
-         "**FINAL SEASONING:** Taste + salt. Remove bay leaf.",
-         "**PORTION:** 3 containers. Cool completely before fridge (5 days) or freezer (3 months).",
-         "**TO SERVE:** Reheat 3-4 min. Garnish w/ fresh cilantro or parsley."
-       ],
-       note:"Homemade chicken stock = restaurant-quality flavor. DON'T skip drying beef or dusting w/ flour: dry meat browns, flour thickens the stew + helps sear. 25 min hands-on, rest is simmering."},
-      {id:"roasted-legs2",name:"🍗 Roasted Chicken Legs + Sweet Potato + Brussels (eat 2, shred 2)",time:"50 min hands-off · 4 legs",macros:{cal:440,p:42,c:32,f:15,fib:8},
-       ingredients:["4 chicken legs (bone-in, skin-on)","1 lb Brussels sprouts, trimmed + halved","2 medium sweet potatoes, cubed ¾-inch","3 tbsp olive oil (divided)","2 tsp za'atar","1 tsp garlic powder","1 tsp salt · ½ tsp pepper","1 lemon (½ for cooking, ½ for finishing)","Fresh parsley or cilantro"],
-       instructions:[
-         "**THAW + DRY:** Thaw chicken legs overnight in fridge (or 30 min cold water bath). Pat COMPLETELY dry — critical for crispy skin.",
-         "**PREHEAT:** Oven to 425°F. Line large sheet pan with parchment or foil.",
-         "**PREP VEG:** In large bowl, toss sweet potato + Brussels w/ 2 tbsp olive oil + ½ tsp salt + ¼ tsp pepper. Spread on ONE SIDE of sheet pan in single layer.",
-         "**SEASON CHICKEN:** Mix za'atar + garlic powder + ½ tsp salt + ¼ tsp pepper. Drizzle legs w/ 1 tbsp olive oil, rub spice mix all over — under AND over the skin.",
-         "**ARRANGE:** Place legs on OTHER SIDE of sheet pan, skin-side up. Squeeze juice of ½ lemon over everything + place squeezed halves on pan.",
-         "**ROAST:** 35-40 min until skin is deep golden + crispy, meat thermometer reads 175°F at thickest part of thigh. Sweet potato = caramelized on edges, Brussels = tender + browned.",
-         "**REST + FINISH:** 5 min rest. Discard cooked lemon. Squeeze fresh ½ lemon over everything + sprinkle parsley or cilantro.",
-         "**PORTION:** 2 legs + veg = tonight's dinner. Let remaining 2 legs cool, shred meat off bone into container for next week (~6 oz meat)."
-       ],
-       note:"Bone-in + skin-on = flavor + moisture. Dry skin, high heat, don't move them — the trifecta for crispy skin. Shredded leftovers save 5 min on Wed/Sat lunches next week."},
-      {id:"protein-bar",name:"🍫 Protein Bar (Khalid daily snack)",time:"1 min",macros:{cal:200,p:20,c:15,f:7,fib:5},
-       ingredients:["**Look for:** ≥15g protein · ≤8g sugar · ≥5g fiber · Whole-food ingredients preferred","**Best brands:** Barebells (20g P, tastes like candy), David Bar (28g P, ~150 cal), Built Bar (17g P, chocolate-truffle-like), Quest (20g P, chewy), RXBAR (12g P, 5 ingredients: dates + egg whites + nuts)","**AVOID:** Clif Bar (only 10g P, 20g sugar), Kind (only 6g P), Nature Valley Protein (highly processed)"],
-       instructions:["**UNWRAP + EAT** — that's it. Best timing: 3-4 PM to bridge lunch to dinner."],
-       note:"Fills Khalid's 1,800 cal target. Stock 5+ different flavors so he doesn't get bored. Costco carries Barebells + Built + Quest in bulk."},
-      {id:"salmon-wedge",name:"🐟 Pan-Seared Salmon + Iceberg Wedge (T) / Purple Cabbage Slaw (K) + HR Sides (Tue swap)",time:"20 min",macros:{cal:450,p:38,c:25,f:20,fib:6},
-       ingredients:[
-         "1 fresh salmon fillet (~6 oz for Tati) + 1 fresh salmon fillet (~8 oz for Khalid)","Salt · pepper · smoked paprika","1 tbsp avocado oil (high smoke point)","1 lemon","**TATI SIDE (Iceberg Wedge):** ½ head iceberg, quartered · ½ cup cherry tomatoes, halved · 2 tbsp feta crumbles","**KHALID SIDE (Purple Cabbage Slaw):** 1½ cups shredded purple cabbage · ½ cup cherry tomatoes · ½ bell pepper, thinly sliced · 1 tsp olive oil · 1 tsp lemon juice · pinch salt","**BOTH SIDES:** HR Brussels + HR potatoes","**Yogurt-Dill Dressing (both use):** 2 tbsp plain Greek yogurt · 1 tsp lemon juice · 1 tsp fresh dill (or ¼ tsp dried) · 1 tsp olive oil · pinch garlic + salt"
-       ],
-       instructions:[
-         "**MAKE DRESSING FIRST:** Whisk all dressing ingredients in a small bowl. Refrigerate while you cook — flavors meld.",
-         "**PREP KHALID'S SLAW:** Toss shredded cabbage + cherry tomatoes + bell pepper w/ 1 tsp olive oil + 1 tsp lemon + pinch salt. Let sit — salt breaks down cabbage slightly for slaw texture.",
-         "**PREP TATI'S WEDGE:** Cut iceberg in half through the core, then cut one half into 2 wedges (that's 1 serving). Refrigerate until ready to plate.",
-         "**COOK POTATOES + BRUSSELS (HR method):** Microwave HR potatoes covered 3 min, stir, 2-4 more min until fork tender. Rest 2-3 min. Meanwhile heat 1 tbsp olive oil in skillet over medium-high, cook Brussels cut-side down 3 min undisturbed, flip + 2-3 more min until crispy.",
-         "**SEAR SALMON:** Pat both salmon fillets VERY dry. Season both sides w/ salt + pepper + smoked paprika. Heat 1 tbsp avocado oil in cast iron or heavy skillet over medium-high until shimmering. Add salmon SKIN-SIDE DOWN. DO NOT MOVE for 4 min — this makes the skin crispy.",
-         "**FLIP + FINISH:** Gently flip salmon w/ a fish spatula. Cook 2-3 more min until firm + opaque throughout + easily flakes (internal temp 125-130°F). Squeeze fresh lemon over the top.",
-         "**PLATE TATI:** Iceberg wedge on plate. Scatter cherry tomatoes + feta on top. Drizzle yogurt-dill dressing over the wedge. Salmon + HR Brussels + potatoes on the side.",
-         "**PLATE KHALID:** Mound purple cabbage slaw on plate. Salmon on top or beside. HR Brussels + potatoes on the side. Yogurt-dill dressing drizzled or in a small ramekin for dipping."
-       ],
-       note:"Tati loves iceberg wedges; Khalid dislikes iceberg → purple cabbage slaw sub. Cherry tomatoes on both. HR salmon fillet from new kit is saved for next week. Skin-side down 4 min undisturbed = crispy skin (don't peek)."}
-    ],
-    dressings: [
-      {name:"Batch #1: Lemon Vinaigrette",yield:"½ cup",
-       ingredients:["¼ cup olive oil","Juice of 1 lemon","1 tsp Dijon","1 tsp honey","Salt/pep"],
-       uses:["Tue L (egg bake salad)","Weekend greens"]},
-      {name:"Batch #2: Miso-Tahini Creamy",yield:"½ cup",
-       ingredients:["2 tbsp tahini","1 tbsp white miso","2 tbsp lemon juice","2 tbsp warm water","1 tsp honey","1 clove garlic minced"],
-       uses:["Wed lunch chicken bowl (optional)","Sat lunch drizzle","Veggie dip"]}
-    ],
-    grocery: {
-      "🛒 Fresh Fish (URGENT — Mon dinner)": {
-        "Fish":["Fresh salmon fillets × 2 (~6 oz each) — HR kit covers Tue"]
-      },
-      "🛒 Trader Joe's / Regular grocery (~$35)": {
-        "Produce":["Fresh spinach 16 oz","Avocados × 3 (chili topping)","Mixed greens 5 oz","Cucumber × 2","Carrots 1 lb bag","Yellow onion × 3","Garlic 1 head","Fresh parsley or cilantro","Lemons × 2","Ginger — small knob"],
-        "Dairy / Eggs":["Eggs × 1 dozen"],
-        "Pantry":["Marinara/red pasta sauce jar (check pantry first)"]
-      },
-      "✅ Already have (skip)": {
-        "Freezer":["Ribeye × 3 (SAVING)","Ground beef 3 lb old + 1 lb NEW = 4 lb","Beef cubes 1 lb NEW","Beyond Meat pkg NEW","Chicken legs × 23","Turkey bacon","Frozen bananas + berries","Frozen veg scraps → chicken stock TODAY"],
-        "Fridge":["Paneer (Mon L — DONE)","Cottage cheese","Greek yogurt","Goat cheese","Parm (tons + NEW)","Cheddar · Mozzarella · Feta","Lox","Kiwis × ~5","Almond milk","Hummus","6 bell peppers","Fresh cilantro","Broccoli","Sweet potatoes","**Cherry tomatoes (LOTS — use Tue+Thu)**","**Purple cabbage (NEW — use Tue+Wed)**","**Iceberg lettuce (Tati wedge — Tue)**","3 serrano · 3 peaches · 2 apples"],
-        "HR kits NEW":["Smoky Salmon + Brussels + potatoes","Envy apples + PB × 4","Herby Red Lentil Dal + zucchini + rice"],
-        "HR kits SALVAGE":["Coconut Curry Sauce + Veggie Mix (Mon dinner Salmon Curry)","Coconut Curry Sauce spare (Wed L)","Tikka Masala Sauce + Riced Cauliflower (Mon L)"],
-        "Pantry":["GF oats","Quinoa","Basmati","Red/green lentils","Moong dal","GF pasta × 3","Instant rice","Black beans (cooked)","Chickpeas","Kidney","Red sauce","Veg broth","Olive/avocado/sesame oil","Miso","Peanut sauce","Almond butter","PB","Tahini","Tamari","Chia · flax","Almonds · cashews","All spices","Saffron","Mint","Ritual protein","Creatine"]
-      }
-    },
-    prepSteps: [
-      {time:"12:00",title:"🚀 Long-cooks START",items:["Soak 1 cup red lentils (2-4h for lentil bread)","Start chicken stock: frozen veg scraps + 8 cups water + bay leaf + peppercorns + salt — bring to boil, simmer 3h","Thaw chicken legs for Sun D"]},
-      {time:"12:30",title:"🛒 Grocery run",items:["Costco/TJs list (see Grocery tab)","⚠️ Buy fresh salmon (2 portions) for Mon dinner"]},
-      {time:"3:00",title:"🌾 Cook quinoa + hard-boil eggs",items:["1 cup quinoa + 2 cups water, 15 min","Portion into 4 × ¾-cup containers","Hard-boil 6 eggs (12 min from cold, ice bath)"]},
-      {time:"3:00",title:"🍞 Lentil bread batter + bake",items:["Blend: drained lentils + 2 eggs + 3 tbsp olive oil + 1 tsp baking powder + 1 tsp salt","Pour into greased loaf pan","350°F for 40 min"]},
-      {time:"4:00",title:"🍳 Egg bake + Parm crisps",items:["Egg bake: blend cottage cheese, whisk w/ 8 eggs + spinach + feta","8×8 dish, 375°F 30-35 min","Same oven: 12 Parm mounds, 350°F 5-7 min"]},
-      {time:"5:00",title:"🍗 Shred chicken + strain stock",items:["Pull ~14 oz chicken leg meat, portion 2 labeled containers","Strain stock through fine mesh","Mason jar 4+ cups (fridge 3, freeze rest)"]},
-      {time:"5:30",title:"🥗 Two batch dressings + finish",items:["Lemon Vinaigrette (mason jar)","Miso-Tahini Dressing (mason jar)","Lentil bread out of oven, slice","Egg bake out, cut 4 squares"]},
-      {time:"Wed pm",title:"⏰ Thu prep — 10 sec",items:["Assemble Thu overnight oats jar"]},
-      {time:"DONE ✅",title:"Fridge/freezer state",items:["4 egg bake squares","7 lentil bread slices","2 shredded chicken portions","4 quinoa portions","4+ cups chicken stock","6 hard-boiled eggs","Lemon Vinaigrette + Miso-Tahini jars","12 Parm crisps","2 fresh salmon portions"]}
-    ],
-    prepAhead: {
-      "2026-08-16": {tonight:["⚠️ START chicken stock at noon (3h simmer)","Soak red lentils for bread","Buy fresh salmon","Bake lentil bread + egg bake","Shred chicken + strain stock","Batch 2 dressings","Assemble Mon lunch (paneer + tikka easy)"], tomorrowAM:["Blend green smoothie","Grab Envy apple + PB"]},
-      "2026-08-17": {tonight:["🍇 **Freeze grapes** — wash, dry, single-layer on sheet pan, freezer 2 hrs","🥤 **Assemble 3 smoothie packs** (Tue/Wed/Thu) — 1 cup frozen grapes + 1 cup spinach + 1 tbsp chia + 1 tsp ginger per bag","Confirm HR curry sauce + veggie mix are good","Pull HR kit for Tue dinner (Brussels + potatoes only — save salmon fillet)","Pull 1 fresh salmon fillet to fridge for Tue dinner"], tomorrowAM:["Blend grape smoothie pack (60 sec)","Pack Tue lunch (egg bake + greens + dressing)"]},
-      "2026-08-18": {tonight:["Assemble Thu overnight oats jar","Pull Beyond Meat + peppers to fridge","Verify quinoa + shredded chicken portions"], tomorrowAM:["Reheat egg bake + lox","Kiwi + AB snack"]},
-      "2026-08-19": {tonight:["Verify beef chili ingredients + chicken stock ready","Assemble Sun overnight oats jar early? No — do Sat night"], tomorrowAM:["Grab overnight oats + cashews","Envy apple + PB"]},
-      "2026-08-20": {tonight:["Batch beef chili tonight → Fri D + Sun L","Portion into 6 containers","Assemble Sat morning food"], tomorrowAM:["Egg bake + boiled egg","Parm crisps + cashews"]},
-      "2026-08-21": {tonight:["Assemble Sun overnight oats jar","Pull 4 chicken legs from freezer for Sun D"], tomorrowAM:["Lentil bread + AB + kiwi","Hummus snack"]},
-      "2026-08-22": {tonight:["Portion beef stew into 3","Review week — what worked?","Plan next week groceries"], tomorrowAM:["Overnight oats","Chili leftover for lunch"]},
-      "2026-08-23": {tonight:["🎉 Week done","Shred 2 leftover chicken legs for next week","Chicken stock inventory check"], tomorrowAM:["Next week begins!"]}
-    }
-  },
-
-  // -----------------------------------------------------------
   // WEEK 3 — Aug 24–30, 2026
   // -----------------------------------------------------------
   {
@@ -813,7 +440,7 @@ const WEEKS = [
       {date:"2026-08-31",day:"Monday",type:"Dinner",name:"🥘 One-Pot Ground Beef + Quinoa Skillet w/ Asparagus + Bell Pepper (ONE PAN)",cal:540,p:38,c:50,f:20,fib:9,time:"20m",recipe:"beef-quinoa-skillet"},
 
       // TUE 9/1 — Khalid home. Rotisserie leftover lemony pasta
-      {date:"2026-09-01",day:"Tuesday",type:"Breakfast",name:"🍠🍳 Sweet Potato Egg Bake + Lox + Berries",cal:400,p:32,c:16,f:22,fib:4,time:"2m",recipe:"sweetpotato-eggbake"},
+      {date:"2026-09-01",day:"Tuesday",type:"Breakfast",name:"🍠🥚 Air Fryer Sweet Potato + 2 Hard-Boiled Eggs + Lox + Berries",cal:410,p:30,c:24,f:20,fib:5,time:"15m air fryer",recipe:"sweetpotato-hardboiled"},
       {date:"2026-09-01",day:"Tuesday",type:"Snack 1",name:"🍎 Envy Apple + 1 tbsp PB",cal:240,p:6,c:22,f:14,fib:4,time:"1m",recipe:"grapes-cashews"},
       {date:"2026-09-01",day:"Tuesday",type:"Lunch",name:"🥘 Beef Quinoa Skillet Leftover (T) / Rotisserie Chicken Bowl (K)",cal:520,p:38,c:48,f:20,fib:9,time:"3m reheat",recipe:"beef-quinoa-skillet"},
       {date:"2026-09-01",day:"Tuesday",type:"Snack 2",name:"🧀 Cheddar + Bell Pepper Strips",cal:200,p:12,c:8,f:14,fib:2,time:"2m",recipe:"cheddar-pepper-snack"},
@@ -821,7 +448,7 @@ const WEEKS = [
       {date:"2026-09-01",day:"Tuesday",type:"Dinner",name:"🍝 Lemon Asparagus GF Pasta + Rotisserie Chicken — thyme + basil",cal:530,p:38,c:52,f:16,fib:6,time:"15m",recipe:"lemon-asparagus-pasta"},
 
       // WED 9/2 — Stuffed peppers night (use ground beef + peppers + quinoa)
-      {date:"2026-09-02",day:"Wednesday",type:"Breakfast",name:"🍠🍳 Sweet Potato Egg Bake + Berries",cal:310,p:22,c:24,f:14,fib:4,time:"1m",recipe:"sweetpotato-eggbake"},
+      {date:"2026-09-02",day:"Wednesday",type:"Breakfast",name:"🍠🥚 Air Fryer Sweet Potato + 2 Hard-Boiled Eggs + Berries",cal:340,p:20,c:28,f:14,fib:5,time:"15m air fryer",recipe:"sweetpotato-hardboiled"},
       {date:"2026-09-02",day:"Wednesday",type:"Snack 1",name:"🍇 Frozen Grapes + 15 Cashews",cal:200,p:5,c:26,f:10,fib:2,time:"1m",recipe:"grapes-cashews"},
       {date:"2026-09-02",day:"Wednesday",type:"Lunch",name:"🍝 Pasta Leftover + Extra Spinach",cal:520,p:36,c:52,f:16,fib:7,time:"3m",recipe:"lemon-asparagus-pasta"},
       {date:"2026-09-02",day:"Wednesday",type:"Snack 2",name:"Hummus + Bell Pepper + Cucumber",cal:170,p:5,c:16,f:8,fib:5,time:"2m",recipe:"grapes-cashews"},
@@ -829,7 +456,7 @@ const WEEKS = [
       {date:"2026-09-02",day:"Wednesday",type:"Dinner",name:"🌶️ Ground Beef Stuffed Bell Peppers + Quinoa (batch 6 halves)",cal:520,p:36,c:44,f:20,fib:8,time:"35m mostly hands-off",recipe:"beef-stuffed-peppers-w4"},
 
       // THU 9/3 — Sheet pan chicken + brussels
-      {date:"2026-09-03",day:"Thursday",type:"Breakfast",name:"🍠🍳 Sweet Potato Egg Bake + 1 oz Lox + Berries",cal:400,p:32,c:16,f:22,fib:4,time:"2m",recipe:"sweetpotato-eggbake"},
+      {date:"2026-09-03",day:"Thursday",type:"Breakfast",name:"🍠🥚 Air Fryer Sweet Potato + 2 Hard-Boiled Eggs + 1 oz Lox + Berries",cal:410,p:30,c:24,f:20,fib:5,time:"15m air fryer",recipe:"sweetpotato-hardboiled"},
       {date:"2026-09-03",day:"Thursday",type:"Snack 1",name:"🍎 Envy Apple + ½ oz Parm chunk",cal:240,p:12,c:20,f:12,fib:4,time:"1m",recipe:"grapes-cashews"},
       {date:"2026-09-03",day:"Thursday",type:"Lunch",name:"🌶️ Stuffed Peppers Leftover (2 halves)",cal:520,p:36,c:44,f:20,fib:8,time:"5m reheat",recipe:"beef-stuffed-peppers-w4"},
       {date:"2026-09-03",day:"Thursday",type:"Snack 2",name:"🥝 Kiwi + Greek Yogurt + Chia",cal:220,p:17,c:24,f:5,fib:6,time:"2m",recipe:"grapes-cashews"},
@@ -837,7 +464,7 @@ const WEEKS = [
       {date:"2026-09-03",day:"Thursday",type:"Dinner",name:"🍗 Sheet-Pan Lemon-Garlic Chicken + Brussels + Sweet Potato — thyme",cal:510,p:44,c:34,f:18,fib:8,time:"40m mostly hands-off",recipe:"sheetpan-chicken-brussels"},
 
       // FRI 9/4 — Pasta primavera (green lentils for protein)
-      {date:"2026-09-04",day:"Friday",type:"Breakfast",name:"🍠🍳 Sweet Potato Egg Bake + Berries",cal:310,p:22,c:24,f:14,fib:4,time:"1m",recipe:"sweetpotato-eggbake"},
+      {date:"2026-09-04",day:"Friday",type:"Breakfast",name:"🍠🥚 Air Fryer Sweet Potato + 2 Hard-Boiled Eggs + Berries",cal:340,p:20,c:28,f:14,fib:5,time:"15m air fryer",recipe:"sweetpotato-hardboiled"},
       {date:"2026-09-04",day:"Friday",type:"Snack 1",name:"🐟 Lox + Cucumber + 3 Rice Crackers",cal:170,p:12,c:12,f:6,fib:1,time:"2m",recipe:"grapes-cashews"},
       {date:"2026-09-04",day:"Friday",type:"Lunch",name:"🍗 Shredded Chicken + Brussels + Spinach + Miso-Tahini",cal:470,p:40,c:14,f:26,fib:6,time:"5m",recipe:"chicken-brussels-bowl"},
       {date:"2026-09-04",day:"Friday",type:"Snack 2",name:"🧀 Parm Crisps + 15 Cashews",cal:200,p:11,c:5,f:14,fib:2,time:"1m",recipe:"grapes-cashews"},
@@ -969,7 +596,212 @@ const WEEKS = [
     prepAhead: {
       "2026-08-31": {tonight:["Leftover Beyond Beef skillet portioned for Tue L","Confirm any thaw needed for Tue D"], tomorrowAM:["Smoothie bowl","Cheddar + pepper snack packed"]}
     }
+  },
+
+  // -----------------------------------------------------------
+  // WEEK 5 — Sep 7–13, 2026
+  // -----------------------------------------------------------
+  {
+    id: "2026-09-07",
+    label: "Sep 7–13, 2026",
+    subtitle: "GF · TTC focus · Khalid home Mon–Fri · Feature: 12 beef sausages + key limes + red cabbage",
+    dailyTargets: {cal:"~1,500", p:"~120g", c:"~130g", f:"~55g", fib:"≥30g"},
+    meals: [
+      // MON 9/7 — Labor Day · Fresh salmon batch
+      {date:"2026-09-07",day:"Monday",type:"Breakfast",name:"🥤 Green Protein Smoothie (banana + berries + spinach)",cal:360,p:32,c:32,f:8,fib:6,time:"4m",recipe:"protein-smoothie-w5"},
+      {date:"2026-09-07",day:"Monday",type:"Snack 1",name:"🍎 Apple + 1 tbsp PB",cal:240,p:6,c:22,f:14,fib:4,time:"1m",recipe:"apple-pb-w5"},
+      {date:"2026-09-07",day:"Monday",type:"Lunch",name:"🍣 Salmon Rice Bowl + Red Cabbage Slaw + Key Lime Vinaigrette",cal:470,p:36,c:44,f:14,fib:6,time:"5m",recipe:"salmon-rice-bowl-w5"},
+      {date:"2026-09-07",day:"Monday",type:"Snack 2",name:"🥝 Greek Yogurt + Berries + Chia",cal:220,p:17,c:24,f:5,fib:6,time:"2m",recipe:"yogurt-chia-w5"},
+      {date:"2026-09-07",day:"Monday",type:"K Snack",name:"🍫 Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar-w5",khalidOnly:true},
+      {date:"2026-09-07",day:"Monday",type:"Dinner",name:"🐟 Sheet-Pan Salmon (batch 4) + Sweet Potato + Broccoli — thyme + marjoram",cal:490,p:40,c:34,f:18,fib:8,time:"40m mostly hands-off",recipe:"sheetpan-salmon-w5"},
+
+      // TUE 9/8 — Salmon rice bowl leftover · Sausage sheet pan
+      {date:"2026-09-08",day:"Tuesday",type:"Breakfast",name:"🍳 Egg Bake Slice + Berries + Almond Butter",cal:380,p:30,c:16,f:22,fib:4,time:"2m",recipe:"egg-bake-w5"},
+      {date:"2026-09-08",day:"Tuesday",type:"Snack 1",name:"🍎 Apple + 1 tbsp PB",cal:240,p:6,c:22,f:14,fib:4,time:"1m",recipe:"apple-pb-w5"},
+      {date:"2026-09-08",day:"Tuesday",type:"Lunch",name:"🍣 Salmon Rice Bowl (from Mon batch) + Slaw + Key Lime Vinaigrette",cal:460,p:34,c:42,f:14,fib:6,time:"3m",recipe:"salmon-rice-bowl-w5"},
+      {date:"2026-09-08",day:"Tuesday",type:"Snack 2",name:"🥝 Kiwi + Greek Yogurt + Chia",cal:220,p:17,c:24,f:5,fib:6,time:"2m",recipe:"yogurt-chia-w5"},
+      {date:"2026-09-08",day:"Tuesday",type:"K Snack",name:"🍫 Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar-w5",khalidOnly:true},
+      {date:"2026-09-08",day:"Tuesday",type:"Dinner",name:"🌭 Mediterranean Beef Sausage Sheet Pan — peppers, onion, potatoes, olives",cal:520,p:38,c:38,f:22,fib:6,time:"30m mostly hands-off",recipe:"med-sausage-sheetpan-w5"},
+
+      // WED 9/9 — Fresh cod · Chili prep
+      {date:"2026-09-09",day:"Wednesday",type:"Breakfast",name:"🥣 GF Overnight Oats + Berries + Cashews",cal:340,p:22,c:38,f:12,fib:6,time:"1m",recipe:"overnight-oats-w5"},
+      {date:"2026-09-09",day:"Wednesday",type:"Snack 1",name:"🥝 Kiwi + Almond Butter",cal:180,p:5,c:20,f:9,fib:4,time:"1m",recipe:"kiwi-ab-w5"},
+      {date:"2026-09-09",day:"Wednesday",type:"Lunch",name:"🌭 Sausage Leftover Bowl (sliced) + Roasted Peppers + Spinach + Key Lime Vinaigrette",cal:450,p:30,c:32,f:22,fib:6,time:"5m",recipe:"med-sausage-sheetpan-w5"},
+      {date:"2026-09-09",day:"Wednesday",type:"Snack 2",name:"Hummus + Bell Pepper + Cucumber",cal:170,p:5,c:16,f:8,fib:5,time:"2m",recipe:"hummus-veg-w5"},
+      {date:"2026-09-09",day:"Wednesday",type:"K Snack",name:"🍫 Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar-w5",khalidOnly:true},
+      {date:"2026-09-09",day:"Wednesday",type:"Dinner",name:"🐟 Key Lime Baked Cod + Quinoa + Roasted Asparagus — basil + marjoram",cal:460,p:40,c:36,f:14,fib:8,time:"25m",recipe:"keylime-cod-w5"},
+
+      // THU 9/10 — Ground beef chili night
+      {date:"2026-09-10",day:"Thursday",type:"Breakfast",name:"🍳 Egg Bake Slice + Berries",cal:340,p:28,c:14,f:20,fib:4,time:"1m",recipe:"egg-bake-w5"},
+      {date:"2026-09-10",day:"Thursday",type:"Snack 1",name:"🍎 Apple + ½ oz Parm chunk",cal:240,p:12,c:20,f:12,fib:4,time:"1m",recipe:"apple-parm-w5"},
+      {date:"2026-09-10",day:"Thursday",type:"Lunch",name:"🍳 Egg Bake + Hummus + Rice Crackers (or cod leftover flake if stretched)",cal:400,p:28,c:28,f:18,fib:5,time:"5m",recipe:"egg-bake-w5"},
+      {date:"2026-09-10",day:"Thursday",type:"Snack 2",name:"🥝 Kiwi + Greek Yogurt + Chia",cal:220,p:17,c:24,f:5,fib:6,time:"2m",recipe:"yogurt-chia-w5"},
+      {date:"2026-09-10",day:"Thursday",type:"K Snack",name:"🍫 Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar-w5",khalidOnly:true},
+      {date:"2026-09-10",day:"Thursday",type:"Dinner",name:"🌶️ Beef Chili (batch 4) — kidney + black beans, avocado + yogurt topping",cal:500,p:42,c:38,f:18,fib:12,time:"35m",recipe:"beef-chili-w5"},
+
+      // FRI 9/11 — Khalid's last night · Sausage & Peppers
+      {date:"2026-09-11",day:"Friday",type:"Breakfast",name:"🥣 GF Overnight Oats + Berries + Cashews",cal:340,p:22,c:38,f:12,fib:6,time:"1m",recipe:"overnight-oats-w5"},
+      {date:"2026-09-11",day:"Friday",type:"Snack 1",name:"🥒 Rice Crackers + Hummus + Cucumber",cal:190,p:8,c:22,f:8,fib:4,time:"2m",recipe:"hummus-veg-w5"},
+      {date:"2026-09-11",day:"Friday",type:"Lunch",name:"🌶️ Beef Chili Leftover + Avocado + Greek Yogurt",cal:490,p:40,c:36,f:18,fib:12,time:"3m",recipe:"beef-chili-w5"},
+      {date:"2026-09-11",day:"Friday",type:"Snack 2",name:"🧀 Parm Crisps + 15 Almonds",cal:200,p:11,c:5,f:14,fib:2,time:"1m",recipe:"parm-crisps-w5"},
+      {date:"2026-09-11",day:"Friday",type:"K Snack",name:"🍫 Protein Bar (Khalid)",cal:200,p:20,c:15,f:7,fib:5,time:"1m",recipe:"protein-bar-w5",khalidOnly:true},
+      {date:"2026-09-11",day:"Friday",type:"Dinner",name:"🌭 Sausage & Peppers Skillet — bell peppers, onion, garlic, basil",cal:500,p:38,c:24,f:28,fib:5,time:"25m",recipe:"sausage-peppers-w5"},
+
+      // SAT 9/12 — Tatiana solo · Pantry mode
+      {date:"2026-09-12",day:"Saturday",type:"Breakfast",name:"🥤 Green Protein Smoothie",cal:360,p:32,c:32,f:8,fib:6,time:"4m",recipe:"protein-smoothie-w5"},
+      {date:"2026-09-12",day:"Saturday",type:"Snack 1",name:"🍎 Apple + 1 tbsp PB",cal:240,p:6,c:22,f:14,fib:4,time:"1m",recipe:"apple-pb-w5"},
+      {date:"2026-09-12",day:"Saturday",type:"Lunch",name:"🌶️ Chili Leftover + Avocado + Spinach",cal:470,p:38,c:34,f:16,fib:12,time:"3m",recipe:"beef-chili-w5"},
+      {date:"2026-09-12",day:"Saturday",type:"Snack 2",name:"Hummus + Bell Pepper + Kiwi",cal:200,p:6,c:20,f:8,fib:6,time:"2m",recipe:"hummus-veg-w5"},
+      {date:"2026-09-12",day:"Saturday",type:"Dinner",name:"🫘 Moong Dal + Basmati Rice + Soft Egg — basil finish",cal:500,p:30,c:60,f:12,fib:14,time:"40m mostly hands-off",recipe:"moong-dal-w5"},
+
+      // SUN 9/13 — Solo · Weekly reset + roast
+      {date:"2026-09-13",day:"Sunday",type:"Breakfast",name:"🥣 GF Overnight Oats + Berries + Cashews",cal:340,p:22,c:38,f:12,fib:6,time:"1m",recipe:"overnight-oats-w5"},
+      {date:"2026-09-13",day:"Sunday",type:"Snack 1",name:"🥝 Kiwi + Greek Yogurt + Chia",cal:220,p:17,c:24,f:5,fib:6,time:"2m",recipe:"yogurt-chia-w5"},
+      {date:"2026-09-13",day:"Sunday",type:"Lunch",name:"🫘 Moong Dal Leftover + Soft-Boiled Egg + Spinach",cal:500,p:28,c:52,f:14,fib:14,time:"5m",recipe:"moong-dal-w5"},
+      {date:"2026-09-13",day:"Sunday",type:"Snack 2",name:"🍚 Rice Cakes + Almond Butter + Parm Chunk",cal:320,p:14,c:32,f:16,fib:3,time:"2m",recipe:"ricecake-ab-w5"},
+      {date:"2026-09-13",day:"Sunday",type:"Dinner",name:"🍗 Roasted Chicken Legs (batch 4 from freezer) + Sweet Potato + Salad + Key Lime Vinaigrette",cal:490,p:42,c:32,f:20,fib:8,time:"45m mostly hands-off",recipe:"chicken-legs-roast-w5"}
+    ],
+    recipes: [
+      {id:"protein-smoothie-w5",name:"🥤 Green Protein Smoothie",time:"4 min · 1 serving",macros:{cal:360,p:32,c:32,f:8,fib:6},
+       ingredients:["1 scoop Ritual protein","5g creatine","1 frozen banana","½ cup frozen mixed berries","1 cup unsweetened almond milk","1 handful spinach","1 tbsp chia"],
+       instructions:["Blend everything until smooth","Pour, drink"],
+       note:"TTC-safe. 2 smoothies/week rule. Uses freezer banana + berries."},
+
+      {id:"apple-pb-w5",name:"🍎 Envy Apple + PB",time:"1 min",macros:{cal:240,p:6,c:22,f:14,fib:4},
+       ingredients:["1 apple","1 tbsp peanut butter"],
+       instructions:["Slice apple, dip in PB"],
+       note:"Simple portable snack."},
+
+      {id:"yogurt-chia-w5",name:"🥝 Kiwi + Greek Yogurt + Chia",time:"2 min",macros:{cal:220,p:17,c:24,f:5,fib:6},
+       ingredients:["¾ cup 2% Greek yogurt","1 kiwi, sliced","1 tbsp chia","Optional: drizzle honey"],
+       instructions:["Layer yogurt + chia + kiwi in a jar or bowl"],
+       note:"Protein + folate. TTC-safe."},
+
+      {id:"protein-bar-w5",name:"🍫 Protein Bar (Khalid)",time:"1 min",macros:{cal:200,p:20,c:15,f:7,fib:5},
+       ingredients:["1 protein bar (Barebells / David / Built / Quest / RXBAR)"],
+       instructions:["Open. Eat."],
+       note:"Khalid afternoon top-up."},
+
+      {id:"kiwi-ab-w5",name:"🥝 Kiwi + Almond Butter",time:"1 min",macros:{cal:180,p:5,c:20,f:9,fib:4},
+       ingredients:["1 kiwi, sliced","½ tbsp almond butter"],
+       instructions:["Slice kiwi, dip"],
+       note:"Uses up kiwi stock."},
+
+      {id:"hummus-veg-w5",name:"🥒 Hummus + Bell Pepper + Cucumber",time:"2 min",macros:{cal:170,p:5,c:16,f:8,fib:5},
+       ingredients:["3 tbsp hummus","½ bell pepper, sliced","½ cucumber, sliced"],
+       instructions:["Slice veg, dip"],
+       note:"Reliable veg snack."},
+
+      {id:"apple-parm-w5",name:"🍎 Apple + Parm Chunk",time:"1 min",macros:{cal:240,p:12,c:20,f:12,fib:4},
+       ingredients:["1 apple","½ oz Parmesan, chunked"],
+       instructions:["Eat side by side"],
+       note:"Sweet-salty. Uses Parm."},
+
+      {id:"parm-crisps-w5",name:"🧀 Parm Crisps + Almonds",time:"1 min (crisps pre-baked Sun)",macros:{cal:200,p:11,c:5,f:14,fib:2},
+       ingredients:["6-8 Parm crisps (baked Sun prep)","15 almonds"],
+       instructions:["Portion into bowl"],
+       note:"Batch-made Sun. Anti-inflam + protein."},
+
+      {id:"ricecake-ab-w5",name:"🍚 Rice Cakes + Almond Butter + Parm Chunk",time:"2 min",macros:{cal:320,p:14,c:32,f:16,fib:3},
+       ingredients:["2 rice cakes","1 tbsp almond butter","½ oz Parm, chunked"],
+       instructions:["Spread AB on cakes, eat with Parm chunk"],
+       note:"Sweet + savory snack combo."},
+
+      {id:"overnight-oats-w5",name:"🥣 GF Overnight Oats + Berries + Cashews",time:"1 min AM (assembled Sun prep)",macros:{cal:340,p:22,c:38,f:12,fib:6},
+       ingredients:["½ cup GF rolled oats","½ cup unsweetened almond milk","1 tbsp chia","½ scoop protein powder (optional for boost)","½ cup mixed berries","1 tbsp cashews"],
+       instructions:["Combine oats + milk + chia + protein in jar Sun prep","Refrigerate overnight","Top with berries + cashews AM"],
+       note:"3 jars batched Sun for Wed / Fri / Sun. TTC-safe."},
+
+      {id:"egg-bake-w5",name:"🍳 Cottage Cheese Egg Bake (batch 8 slices)",time:"5 min prep · 30 min bake",macros:{cal:340,p:28,c:8,f:20,fib:2},
+       ingredients:["8 large eggs","½ cup cottage cheese","2 cups fresh spinach, chopped","½ cup grated Parm","¼ cup chopped scallion or red onion","1 tsp thyme (garden)","1 clove garlic, grated","¾ tsp salt","¼ tsp pepper","1 tbsp olive oil"],
+       instructions:["375°F. Grease 9x13 or 8x8 dish","Whisk eggs + cottage cheese + salt + pepper","Stir in spinach, Parm, onion, thyme, garlic","Pour into dish, bake 30 min until set","Cool 5 min, cut into 8 slices","Fridge 5 days, or freeze"],
+       note:"TTC-safe. Choline + folate. Batched Sun for Tue + Thu B + Thu L."},
+
+      {id:"salmon-rice-bowl-w5",name:"🍣 Salmon Rice Bowl + Red Cabbage Slaw + Key Lime Vinaigrette",time:"5 min assembly (from Mon batch)",macros:{cal:470,p:36,c:44,f:14,fib:6},
+       ingredients:["6 oz cooked salmon (from Mon sheet-pan batch)","¾ cup cooked jasmine rice (Sun prep)","1 cup Red Cabbage Slaw (Sun prep — see dressings tab)","1 cup spinach","2 tbsp Key Lime Vinaigrette","Optional: avocado, sesame seeds"],
+       instructions:["Layer rice → spinach → salmon → slaw","Drizzle vinaigrette + squeeze extra key lime"],
+       note:"Uses Mon salmon batch. TTC power lunch (DHA + folate)."},
+
+      {id:"sheetpan-salmon-w5",name:"🐟 Sheet-Pan Salmon (batch 4) + Sweet Potato + Broccoli",time:"10 min prep · 30 min roast · ONE PAN",macros:{cal:490,p:40,c:34,f:18,fib:8},
+       ingredients:["4 salmon portions (~6 oz each)","2 sweet potatoes, ½\" cubes","1 head broccoli, florets","3 tbsp olive oil","1 tbsp fresh thyme (garden)","1 tbsp fresh marjoram (garden)","1 lemon, sliced","Salt, pepper"],
+       instructions:["425°F. Toss sweet potato + oil + salt on sheet pan","Roast 15 min","Add broccoli + more oil. Push to sides, add salmon","Top salmon with thyme + marjoram + lemon + salt","Roast 12–14 min more until salmon flakes","Serve 2 tonight with rice, save 2 portions for Tue L bowls"],
+       note:"TTC power dinner: DHA + beta-carotene + sulforaphane. Batches for Tue L."},
+
+      {id:"med-sausage-sheetpan-w5",name:"🌭 Mediterranean Beef Sausage Sheet Pan",time:"10 min prep · 25 min roast · ONE PAN",macros:{cal:520,p:38,c:38,f:22,fib:6},
+       ingredients:["4 beef sausages (freezer, thawed)","3 bell peppers, sliced","1 red onion, wedged","1 lb baby potatoes, halved","3 tbsp olive oil","1 tsp oregano","1 tsp smoked paprika","½ cup kalamata olives","Fresh marjoram + basil (garden)","Lemon wedges","Salt, pepper"],
+       instructions:["425°F. Toss potatoes + oil + salt + paprika → sheet pan, roast 15 min","Add peppers + onion + oregano, toss","Nestle sausages on top","Roast 20-25 min until sausages cooked + potatoes crisp","Scatter olives + marjoram + basil. Squeeze lemon"],
+       note:"Uses 4 of 12 sausages. Batches 1 spare sausage + veg → Wed L bowl."},
+
+      {id:"keylime-cod-w5",name:"🐟 Key Lime Baked Cod + Quinoa + Roasted Asparagus",time:"25 min · 10 min hands-on",macros:{cal:460,p:40,c:36,f:14,fib:8},
+       ingredients:["2 cod portions (~6 oz each)","Zest + juice of 2 key limes","2 cloves garlic, minced","2 tbsp olive oil","1 bunch asparagus, trimmed","1 cup cooked quinoa (Sun prep)","Fresh basil + marjoram (garden)","Salt, pepper"],
+       instructions:["400°F. Toss asparagus with oil + salt → roast 8 min","Whisk key lime juice + zest + garlic + olive oil + salt","Push asparagus aside, add cod. Spoon key lime mix over","Roast 10–12 min until cod flakes","Warm quinoa, toss with basil","Plate cod on top, marjoram to finish"],
+       note:"TTC power day: cod (low-mercury DHA) + quinoa + asparagus (folate)."},
+
+      {id:"beef-chili-w5",name:"🌶️ Beef Chili (batch 4)",time:"35 min · 3-4 servings",macros:{cal:500,p:42,c:38,f:18,fib:12},
+       ingredients:["1 lb 90% lean ground beef (freezer, thawed Wed pm)","1 yellow onion, diced","1 bell pepper, diced","1 serrano (or jalapeño), minced","3 cloves garlic","2 tsp cumin","1 tsp smoked paprika","1 tsp oregano","½ tsp cinnamon","1 can diced tomatoes (14 oz)","1 can kidney beans, drained","1 can black beans, drained","1 cup broth","Toppings: avocado, Greek yogurt, cilantro, cheese (Khalid)"],
+       instructions:["Brown beef, drain excess fat","Add onion + pepper + serrano + garlic, cook 5 min","Add spices, stir 30 sec","Add tomatoes + beans + broth. Simmer 20 min","Salt to taste","Portion: 2 tonight, 2 for Fri L, freeze extras"],
+       note:"Batches Thu D + Fri L + Sat L. Iron + fiber + folate. TTC-safe."},
+
+      {id:"sausage-peppers-w5",name:"🌭 Sausage & Peppers Skillet",time:"25 min · ONE PAN",macros:{cal:500,p:38,c:24,f:28,fib:5},
+       ingredients:["4 beef sausages (freezer, thawed)","3 bell peppers, sliced","1 red onion, sliced","4 cloves garlic","2 tbsp olive oil","1 tsp fennel seed (if have)","Red pepper flakes","Splash broth","Fresh basil (garden)","Rice on side or serve as-is"],
+       instructions:["Brown sausages in skillet 5 min per side. Remove","Same pan: peppers + onion + garlic + olive oil, cook 8 min","Add fennel + flakes + broth splash. Return sausages, cover, simmer 5 min","Slice sausages, plate over rice (Khalid) or naked (Tati). Top basil + parm"],
+       note:"Uses 4 more sausages. Freeze remaining 4."},
+
+      {id:"moong-dal-w5",name:"🫘 Moong Dal + Basmati + Soft Egg",time:"40 min · 3 servings",macros:{cal:500,p:30,c:60,f:12,fib:14},
+       ingredients:["1 cup moong beans, rinsed (soaked 2 hrs helps)","3 cups water or broth","1 small onion, diced","3 cloves garlic","1 tbsp ginger, grated","2 tsp cumin","1 tsp turmeric","1 tsp coriander","½ tsp cayenne","1 tbsp ghee or coconut oil","Basmati rice on side","Fresh basil or cilantro to finish","Salt"],
+       instructions:["Sauté onion + garlic + ginger + spices in ghee 3 min","Add moong + water/broth, simmer 25-30 min until soft","Salt to taste","Serve with rice + soft-boiled egg"],
+       note:"Pantry-only weekend meal. Anti-inflam + folate + iron."},
+
+      {id:"chicken-legs-roast-w5",name:"🍗 Roasted Chicken Legs (batch 4)",time:"10 min prep · 40 min roast · ONE PAN",macros:{cal:490,p:42,c:32,f:20,fib:8},
+       ingredients:["4 chicken legs (freezer, thawed Sat pm)","2 tbsp olive oil","1 tbsp fresh thyme + 1 tbsp marjoram (garden)","Salt, pepper, garlic powder","2 sweet potatoes, cubed","Salad greens + Key Lime Vinaigrette"],
+       instructions:["425°F. Rub chicken with oil + herbs + salt + pepper + garlic powder","Sheet pan: chicken + sweet potato","Roast 40 min until skin crisp and internal 175°F","Eat 2, shred 2 into container for next week"],
+       note:"Sunday reset. Sets up next week's shred protein."}
+    ],
+    dressings: [
+      {name:"Batch #1: Key Lime Vinaigrette",yield:"½ cup",
+       ingredients:["¼ cup olive oil","3 tbsp fresh key lime juice (~4-5 key limes)","1 tsp key lime zest","1 tsp Dijon","1 tsp honey or maple","1 small garlic clove, grated","1 tbsp chopped thyme or basil (garden)","Salt, pepper"],
+       uses:["Salmon rice bowl (Mon+Tue L)","Sausage leftover bowl (Wed L)","Chicken salad (Sun D)","Red cabbage slaw base"]},
+      {name:"Batch #2: Miso-Tahini Creamy",yield:"½ cup",
+       ingredients:["3 tbsp tahini","2 tbsp miso paste","2 tbsp rice vinegar","1 tbsp sesame oil","1 tbsp tamari","1 tbsp maple","1 tsp grated ginger","3-4 tbsp warm water"],
+       uses:["Bowl backup","Veggie dip","Roasted chicken drizzle"]},
+      {name:"Red Cabbage Slaw (Sun prep, keeps 5 days)",yield:"~2 cups",
+       ingredients:["¼ head red cabbage, thinly shredded","½ small red onion, thin-sliced","Handful cilantro, chopped","⅓ cup Key Lime Vinaigrette","Salt"],
+       uses:["Mon L bowl","Tue L bowl","Wed L bowl","Fri L side"]}
+    ],
+    grocery: {
+      "🛒 Fresh Fish (buy Sat 9/5 pm or Sun 9/6 AM)": {
+        "Fish":["Fresh salmon × 4 portions (~6 oz each) — Mon batch","Fresh cod × 2 portions (~6 oz each) — Wed"]
+      },
+      "🛒 Grocery run (medium — ~$45)": {
+        "Produce":["Spinach × 2 large tubs","Cucumber × 3","Avocado × 4 ripe","Berries × 2 pints","Bell peppers × 6 (mixed)","Red onion × 2","Yellow onion × 2","Garlic — 1 head","Ginger — small knob","Asparagus × 1 bunch","Baby potatoes × 1 bag","Apples × 4-6","Kiwis × 6","Fresh cilantro × 1 bunch","Serrano or jalapeño × 1"],
+        "Dairy / Eggs":["Greek yogurt 32 oz","Cottage cheese 16 oz","Eggs × 2 dozen","Almond milk (if low)","Sour cream or extra yogurt (chili night)"],
+        "Pantry":["Diced tomatoes 14 oz × 1","Chicken or veg broth × 1 carton","Protein bars × 1 box (if <6 left)","Corn tortillas or tortilla chips (Khalid chili night)"]
+      },
+      "✅ Already have (skip)": {
+        "Freezer":["12 beef sausages ⭐ NEW","Ribeye × 3 (SAVING)","Ground beef ~3 lb","Chicken legs (~13)","Frozen bananas + berries","Coconut curry cubes"],
+        "Fridge":["Key limes 2 lb ⭐ NEW","Lemons 2 lb ⭐ NEW","Red cabbage ¼ head ⭐ NEW","Parm","Cheddar · Mozzarella · Feta","Hummus","Sweet potatoes","Purple potato","HR potatoes"],
+        "Garden":["Basil ✅","Thyme ✅","Marjoram ✅","Lovage ✅","Mint ✅"],
+        "Pantry":["GF oats","Jasmine rice","Basmati","Quinoa","Red lentils","Moong beans","GF pasta","Kidney beans","Black beans","Chickpeas","Refried beans","Enchilada sauce","Olive/avocado/sesame oil","Miso","Peanut sauce","Coconut aminos","Tamari","Tahini","Almond butter","PB","Chia · flax","Almonds · cashews","Kalamata olives","Rice cakes · rice crackers","All spices + saffron","Ritual protein","Creatine"]
+      }
+    },
+    prepSteps: [
+      {time:"10:00 Sun 9/6",title:"🚀 Kickoff (thaws)",items:["Take 4 beef sausages → fridge (Tue sheet pan)","Take 1 lb ground beef → fridge (for Thu chili — pull Wed pm if not yet)","Take 4 chicken legs → fridge (Sun D roast, pull Sat pm)","Prep salmon sheet pan mise en place (cube 2 sweet potatoes, cut broccoli)"]},
+      {time:"10:30 Sun 9/6",title:"🍳 Batch cooking",items:["KHALID: bake egg bake (8 slices)","Tatiana: cook jasmine rice (3 cups dry → 6 cups cooked)","Tatiana: cook quinoa (1 cup dry → 3 cups cooked)","KHALID: batch Key Lime Vinaigrette (½ cup mason jar)","KHALID: batch Miso-Tahini (½ cup mason jar)","Tatiana: shred ¼ red cabbage + red onion → Red Cabbage Slaw with ⅓ cup Key Lime Vinaigrette"]},
+      {time:"11:45 Sun 9/6",title:"🥕 Snacks + oats",items:["Portion overnight oats × 3 jars (Wed / Fri / Sun)","Hard-boil 6 eggs (Khalid AM top-ups)","Make Parm crisps — 400°F 5 min","Wash + tub spinach"]},
+      {time:"12:15 Sun 9/6",title:"✅ Finish",items:["Label everything with dates","Wipe down, restock fridge","Verify grocery on hand for the week"]},
+      {time:"DONE ✅",title:"Fridge state",items:["8 egg bake slices","6 cups jasmine rice","3 cups quinoa","Key Lime Vinaigrette + Miso-Tahini jars","Red Cabbage Slaw container","6 hard-boiled eggs","Parm crisps","3 overnight oats jars"]}
+    ],
+    prepAhead: {
+      "2026-09-07": {tonight:["Confirm 4 sausages fully thawed for Tue sheet pan","Pull salmon (2 portions) leftover to fridge for Tue L bowls"], tomorrowAM:["Egg bake slice + berries + almond butter","Apple + PB"]},
+      "2026-09-08": {tonight:["Pull 1 lb ground beef from freezer → fridge for Thu chili","Assemble Wed overnight oats jar (if not from Sun batch)"], tomorrowAM:["Overnight oats + cashews","Kiwi + AB snack"]},
+      "2026-09-09": {tonight:["Pull 4 more sausages → fridge for Fri skillet","Verify diced tomatoes + beans staged for Thu chili"], tomorrowAM:["Egg bake + berries","Apple + Parm"]},
+      "2026-09-10": {tonight:["Portion chili — 2 for Fri L, freeze extras","Confirm 4 sausages fully thawed for Fri"], tomorrowAM:["Overnight oats","Rice crackers + hummus snack"]},
+      "2026-09-11": {tonight:["Freeze remaining 4 sausages (backup)","Batch cook Moong Dal for Sat/Sun"], tomorrowAM:["Smoothie","Apple + PB"]},
+      "2026-09-12": {tonight:["Portion dal → 2 servings","Pull 4 chicken legs → fridge for Sun D roast"], tomorrowAM:["Overnight oats + kiwi"]},
+      "2026-09-13": {tonight:["🎉 Week done","Shred 2 chicken legs from tonight's roast for next week","Plan next week groceries"], tomorrowAM:["Next week begins!"]}
+    }
   }
+
 ];
 
 // ============================================================

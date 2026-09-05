@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Meal Plan — Aug 24–30, 2026</title>
+<style>
+  @page { size: letter landscape; margin: 0.35in; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0; padding: 12px;
+    color: #1a1a1a; background: #fff;
+    font-size: 11px; line-height: 1.3;
+  }
+  h1 {
+    margin: 0 0 4px; font-size: 20px; letter-spacing: 0.5px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 2px solid #1a1a1a; padding-bottom: 4px;
+  }
+  h1 .sub { font-size: 11px; font-weight: 400; color: #555; }
+  .legend {
+    display: flex; gap: 14px; margin: 6px 0 8px; font-size: 10px; color: #444;
+  }
+  .legend b { color: #1a1a1a; }
+  table {
+    width: 100%; border-collapse: collapse; table-layout: fixed;
+  }
+  th, td {
+    border: 1px solid #999; padding: 5px 6px; vertical-align: top;
+    font-size: 10px;
+  }
+  th {
+    background: #1a1a1a; color: #fff; font-weight: 600; text-align: center;
+    font-size: 11px; padding: 6px 4px;
+  }
+  th.today { background: #b8410e; }
+  .meal-label {
+    background: #f0ede6; font-weight: 700; text-align: center;
+    width: 8%; font-size: 11px; letter-spacing: 0.5px;
+  }
+  td.meal { height: 62px; }
+  td.today-col { background: #fff8f1; }
+  .k { display: block; color: #555; font-style: italic; margin-top: 2px; font-size: 9px; }
+  .k::before { content: "K: "; font-weight: 600; font-style: normal; color: #b8410e; }
+  .prep {
+    margin-top: 10px; padding: 8px 10px; background: #f0ede6;
+    border-left: 4px solid #b8410e; font-size: 10px;
+  }
+  .prep b { color: #b8410e; }
+  .footer {
+    margin-top: 6px; font-size: 9px; color: #777; text-align: center;
+  }
+  @media print {
+    body { padding: 0; }
+    .noprint { display: none; }
+  }
+  .noprint {
+    position: fixed; top: 8px; right: 8px;
+    background: #b8410e; color: #fff; padding: 8px 14px;
+    border-radius: 4px; cursor: pointer; border: none; font-size: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+</style>
+</head>
+<body>
+
+<button class="noprint" onclick="window.print()">🖨️ Print</button>
+
+<h1>
+  Meal Plan — Aug 24 – 30, 2026
+  <span class="sub">Tatiana + Khalid · TTC · GF · No shellfish</span>
+</h1>
+
+<div class="legend">
+  <span><b>B</b> Breakfast</span>
+  <span><b>S1</b> AM Snack</span>
+  <span><b>L</b> Lunch</span>
+  <span><b>S2</b> PM Snack</span>
+  <span><b>D</b> Dinner</span>
+  <span style="margin-left:auto"><span style="color:#b8410e">K:</span> = Khalid's variation</span>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:7%"></th>
+      <th>MON 8/24<br><span style="font-weight:400;font-size:9px">Thai out 🥡</span></th>
+      <th>TUE 8/25<br><span style="font-weight:400;font-size:9px">Beef stew</span></th>
+      <th class="today">WED 8/26 ★<br><span style="font-weight:400;font-size:9px">Chili night</span></th>
+      <th>THU 8/27<br><span style="font-weight:400;font-size:9px">Ground beef</span></th>
+      <th>FRI 8/28<br><span style="font-weight:400;font-size:9px">Roast chicken</span></th>
+      <th>SAT 8/29<br><span style="font-weight:400;font-size:9px">Solo · Dal</span></th>
+      <th>SUN 8/30<br><span style="font-weight:400;font-size:9px">Reset + prep</span></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td class="meal-label">B</td>
+      <td class="meal">Egg bake + lox + avocado + berries<span class="k">+2 hard-boiled eggs</span></td>
+      <td class="meal">Egg bake + lox + berries<span class="k">+ lentil bread</span></td>
+      <td class="meal today-col">Overnight oats + berries + cashews<span class="k">+2 hard-boiled eggs</span></td>
+      <td class="meal">Egg bake + hard-boiled egg + berries<span class="k">+ lentil bread</span></td>
+      <td class="meal">Overnight oats + berries + cashews<span class="k">+2 hard-boiled eggs</span></td>
+      <td class="meal">Lentil bread + almond butter + kiwi</td>
+      <td class="meal">Overnight oats + berries + cashews</td>
+    </tr>
+
+    <tr>
+      <td class="meal-label">S1</td>
+      <td class="meal">Envy apple + PB</td>
+      <td class="meal">Envy apple + PB<span class="k">+ protein bar</span></td>
+      <td class="meal today-col">Kiwi + almond butter</td>
+      <td class="meal">Envy apple + Parm chunk<span class="k">+ protein bar</span></td>
+      <td class="meal">Lox + cucumber + rice crackers<span class="k">+ protein bar</span></td>
+      <td class="meal">Envy apple + PB</td>
+      <td class="meal">Kiwi + Greek yogurt + chia</td>
+    </tr>
+
+    <tr>
+      <td class="meal-label">L</td>
+      <td class="meal">Salmon salad bowl (no rice)<span class="k">2 Beyond Meat stuffed peppers + salad + bar</span></td>
+      <td class="meal">Avocado toast (sourdough)<span class="k">2 Beyond Meat stuffed peppers + spinach + bar</span></td>
+      <td class="meal today-col"><b>Salmon + quinoa</b> ✅<br><span style="font-size:9px;color:#888">(swapped from chili)</span></td>
+      <td class="meal">Beyond Meat stuffed peppers (freezer)<span class="k">+ side salad + vinaigrette</span></td>
+      <td class="meal">Ground beef skillet leftover + rice + spinach</td>
+      <td class="meal">Shredded chicken bowl + spinach + avocado + Miso-Tahini</td>
+      <td class="meal">Dal leftover + soft-boiled egg + spinach</td>
+    </tr>
+
+    <tr>
+      <td class="meal-label">S2</td>
+      <td class="meal">Kiwi + Greek yogurt + chia</td>
+      <td class="meal">Parm crisps + 15 almonds</td>
+      <td class="meal today-col">Hummus + bell pepper + cucumber</td>
+      <td class="meal">Kiwi + Greek yogurt + chia</td>
+      <td class="meal">Parm crisps + 15 cashews</td>
+      <td class="meal">Hummus + bell pepper + cucumber</td>
+      <td class="meal">Lentil bread + almond butter + Parm chunk</td>
+    </tr>
+
+    <tr>
+      <td class="meal-label">D</td>
+      <td class="meal">🥡 Thai — Pad Kee Mao (GF)<span class="k">Fried rice</span></td>
+      <td class="meal">Beef stew leftover + lentil bread + lovage/thyme</td>
+      <td class="meal today-col"><b>Beef chili + avocado + Greek yogurt</b><br><span style="font-size:9px;color:#888">(moved from Wed L — no cod)</span></td>
+      <td class="meal">Ground beef + zucchini + peppers skillet over rice + spinach<span class="k">+ extra rice</span></td>
+      <td class="meal">Roasted chicken legs + sweet potato + Brussels + vinaigrette<span class="k">+ extra sweet potato</span></td>
+      <td class="meal">Red lentil dal + basmati + soft egg + basil</td>
+      <td class="meal">Roasted chicken legs + sweet potato + salad + vinaigrette</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<div class="prep">
+  <b>KEY THIS WEEK:</b>
+  Salmon Sun batch (4 portions) · Cod skipped — chili filling Wed D · Beef chili from freezer (Thu 8/20 batch) ·
+  Beef stew Sat batch (2 servings) · Ground beef skillet Thu (batch 4) · Roast chicken Fri (batch 6 from freezer) ·
+  Khalid leaves Sat AM — solo weekend pantry mode
+</div>
+
+<div class="footer">
+  Live dashboard: tatianamohammed.github.io/meals-svcuaxfw · Nancy in Teams for swaps + questions
+</div>
+
+</body>
+</html>
