@@ -14,21 +14,17 @@ Store: Costco/QFC. Walk section by section.
 ## 🥬 PRODUCE
 - [ ] Spinach — 2 large tubs (daily use)
 - [ ] Cucumber — 3 (snacks + slaws)
-- [ ] Avocado — 4 ripe (bowls, chili, dal weekend)
+- [ ] Avocado — 3 ripe (have 1.5; week uses ~4–5)
 - [ ] Berries — 2 pints (mixed or blueberries)
 - [ ] Bell peppers — 6 (sausage sheet pan + skillet + chili + snacks)
 - [ ] Red onion — 2 (sheet pan + skillet + chili + dal)
 - [ ] Yellow onion — 2 (chili, dal)
-- [ ] Garlic — 1 head
 - [ ] Ginger — small knob (dal, cod)
-- [ ] Asparagus — 1 bunch (Wed roasted)
 - [ ] Baby potatoes — 1 bag (Tue sausage sheet pan, if not enough HR potatoes on hand)
 - [ ] Apples — 4–6 (snacks)
-- [ ] Kiwis — 6 (snacks)
-- [ ] Fresh cilantro — 1 bunch (chili, cod, dal)
 - [ ] Serrano or jalapeño — 1 (if none left)
 
-*Note: red cabbage on hand (¼ head — Mon/Tue slaw). Key limes + lemons on hand — no citrus buy.*
+*Note: red cabbage on hand (¼ head — Mon/Tue slaw). Key limes + lemons on hand — no citrus buy. **Asparagus (tons) + 6 kiwis on hand — skip.***
 
 ## 🥛 DAIRY
 - [ ] Greek yogurt — 32 oz (topping + snacks)
