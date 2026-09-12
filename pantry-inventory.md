@@ -26,6 +26,7 @@ Same as prior — max 2 batch dressings, fresh fish clustered Mon–Wed, section
 | **Turkey bacon** | 1 lb | Not used |
 | **Frozen bananas** | plenty | Sat smoothie |
 | **Frozen mixed berries** | plenty | Smoothie + oats + yogurt snacks |
+| **Frozen grapes** ⭐ | plenty | Snack topper (yogurt bowls) + Wegovy nausea-friendly straight-from-freezer bite |
 | **Coconut curry sauce cubes** | ~½ tray | Not used |
 | **Homemade chicken stock** | ⚠️ verify | Used Wed stew (~1 cup) + chicken poaching (backup) |
 
