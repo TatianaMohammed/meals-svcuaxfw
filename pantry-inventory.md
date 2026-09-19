@@ -1,165 +1,173 @@
 # Pantry & Freezer Inventory — Tatiana + Khalid
 
-**Last updated:** 2026-09-12 (full audit + planned decrements for Sep 14–20 week)
+**Last updated:** 2026-09-19 (confirmed audit + planned decrements for Sep 21–27 week)
+
+**⚠️ Health note:** Tati out of mesalamine → active flare risk. This week is anti-inflam front-loaded.
 
 ---
 
 ## ⚠️ WEEKLY PLANNING RULES
-Same as prior — max 2 batch dressings, fresh fish clustered Mon–Wed, section-by-section grocery, prep-ahead audit, no "5-min assembly" unless upstream prep done.
+Same as prior — max 2 batch dressings, fresh fish clustered Mon–Wed (or omega-3 mid-week), section-by-section grocery, prep-ahead audit, no "5-min assembly" unless upstream prep done.
 
 ## 🌿 HERB ROTATION (garden + fridge — use weekly)
-- **Thyme, Marjoram, Basil, Rosemary, Lovage, Dill** — all in play. Rotate: thyme+marjoram (roasts + fish), basil (pasta + tomato + summer plates), rosemary (stews + shrooms), lovage (soups + dals — like celery-parsley hybrid), dill (yogurt + cucumber + fish + dal finish)
+- **Ginger** ⭐ heavy use this week (soup, dal, curry, stew, oats — anti-inflam anchor)
+- **Turmeric** ⭐ heavy use (dal, eggs, broth, soup)
+- **Thyme, Rosemary, Basil, Dill, Lovage, Marjoram** — rotate as usual
 
 ---
 
-## ❄️ FREEZER (as of 9/12/26)
+## ❄️ FREEZER (as of 9/19/26)
 
-| Item | Qty | This week's use (Sep 14–20) |
+| Item | Qty | This week's use (Sep 21–27) |
 |---|---|---|
-| **Ribeye** | **4** | 1 used Sun D — leaves **3** after week |
-| **Ground beef** | ~few lb | ½ lb used Tue pasta |
-| **Beef cubes** | ~1 lb | 1 lb used Wed stew — likely 0 after |
-| **Chicken breast** | plenty | 3–4 breasts poached Sun (Mon L + Tue L + Thu L + Fri D) |
-| **Frozen cod** | plenty | 2 portions used Mon D |
-| **Beef sausages** | ~4 remaining | **SKIP this week** (save as emergency protein) |
-| **Grilled chicken legs (mom's)** | ~9 (rough — verify) | Not used |
-| **Turkey bacon** | 1 lb | Not used |
-| **Frozen bananas** | plenty | Sat smoothie |
-| **Frozen mixed berries** | plenty | Smoothie + oats + yogurt snacks |
-| **Frozen grapes** ⭐ | plenty | Snack topper (yogurt bowls) + Wegovy nausea-friendly straight-from-freezer bite |
-| **Coconut curry sauce cubes** | ~½ tray | Not used |
-| **Homemade chicken stock** | ⚠️ verify | Used Wed stew (~1 cup) + chicken poaching (backup) |
+| **Ribeye** | **4 servings** | 3 used (Sun D T+K, Sat D T solo) — leaves **1** after week |
+| **Ground beef** | **3 lb** | 1.5 lb meatball batch Sun (Fri D + freezer) — leaves ~1.5 lb after |
+| **Beef cubes** | **2 lb** | All used Wed stew batch → 3 freezer servings gained |
+| **Chicken thighs** | **4 lb** | All used (2 lb poached, 2 lb roasted Sun) — leaves 0 after week |
+| **Frozen cod** | 2 portions | 2 used Thu D — leaves 0 |
+| **Beef sausages** | ~4 | **SKIP again** (nitrates, save as emergency) |
+| **Grilled chicken legs (mom's)** | ~9 (verify) | Not used |
+| **Turkey bacon** | 1 lb | 2 breakfasts K (Wed + Fri) — leaves ~⅔ lb |
+| **Frozen bananas** | some | Backup smoothies |
+| **Frozen mixed berries** | plenty | Overnight oats + yogurt bowls + snacks (heavy use) |
+| **Frozen grapes** ⭐ | plenty | Wed S1 + Sat S1 + Tue snack box + Wegovy nausea/flare backup |
+| **Coconut curry sauce cubes** | some | **Mon D coconut curry — all/most used** |
+| **Homemade chicken stock** | ⚠️ **NONE — making fresh bone broth Sunday** | ~6 cups made → 2 stew + 2 soup + 2 freezer |
 
-## 🧊 FRIDGE (as of 9/12/26)
+## 🧊 FRIDGE (as of 9/19/26)
 
 ### Proteins / dairy
-- ✅ **Greek yogurt** — on hand
-- ✅ **2 cottage cheese containers** — 1 goes into egg bake Sun, other stays for snacks
-- ✅ **Parm** — TONS + spare pkg (using heavily this week)
-- ✅ **Cheddar · Mozzarella · Feta** — probably still good
-- ✅ **Garlic-herb butter** — Sun ribeye + polenta star
-- ✅ **Tofu** — flex backup (not scheduled)
-- ✅ **HR Vital Farms whole eggs** — breakfasts + egg bake
-- ✅ **HR Wild-Caught Scallops** — Sun L (USE TODAY)
-- ✅ **HR Sweet Potato Veggie Burger patties** — Thu D
-- ✅ **HR MUSH Vanilla Overnight Oats** — Sun B
+- ✅ **Greek yogurt — ½ container** (+ 32oz to buy Sat)
+- ✅ **Cottage cheese** — 1 container (used in egg bake + snacks)
+- ✅ **Parm** — TONS
+- ✅ **Cheddar** — snacks + Tue box
+- ✅ **Feta** — flex
+- ✅ **Eggs** — some (buying 1 doz buffer for heavy use)
+- ✅ **Rinsed red lentils** ⚠️ **USE BY TUE — dal Sun batch**
 
 ### Produce (fridge + counter)
-- **Bell peppers** — 5 (2 red, 1 orange, 2 yellow) — snacks, pasta night, wraps
-- **Spinach** — 3 bags (2 big + 1 small fridge) + HR baby spinach extra
-- **Cucumber** — 1 long (snacks, wraps, savory yogurt bowls)
-- **Tomatoes** — lots + **grape tomatoes** — snacks, breakfasts, wraps
-- **Jalapeños + serranos** — dal + skillet + chili backup
-- **Ginger** — dal + cod glaze
-- **Ginger paste** — cod + dal + dressings
-- **Lemon** — vinaigrette + fish + polenta finish
-- **Old limes** — squeeze for chili/salsa if usable
-- **Apples** — snacks (M/T/Th) + fresh salads
-- **2 kiwis** — Mon S2 + Tue S1 only
-- **Shiitake mushrooms** — few (Sun scallops linguine + Wed stew)
-- **Carrots** — bag (Wed stew)
-- **Purple cabbage** — small remnant (Thu slaw)
-- **Eggplants** — **6** (3 roasted Sun batch: Sun D + Mon D + Tue D · 2 raw Sat eggplant parm · 1 flex)
-- **Green onions, red onions, dill, basil** — using across the week
-- **Garlic** — plenty
+- **Bell peppers** — 3 (curry Mon + snacks + skillet)
+- **Spinach** — ½ bag (+ 2 bags to buy — heavy daily cooked greens use)
+- **Cucumber** — 1 (snacks + Tue box)
+- **Cherry tomatoes** — some (breakfasts + snacks)
+- **Roma tomatoes** — TONS ⭐ (roma-jalapeño salsa batch + dal + stew + skillet)
+- **Jalapeños + serranos** — tons (roasted only during flare — no raw)
+- **Carrots** — some (stew + broth)
+- **Apple** — 1 (Tue S2 priority)
+- **Ginger + ginger paste** ⭐ — heavy use, buy large knob buffer
+- **Eggplant** — 1 (Thu D)
+- **Green onions, red onions** — plenty
+- **Garlic** — tons
+- **Butternut squash** ⭐ — 1 whole (Sun soup batch)
+- **Sweet potatoes** — TONS (Sun roast batch → 4 uses)
 
 ### Sauces / condiments (open + jar)
-- ⚠️ **Enchilada sauce (open)** — FINISH: Mon L (½) + Fri D (rest)
-- ✅ Red pesto — Tue pasta swirl
-- ✅ Creamy miso from Hungary — flex (not this week)
+- ✅ Red pesto (open) — flex
+- ✅ Creamy miso (Hungary) — flex, save for next week
 - ✅ Peanut sauce — flex
 - ✅ Hoisin — flex
-- ✅ Tangy pepper sauce (Hungryroot) — flex garnish
-- ✅ Sushi ginger — flex garnish (Mon cod side)
-- ✅ Verde salsa — Mon + Fri enchilada bowls
-- ✅ Ketchup, Dijon (dressings), pickled red peppers
-- ✅ Slow-roasted tomatoes — Tue pasta
-- ✅ Sun-dried tomatoes (w/ olives) — Sat eggplant parm
-- ✅ **Bubi's Garlic Sauce ×2** (HR) — Thu L wrap + Thu D burger + snack dip
-- ✅ **HR Rosemary Mushroom Truffle Sauce** — Sun scallops linguine
-- ✅ **HR Spinach Wraps** — Thu L chicken wraps
-- ✅ **HR Cauliflower Sandwich Rounds** — flex/backup
-- ✅ **HR GF Hamburger Buns** — Thu D
-- ✅ **Cauliflower Linguine** (HR) — Sun L
+- ✅ Tangy pepper sauce (HR) — flex
+- ✅ Sushi ginger — flex
+- ✅ Verde salsa — flex (or finish this week if aging)
+- ✅ Ketchup, Dijon
+- ✅ Slow-roasted tomatoes — flex
+- ✅ Bubi's Garlic Sauce — 1 remaining
+- ✅ Tahini (dressings)
+- ✅ Brown miso (Thu cod glaze + dressing)
+- ✅ Tamari, sesame oil, rice vinegar (dressings + glaze)
 
 ---
 
 ## 🥫 PANTRY (dry + canned + jarred)
 
 ### Grains & pasta
-- GF oats · **Tons GF pasta** (Tue + Sat) · **Quinoa** (Mon) · Rice · **Basmati** (Sat dal) · **Polenta ⭐** (Sun + Wed — 2 uses)
-- Red lentils (soaking — bread Sun + Sat dal)
-- Green lentils · Moong beans · Instant rice
+- **GF oats** ✅ (overnight oats Sun + Sat)
+- **Tons GF pasta** — not used this week
+- **Quinoa** ✅ (Wed stew base + bowls Wed/Fri/Sat)
+- **Rice** ✅ (curry Mon + dal Sun)
+- **Basmati** ✅ (dal + curry)
+- **Polenta** — verify — not planned this week
+- **Green lentils · Moong beans · Instant rice** — backup
 
 ### Oils/vinegars/pastes
-- Olive oil · Avocado oil · Sesame oil · Red wine vinegar
-- **Brown miso paste** (Mon cod glaze)
-- **Tamarind concentrate** (Sat dal splash)
+- Olive oil · Avocado oil · Sesame oil · Red wine vinegar · Rice vinegar
+- **Brown miso paste** (Thu cod + dressing)
+- **Tamarind concentrate** — flex
 - Peanut butter · Almond butter · Tamari · Coconut aminos · Tahini
-- **Ginger paste**
+- **Ginger paste** (backup to fresh)
+- **Honey** (dressings + cod glaze)
 
 ### Nuts/seeds
-Chia · Flax · Almonds · Cashews (Wed + Fri oats topping)
+Chia (heavy) · Flax · Almonds · Cashews
 
 ### Snacks
-- **Rice crackers · Rice cakes**
-- **HR Partake Mini Chocolate Chip Cookies** — GF treat
-- **HR Pumpkin Seed Choc Dipper** — treat
-- **Protein bars** (K daily — verify count ~4–6)
+- **Rice crackers · Rice cakes** (heavy this week)
+- **HR Partake Mini Cookies** — flex GF treat
+- **HR Pumpkin Seed Choc Dipper** — flex treat
+- **Protein bars** (K daily — verify count, restock if low)
 
 ### Jarred/canned
-- **4 jars marinara** (using 2: Tue + Sat) — leaves 2
-- **Cream of celery** (Wed stew) — will finish
-- **1 split pea soup** — backup
-- **1 French onion** — backup
-- **2 crushed tomatoes** — backup / next week chili
-- **4 refried beans** (using 2: Mon + Fri) — leaves 2
-- **1 cranberry sauce** — backup
-- **1 chickpeas** · **1 kidney** · **1 black** — backup
-- **Kalamata olives** — flex
-- **Enchilada sauce** (open, finish this week)
-- **1 veg broth** carton
+- **2 jars marinara** — untapped this week
+- **2 crushed tomatoes** — untapped (backup)
+- **2 refried beans** — untapped (backup)
+- **1 chickpeas · 1 kidney · 1 black beans** — backup
+- **1 veg broth** carton — backup
+- **1 can coconut milk** — soup + curry (buy 1 to buffer)
+- Kalamata olives — flex
 
 ### Supplements ✅
 - Ritual protein · Creatine · Prenatal
 
 ---
 
-## 📉 DECREMENTS TO APPLY AT WEEK END (Sun 9/20 pm)
+## 📉 DECREMENTS TO APPLY AT WEEK END (Sun 9/27 pm)
+
 After the week, expect:
-- **Ribeyes: 4 → 3**
-- **Ground beef: −½ lb**
-- **Beef cubes: −1 lb (likely 0)**
-- **Chicken breast: −3–4 breasts**
-- **Cod: −2 portions**
-- **Scallops: 0 (all used Sun)**
-- **Eggplants: 6 → 1**
-- **Cream of celery: gone**
-- **Enchilada sauce (open): gone ✅**
-- **Marinara: 4 → 2**
-- **Refried beans: 4 → 2**
-- **Purple cabbage: gone ✅**
-- **Kiwis: 2 → 0**
-- **Shiitakes: gone**
-- **Carrots: −1 bag partial**
-- **Bell peppers: 5 → ~2** (snacks + Sun scallops + burger + wraps)
-- **Spinach: 3 bags → maybe 0–1**
-- **HR items:** MUSH oats, veggie burger patties, buns, spinach wraps, scallops, cauli linguine, truffle sauce, 1 Bubi's — all fully or partially used
+- **Ribeyes: 4 → 1** (3 used)
+- **Ground beef: 3 lb → ~1.5 lb** (1.5 lb meatball batch, 12 meatballs in freezer)
+- **Beef cubes: 2 lb → 0** (all in stew batch; +3 stew servings in freezer)
+- **Chicken thighs: 4 lb → 0** (all in poach + roast batches)
+- **Cod: 2 → 0**
+- **Rinsed red lentils: gone ✅**
+- **Coconut curry cubes: mostly gone**
+- **Butternut squash: gone ✅** (+ 2 cups soup in freezer)
+- **Eggplant: 1 → 0**
+- **Sweet potatoes: −3 large** (still tons remaining)
+- **Roma tomatoes: −8** (batch salsa + dal + stew — still have plenty)
+- **Bell peppers: 3 → ~0** (curry + skillet + snacks)
+- **Spinach: buy 2 → maybe 0–½ bag** (heavy daily cooked greens)
+- **Apple: 1 → 0** (buy 4)
+- **Greek yogurt: ½ + new 32oz → maybe 0** (daily snack)
+- **Cottage cheese: 1 → 0** (egg bake + snacks)
+- **Eggs: heavy use — buy 1 doz buffer**
+- **Ginger: buy large knob — heavy use, verify remainder Sun end**
+- **Cucumber: 1 + 1 → maybe 0**
+
+### 🎁 Freezer gifts for future weeks (added by week end)
+- 3 servings **beef stew** 🧡
+- 12 **meatballs**
+- 1 serving **coconut curry**
+- 2 cups **ginger butternut soup** 🧡
+- 2 cups **homemade bone broth** 🧡
 
 ---
 
 ## 🌟 Meal ideas unlocked by *remaining* stock (next week planning)
-- 3 ribeyes = 2–3 more ribeye nights or 1 steakhouse dinner + 2 steak salads
-- 2 marinara + 2 crushed tomatoes = tomato-heavy week (chili, minestrone, pasta)
-- 2 refried beans = burrito bowls
-- Cauliflower Sandwich Rounds (unused) = lunch swap
-- Tangy pepper sauce (Hungryroot), red pesto (open), peanut sauce, hoisin, creamy miso Hungary = untapped — theme next week around one of these
-- Tofu (unused) — flex protein
-- Turkey bacon (unused) — sub for K breakfasts
+- **Remaining 1 ribeye** = 1 more steak night
+- **~1.5 lb ground beef** + 2 marinara + 2 crushed tomato = tomato-beef week (chili, minestrone, pasta bolognese)
+- **2 refried beans** = burrito bowls
+- **Sweet potatoes still plentiful** = continue as staple base
+- **Roma tomatoes tons** — still plenty for a tomato-forward week
+- **Beef sausages** — still deferred (nitrate)
+- **Turkey bacon** — still ⅔ lb, K breakfasts
+- **Coconut milk / peanut sauce / hoisin / creamy miso** = SE Asian theme still viable next week
+- **Frozen meatballs** = any-night dinner backup
 
 ## ⚠️ ITEMS TO VERIFY THIS WEEKEND
-1. Homemade chicken stock quantity? (need ~2 cups for Wed stew)
-2. Ground beef qty precise (need ½ lb Tue)?
-3. Egg count after HR delivery? (need ~14 this week: 8 egg bake + K daily + soft-boiled Sat + hard-boiled 6 K snacks)
-4. Garlic-herb butter enough for both Sun ribeye AND Sun polenta?
-5. Any lemons left or must buy?
+1. **Coconut curry sauce cube count** — enough for full batch? (buy backup coconut milk can just in case)
+2. **Egg count precise** (need ~14 this week: 8 egg bake + K daily + 4 hard-boil + Fri scramble)
+3. **Garlic-herb butter** — need for Sun ribeye? Make w/ butter + garlic + thyme if not.
+4. **Coconut milk can** — do we have one already?
+5. **Ginger knob size** — heavy use, may need to buy 2
+6. **Lemons** — Tati mentioned running low
+7. **K protein bar count**
