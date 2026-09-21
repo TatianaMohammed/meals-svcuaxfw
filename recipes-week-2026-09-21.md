@@ -260,7 +260,7 @@ Same method as Sun D but half portion. Ribeye + roasted sweet potato + spinach s
 - Greek yogurt + berries + chia (S1 default)
 - Frozen grapes + yogurt 🧡 (Wed S1, Sat S1)
 - Apple + PB or almond butter (S2, limited — only 1 apple left, prioritize Tue)
-- Cucumber + cottage cheese dip + rice crackers
+- Hard-boiled egg + cheddar cubes + cucumber spears
 - Rice crackers + cheddar (fastest)
 - Cup of butternut soup (nausea backup)
 - Cup of bone broth (flare comfort sip)
