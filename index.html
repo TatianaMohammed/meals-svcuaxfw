@@ -134,7 +134,7 @@ html[data-theme="dark"] .today-meal-check-row.khalid { color:#60a5fa; }
 .snack-toggle label { font-size:14px; font-weight:500; cursor:pointer; }
 .snack-toggle input[type="checkbox"] { accent-color:var(--cp-accent); cursor:pointer; width:16px; height:16px; }
 .snack-toggle .count { font-size:12px; color:var(--cp-text-muted); }
-@media print { .tabs, .print-btn, .snack-toggle, .week-nav { display:none; } .panel { display:block !important; page-break-after:always; } }
+@media print { .tabs, .print-btn, .snack-toggle, .week-nav, .audit-banner { display:none; } .panel { display:block !important; page-break-after:always; } }
 </style>
 </head>
 <body>
@@ -1295,6 +1295,7 @@ function weekdayFromISO(dateISO) {
     document.addEventListener('DOMContentLoaded', () => {
       const banner = document.createElement('div');
       banner.style.cssText = 'background:#fef3c7;color:#92400e;border-left:4px solid #f59e0b;padding:10px 14px;margin:8px 0;border-radius:8px;font-size:13px;';
+      banner.className = 'audit-banner';
       banner.innerHTML = `⚠️ <strong>Week data has ${mismatches.length} stale weekday label(s)</strong> — dashboard is rendering the correct weekdays from dates. Regenerate week data to clear this. (See console for details.)`;
       const tabbar = document.querySelector('.tabs');
       if (tabbar && tabbar.parentNode) tabbar.parentNode.insertBefore(banner, tabbar.nextSibling);
