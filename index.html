@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
-<meta name="build-version" content="2026-09-20T18-38" />
+<meta name="build-version" content="2026-10-17T17-38" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Weekly Meal Plan</title>
 <script>
@@ -1738,7 +1738,8 @@ function renderCalendar() {
 }
 
 function renderRecipes() {
-  const {recipes, dressings} = week();
+  const recipes = week().recipes || [];
+  const dressings = week().dressings || [];
   const dressingsHTML = `<div class="recipe-card" style="grid-column: 1 / -1;">
     <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:8px;">
       <div class="recipe-title">🥗 Weekly Batch Dressings</div>
@@ -1825,7 +1826,7 @@ function renderGrocery() {
   document.getElementById('groceryGrid').innerHTML = Object.entries(grocery).map(([store, sections], si) => `
     <div class="grocery-store">
       <div class="store-header">${store}</div>
-      ${Object.entries(sections).map(([section, items], ssi) => `
+      ${Object.entries(Array.isArray(sections) ? {Items: sections} : sections).map(([section, items], ssi) => `
         <div class="grocery-section">
           <div class="grocery-section-header">${section}</div>
           <ul class="grocery-items">
