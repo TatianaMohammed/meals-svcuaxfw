@@ -52,7 +52,7 @@ All gluten-free (verify sauce labels). Macros are per **Tatiana portion** unless
 
 ---
 
-## 🌮 4. Birria Beef & Red Lentil Casserole (9×13) — Sun D
+## 🌮 4. Birria-Sauce Beef & Red Lentil Casserole (9×13) — Sun D
 **8 servings · per serving ~330 cal · 25P · 22C · 15F · 4 fib**. With toppings + greens: **395 / 29P / 6 fib**. 20 min stovetop + 25 min bake.
 
 **Ingredients**
@@ -71,7 +71,7 @@ All gluten-free (verify sauce labels). Macros are per **Tatiana portion** unless
 2. Stir in the birria sauce, cooked lentils, spinach and lovage. Simmer 3 min.
 3. Spread in a greased 9×13 and top with mozzarella.
 4. Bake at 375°F for 20–25 min, until bubbling and golden.
-5. **Portions:** Sun D (T 1, K 1.5), Mon L T (fridge), Thu L (T 1 + K 1.5 → **freeze tonight**), 2 spare → freeze.
+5. **Portions:** Sun D (T 1, K 1.5), Thu L (T 1 + K 1.5 → **freeze tonight**), 3 spare → freeze.
 
 ---
 
@@ -211,3 +211,34 @@ All gluten-free (verify sauce labels). Macros are per **Tatiana portion** unless
 **~½ cup · per 1 tbsp: 60 cal**
 3 tbsp olive oil · juice of 1 lemon · 1 tsp Dijon · 1 tbsp chopped lovage · ½ tsp honey · salt, pepper
 → Side greens on Mon, Thu, Fri and Sat.
+
+---
+
+## 🍲 13. Golden Chicken, Rutabaga & Red Lentil Soup (freezer batch, low-histamine, anti-inflammatory)
+**8 servings (~1¾ cups each) · per serving ~340 cal · 44P · 28C · 7F · 7 fib**
+T = 1 serving (340 / 44P) · K = 1.5 servings (510 / 66P) · 15 min prep + 35 min simmer (or 12 min Instant Pot)
+
+**Ingredients**
+- 2 lb **fresh** boneless skinless chicken breast + 1 lb boneless thighs (bought fresh, cooked the same day)
+- 1 cup dry red lentils, rinsed
+- 1 rutabaga (#3), peeled, ¾" cubes
+- 4 carrots, sliced · 3 celery stalks, sliced · 1 yellow onion, diced · 1 zucchini, diced
+- 2 cups broccoli florets (stir in for the last 5 min)
+- 4 garlic cloves · 2" fresh ginger, grated · 1½ tsp ground turmeric · pinch black pepper (helps turmeric absorb)
+- 2 tbsp olive oil · 1½ tsp salt
+- **10 cups water.** No store-bought broth or bone broth, both of which are high-histamine.
+- Garden herbs: 6 sprigs thyme + 1 sprig rosemary (in the pot) · 2 tbsp lovage + basil (to finish)
+
+**Instructions**
+1. Warm the olive oil in a large pot. Cook the onion, carrot and celery 5 min, then add the garlic, ginger and turmeric for 1 min.
+2. Add the water, lentils, rutabaga, whole chicken pieces, thyme, rosemary and salt. Bring to a boil, then simmer 25 min.
+3. Pull out the chicken and shred it. Add the zucchini + broccoli and simmer 5 min. Return the chicken, remove the herb stems, and stir in the lovage and basil.
+4. **Low-histamine cooling (important):** set the pot in a sink ice bath and stir until lukewarm, within about 30 min.
+5. **Freeze right away:** 6 portions into glass containers (leave 1" headspace, lids cracked until frozen). Keep 1 portion in the fridge for T's Mon lunch, eaten within 24 hrs. Freeze the other 7.
+6. **Reheat from frozen:** thaw overnight in the fridge or microwave straight from frozen. Eat the same day; don't re-cool.
+
+**Why it works**
+- ✅ Low-histamine: fresh meat cooked fast and frozen immediately, no tomato, spinach, vinegar, citrus, fermented foods or long-simmered bone broth
+- ✅ Anti-inflammatory: turmeric + pepper, ginger, garlic, olive oil, ~7g fiber
+- ✅ TTC: red lentils (folate, iron) + lean protein
+- ✅ Wegovy: high protein, easy on the stomach on nausea days

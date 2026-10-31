@@ -78,7 +78,8 @@ Chia, flax, Ritual protein (need ~11 scoops), K protein bars (need 4), baking po
 - **Rotisserie chicken:** used up by Wed
 
 ### 🎁 Freezer going into next week (Nov 8+)
-- **2 birria casserole portions**
+- **7 golden soup portions** (low-histamine)
+- **3 birria-sauce casserole portions**
 - **2–3 pasta bake portions**
 - **3 blueberry protein pancake squares** (+1 pumpkin if not eaten)
 - **~1 lb ground beef**

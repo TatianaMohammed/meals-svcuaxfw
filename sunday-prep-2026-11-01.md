@@ -56,6 +56,13 @@
 - [ ] **Trout kits (Tue):** in 2 single glass dishes, add 1 cup roasted Brussels + ¾ cup roasted rutabaga each. Lid and refrigerate.
 - [ ] Portion quinoa: ⅓ cup for T Sun L, ½ cup for K Sun L. **Freeze 1 cup** for the Fri lamb bowls.
 
+## 2:20 PM — 🍲 Freezer soup (15 min hands-on, 35 min simmer, back burner)
+- [ ] Sauté onion, carrot, celery 5 min, then garlic, ginger, turmeric 1 min
+- [ ] Add 10 cups water + red lentils + rutabaga #3 + whole fresh chicken + thyme/rosemary + salt. Simmer 25 min.
+- [ ] Shred the chicken, add the zucchini + broccoli for 5 min, return the chicken, finish with lovage + basil
+- [ ] **Ice-bath cool within 30 min, then freeze 6 glass portions right away** (lids cracked until frozen). **1 portion in the fridge for T's Mon lunch.** Freeze the other 7.
+- [ ] Cook enough red lentils for both the birria (1 cup) and the soup (1 cup, raw, added straight to the pot)
+
 ## 2:35 PM — Sauces (10 min)
 - [ ] **Dill-mint yogurt sauce** (¾ cup yogurt, dill, mint, lemon, garlic, salt) → jar
 - [ ] **Lemon-lovage vinaigrette** (olive oil, lemon, Dijon, lovage, honey) → jar
@@ -67,7 +74,7 @@ Chicken + quinoa + roasted Brussels + 1 tbsp red pepper almond pesto + greens
 ## ~6:00 PM — Dinner: Birria casserole 🌮
 - [ ] Serve T 1 portion, K 1.5, topped with Greek yogurt + cilantro-lime + lime
 - [ ] Once it's cool (within 2 hrs):
-  - **Mon L (T):** 1 portion → fridge
+  - **Mon L (T):** now the soup, so this birria portion → freezer (bank)
   - **Thu L:** T 1 + K 1.5 → **freezer** (label "Thu 11/5")
   - **Spare:** 2 portions → freezer (bank)
 

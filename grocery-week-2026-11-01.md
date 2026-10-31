@@ -15,6 +15,7 @@ Grocery is fill-in only. The week is built around the freezer and the sauces alr
 
 ### Proteins
 - [ ] **Rotisserie chicken × 1** (K pickup). Check that the label says gluten-free. Use by Wed.
+- [ ] 🍲 **FRESH boneless skinless chicken: ~2 lb breast + 1 lb thighs** (for the soup; cook Sunday, don't freeze raw first)
 
 ### Dairy / eggs
 - [ ] **Eggs — 2 dozen** (pancake bakes 4 · T HB eggs 4 · T Sun scramble 2 · K breakfasts 8; K's scrambles are stretched with egg whites)
@@ -34,7 +35,9 @@ Grocery is fill-in only. The week is built around the freezer and the sauces alr
 ## 🥬 REGULAR GROCERY (or Costco if they have it)
 
 ### Produce
-- [ ] **Rutabaga × 2** ⭐ (1 roasted Sun for the trout bake · 1 for the Thu lamb sheet pan + Sat ribeye)
+- [ ] **Rutabaga × 3** ⭐ (1 roasted Sun for trout · 1 for the Thu lamb + Sat ribeye · 1 for the 🍲 soup)
+- [ ] 🍲 **Soup veg:** carrots (1 lb) · celery (1 bunch) · zucchini × 1 · fresh ginger (2" knob) · extra broccoli (2 cups)
+- [ ] **Ground turmeric** (verify you have it)
 - [ ] **Yellow onion × 2**, **red onion × 1**
 - [ ] **Garlic** — 1 bulb (if low)
 - [ ] **Lemons × 3**, **limes × 2**
