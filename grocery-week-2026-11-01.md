@@ -38,7 +38,7 @@ Grocery is fill-in only. The week is built around the freezer and the sauces alr
 - [ ] **Rutabaga × 3** ⭐ (1 roasted Sun for trout · 1 for the Thu lamb + Sat ribeye · 1 for the 🍲 soup)
 - [ ] 🍲 **Soup veg:** carrots (1 lb) · celery (1 bunch) · zucchini × 1 · fresh ginger (2" knob) · extra broccoli (2 cups)
 - [ ] **Ground turmeric** (verify you have it)
-- [ ] **Yellow onion × 2**, **red onion × 1**
+- [ ] **Yellow onion × 3**, **red onion × 1**
 - [ ] **Garlic** — 1 bulb (if low)
 - [ ] **Lemons × 3**, **limes × 2**
 - [ ] **Banana × 1** ripe (blueberry pancake bake)
