@@ -1,221 +1,90 @@
 # Pantry & Freezer Inventory — Tatiana + Khalid
 
-Last updated: October 17, 2026 — user-confirmed audit for Oct 18–24 week plan.
-This file supersedes all prior assumptions. Current state reflects confirmed inventory only.
+**Last updated:** October 31, 2026, from Tati's quick kitchen check before the Nov 1–7 week.
+The previous snapshot is in `pantry-inventory-2026-10-17.md`. This file supersedes it.
 
-**Week Oct 18–24 plan built around this inventory. Greens + eggs added as grocery top-ups (see grocery file).**
+---
 
-## Confirmed on October 17, 2026 (user kitchen audit)
+## ✅ Confirmed on October 31, 2026
 
-| Item | Confirmed quantity | Status / planned use |
+### ❄️ Freezer
+| Item | Qty | Nov 1–7 use |
 |---|---|---|
-| **Ahi tuna steaks** | Some, with dill | Khalid Tue D only (high mercury) |
-| **Black cod fillet** | 1 frozen | Sun D (Tatiana, TTC-safe) |
-| **Salmon fillet** | 1 frozen | Mon D (Tatiana, TTC-safe) |
-| **Frozen grapes** | Some | Backup snacks + Wegovy nausea |
-| **Fresh raspberries** | Small qty | Mon–Tue B rotation, freeze if not used |
-| **Bananas, very ripe** | 3 | Muffin batch (Sun) or eat fresh |
-| **Satsumas** | Bag | Snacks all week |
-| **Squashes** | 1 spaghetti, 1 butternut, 1 honey nut, 1 delicata | All → roasted Sun |
-| **Eggplant** | 1 | Roasted Sun |
-| **Plum, pear, apples** | 1 plum, 1 pear, 2 apples | Snacks/breakfasts all week |
-| **GF bagel** | 1 | K breakfast (need more in grocery if running out) |
-| **GF oats** | On hand | T breakfasts (Wed, Sat) |
-| **Rice** | On hand | Backup (not used this week) |
-| **Quinoa** | On hand | Batch-cooked Sun, use Mon–Fri |
-| **Red lentils** | On hand | Batch-cooked Sun, use Mon–Fri |
-| **Mung beans** | On hand | Optional sprouts or side |
-| **GF pasta** | On hand | Backup (not used this week) |
-| **Canned kidney beans** | On hand | Backup |
-| **Pasta sauce** | Lots | Fri braise or storage for next week |
-| **Cream of celery soup** | 1 can | Not planned this week |
-| **Chia seeds** | On hand | T breakfast rotation |
-| **Eggs** | 5 current | **BUY 2 DOZEN more** (K needs 14 for breakfasts) |
-| **Greek yogurt** | 1 large container | Breakfast + snack all week |
-| **Cottage cheese, pineapple** | On hand | Fri B + optional muffin |
-| **Paneer** | On hand | Sear Sun, use Mon–Thu lunches |
-| **Smoked salmon piece** | 1 | Optional Sun B or lentil topper |
-| **Ghee** | On hand | Searing, roasting |
-| **Sour cream** | On hand | Optional topping, binding |
-| **Almond milk** | (Costco shake) | Confirm if sufficient for breakfasts |
-| **Miso paste** | On hand | Not used this week; verify for future |
-| **Olive oil** | On hand | Verify level (roast + sauté heavy) |
-| **Tahini** | On hand | Not used this week |
-| **Peanut butter** | On hand | Muffins, optional |
-| **Honey** | On hand | Muffins, optional |
-| **Lemon juice** | TBD | Verify (fresh or bottled) |
-| **Dijon, hot sauce, olives** | On hand | Optional finishes |
+| Chinook salmon (bone-in) | 1 piece (~10 oz) | Mon D + Tue L (T) |
+| Trout | 1 fillet (~10 oz) | Tue D + Wed L (T) |
+| Ground beef | ~3.5 lb | 1.5 lb Sun birria · 1 lb Thu-night pasta bake · ~1 lb banked |
+| Ribeye | 1 | Sat D (split) |
+| Lamb chops | 9 | Thu D + Fri L |
+| ~~Coconut curry~~ | 0 | Gone |
+| ~~Chicken quarters~~ | 0 | Gone |
 
-## Consumption confirmed (Oct 17 audit)
-- Meatballs eaten Oct 4. Status: **not listed in current inventory** (assume consumed or unclear).
-- Beef stew, soup, bone broth, frozen berries: **not confirmed in fridge/freezer Oct 17**. Not planned for week Oct 18–24.
-
-## Not confirmed — check or buy before using
-- Stock for thinning tonight's soup: user suggested adding it; presence and quantity not confirmed. Water is the fallback.
-- All other September 27 meat, produce, dairy and pantry quantities are historical only.
-- Eggs, plain Greek yogurt, certified GF oats, fruit, leafy greens, carrots, onions, garlic, GF pasta and canned tomatoes are proposed grocery items, NOT confirmed purchases.
-- Oil and basic seasonings: verify before cooking.
-- Frozen chicken: reserve enough for two chicken/quinoa lunches; buy chicken for dinner/lunch if insufficient. Do not assume the old 4 lb chicken quarters are still present.
-
-## This week's household pattern
-- October 5–11: Khalid home for all meals.
-- Tatiana needs three packable lunches. Office days not specified; lunch boxes are movable.
-- Plan is for two adults. Shared meals, individual portions to appetite; no newly validated calorie target or exact macro data.
-- Gluten-free ingredient checks and no shellfish. No iceberg for Khalid.
-- Use existing miso dressing only if stored safely; no need to make two extra dressings.
-
-## Inventory update discipline
-Record actual quantities used only after confirmation. Keep planned allocations separate from stock. Review remaining chicken, curry and soup before claiming leftovers. Do not infer that last week's groceries were purchased or that its dinners happened.
-
----
-## Historical snapshot — September 27, NOT current inventory
-The following is preserved for reference only. Expected decrements and freezer gifts were plans, not verified events.
-
-# Pantry & Freezer Inventory — Tatiana + Khalid
-
-**Last updated:** 2026-09-27 (audit before week Sep 27–Oct 3)
-
----
-
-## ⚠️ WEEKLY PLANNING RULES
-Same as prior — max 2 batch dressings, fresh fish clustered mid-week or use frozen, section-by-section grocery, prep-ahead audit, no "5-min assembly" unless upstream prep done.
-
-## 🌿 HERB ROTATION (garden + fridge)
-- **Ginger** ⭐ heavy use (Sun stir-fry, Thu cod, oats)
-- **Thyme, dill, basil, cilantro** — rotate this week
-- **Rosemary, marjoram, lovage** — save for next week
-
----
-
-## ❄️ FREEZER (as of 10/17/26, Oct 18–24 week plan)
-
-| Item | Qty | This week's use (Oct 18–24) |
+### 🧊 Fridge
+| Item | Qty | Nov 1–7 use |
 |---|---|---|
-| **Ahi tuna steaks + dill** | Some | Khalid Tue D (sear) |
-| **Black cod fillet** | 1 | Tatiana Sun D (pan-sear) |
-| **Salmon fillet** | 1 | Tatiana Mon D (bake) |
-| **Ribeye steaks** | 2 ⭐ | 1 used Wed D; 1 banked for next week |
-| **Ground beef** | ~4 lb ⭐ | 1 lb used Fri D braise; ~3 lb banked |
-| **Chuck roast** | 1 whole ⭐ | Used Sat D (all-day braise) |
-| **Lamb chops** | 9 ⭐ | Not used this week — banked |
-| **Chicken quarters** | 4 lb ⭐ | 4 quarters = roast Thu D (2 eat, 2 → Fri L); raw unused stay frozen |
-| **Coconut curry** | 1 serv | Not used — banked |
-| **Frozen grapes** | Some | Backup snacks all week |
-| **Frozen bananas** | Some | Backup (not needed; fresh bananas on hand) |
+| Liquid egg whites | 4 boxes | Pancake bakes, pasta bake, K scrambles (~2.5 boxes) |
+| Whole eggs | 0 | 🛒 Buy 2 dozen |
+| Cottage cheese | 6 oz | Blueberry pancake bake (uses it up) |
+| Greek yogurt | ½ qt | Breakfast bowls (🛒 + 48 oz tub) |
+| Broccoli | Some | Mon salmon bake first (oldest) |
+| Brussels sprouts | Some | All roasted Sun → Sun L + Tue trout |
 
-## 🧊 FRIDGE (as of 10/17/26, Oct 18–24 week plan)
+### 🥫 Pantry
+| Item | Status | Nov 1–7 use |
+|---|---|---|
+| Quinoa | On hand | 1 cup dry, Sun batch |
+| Red lentils | On hand | 1 cup dry, birria casserole |
+| GF pasta | Lots | 8 oz, Fri pasta bake |
+| GF oats | On hand | 2 cups, pancake bakes |
+| Rice ramen | On hand | 2 cakes, Wed peanut bake (⚠️ GF label) |
+| Olive oil, ghee | On hand | All week |
+| Red pepper almond pesto | On hand | Sun L + Mon salmon (⚠️ GF label) |
+| Birria cooking sauce | On hand | 1 cup, Sun casserole (⚠️ GF label) |
+| Thai peanut sauce | On hand | Wed bake (⚠️ GF label) |
+| Cilantro-lime sauce | On hand | Birria + peanut bake topping (⚠️ GF label) |
+| Rustic pasta sauce | On hand | 2½ cups, Fri pasta bake |
+| Capers, sun-dried tomatoes | On hand | Salmon + trout bakes |
+| Tangy black pepper sauce/marinade | On hand | Not used (verify GF) |
+| Hoisin sauce | On hand | Not used (usually contains wheat) |
+| Miso paste | On hand | Not used (verify GF) |
+| Pizza sauce | On hand | Not used |
 
-### Proteins / dairy
-- ✅ **Paneer** — 8 oz (sear Sun, use Mon–Thu lunches)
-- ✅ **Smoked salmon piece** — 1 (optional Sun B or lentil topper)
-- ✅ **Greek yogurt** — 1 large container (breakfast + snack all week)
-- ✅ **Cottage cheese, pineapple** — available (Fri B + muffins)
-- ✅ **Eggs** — 5 current (⚠️ **BUY 2 DOZEN more** for K breakfasts + cooking)
-- ✅ **Egg whites** — 5 boxes (backup for muffins or cooking)
-- ✅ **Ghee** — on hand (searing, roasting)
-- ✅ **Sour cream** — on hand (optional topping, binding)
-- ✅ **Almond milk protein shake** (Costco) — verify if sufficient for daily breakfasts
+### 🛒 Being bought for Nov 1–7 (see grocery file)
+Rotisserie chicken (K, Costco) · 2 doz eggs · Greek yogurt 48 oz · cottage cheese ~24 oz · mozzarella · almond milk · spinach · broccoli · kiwi · romaine · frozen berries · 2 rutabagas · onions · lemons/limes · banana · slaw mix · canned pumpkin
 
-### Produce (fridge + counter)
-- ✅ **Fresh raspberries** — small qty (use by Mon–Tue, freeze if excess)
-- ✅ **Satsumas** — bag (snacks all week)
-- ✅ **Bananas, very ripe** — 3 (→ muffin batch Sun)
-- ✅ **Plum, pear, apples** — 1 each of plum + pear, 2 apples (snacks/breakfasts)
-- ❌ **NO greens confirmed** — **BUY 3–4 bags fresh greens** (romaine, mixed, spinach — NOT iceberg for K)
-
-### Sauces / condiments
-- ✅ Olive oil, sesame oil, ghee (verify levels — heavy roasting + sautéing this week)
-- ✅ Lemon juice (fresh or bottled; for pan-sears + marinades)
-- ✅ Salt, black pepper, dried herbs (thyme, basil, oregano)
-- ✅ Tamari, rice vinegar, honey (backup)
-- ✅ Tahini, peanut butter, almond butter
-- ✅ Dijon, hot sauce, salsa (optional finishes)
-- ✅ Miso paste (verify, for future meals)
+### ❓ Not re-confirmed (verify)
+Chia, flax, Ritual protein (need ~11 scoops), K protein bars (need 4), baking powder, pumpkin pie spice, Dijon, honey/maple, peanut butter, rice, canned beans, cream of celery soup, sour cream, paneer, GF bagels.
 
 ---
 
-## 🥫 PANTRY (dry + canned + jarred)
-
-### Grains & pasta
-- **GF bagels** ⭐ (3 uses this week: Sun/Mon/Wed B)
-- **GF oats** ✅ (Sat B)
-- **Rice** ✅ (heavy — Sun/Tue/Wed/Thu/Fri/Sat — verify level)
-- **Basmati** ✅ (palak paneer)
-- **Quinoa** ✅ (not planned this week)
-- **Tons GF pasta** — not used
-- **Instant rice, green lentils, moong** — backup
-
-### Oils/vinegars/pastes
-- Olive · Avocado · Sesame · Red wine vin · Rice vin
-- Brown miso · Ginger paste · Honey
-- Peanut butter · Almond butter · Tamari · Coconut aminos · Tahini
-
-### Nuts/seeds
-Chia (heavy) · Flax · Almonds · Cashews · Sesame seeds
-
-### Snacks
-- **Rice crackers · Rice cakes** (heavy this week)
-- **Protein bars** (K daily — verify count, restock if <6)
-
-### Jarred/canned
-- **2 marinara** — backup
-- **2 crushed tomato** — backup (palak base if roma short)
-- **2 refried beans** — backup
-- **1 chickpeas · 1 kidney · 1 black beans** — backup
-- **1 veg broth carton** — backup
-- Kalamata olives — flex
-
-### Supplements ✅
-- Ritual protein · Creatine · Prenatal
+## 🌿 Herb rotation
+- **This week:** rosemary, marjoram, lovage (finally!), dill, mint, basil, thyme. All 7 garden herbs are in use.
 
 ---
 
-## 📉 DECREMENTS TO APPLY AT WEEK END (Sat 10/24 pm)
+## 📉 DECREMENTS TO APPLY AT WEEK END (Sat 11/7 pm)
+- **Chinook salmon:** 0 (used Mon)
+- **Trout:** 0 (used Tue)
+- **Lamb chops:** 0 (used Thu/Fri)
+- **Ribeye:** 0 (used Sat)
+- **Ground beef:** ~3.5 → **~1 lb** banked
+- **Egg whites:** 4 → ~1.5 boxes
+- **Eggs:** 24 → ~6
+- **Greek yogurt:** ~1 cup left · **cottage cheese:** ~½ cup left
+- **Mozzarella:** ~½ bag left
+- **Quinoa / red lentils / GF pasta / oats:** −1 cup / −1 cup / −8 oz / −2 cups
+- **Sauces:** birria ~half left · peanut sauce ~¾ left · pesto ~¾ left · pasta sauce ~half left
+- **Rice ramen:** −2 cakes
+- **Brussels, broccoli, rutabagas, spinach, kiwi:** used up
+- **Rotisserie chicken:** used up by Wed
 
-After the Oct 18–24 week, expect:
-- **Ahi tuna steaks:** all used Tue (K only)
-- **Black cod:** all used Sun D
-- **Salmon fillet:** all used Mon D
-- **Ribeye:** 1 used Wed D; 1 remains
-- **Ground beef:** ~0.5 lb used Fri; ~3.5 lb remain
-- **Chuck roast:** all used Sat D
-- **Paneer:** seared Sun, all used by Thu
-- **Squashes:** all roasted Sun, used through week
-- **Eggplant:** all roasted Sun, used through week
-- **Fresh raspberries:** used or frozen by Mon–Tue
-- **Bananas (3 ripe):** muffin batch Sun or eaten
-- **Satsumas:** consumed Mon–Sat
-- **Plum, pear, apples:** consumed Mon–Sat
-- **Cottage cheese:** used Fri B + muffins (if baked) — possibly depleted
-- **Greek yogurt:** daily use, likely depleted by Sat
-- **Eggs:** 5 old + 24 new → ~25–26 used by Sat (mostly K breakfasts), expect ~5–6 remain
+### 🎁 Freezer going into next week (Nov 8+)
+- **2 birria casserole portions**
+- **2–3 pasta bake portions**
+- **3 blueberry protein pancake squares** (+1 pumpkin if not eaten)
+- **~1 lb ground beef**
+- **No fish, lamb or steak left.** Next week's grocery needs a protein restock (salmon/cod for TTC DHA, chicken, maybe another ribeye or lamb).
 
-### 🎁 New freezer additions (end of Sat)
-- ~3.5 lb ground beef (from ~4 lb, after Fri braise)
-- Possible leftover cooked chicken if not using all Thu roast
-- Possible extra cooked portions if batch cooking excess lentils/quinoa
-
-### 🎁 Freezer inventory going into next week (still banked)
-- **1 ribeye** (from 2, after 1 used Wed)
-- **~3.5 lb ground beef** (after Fri use)
-- **9 lamb chops** (not used this week)
-- **4 lb chicken quarters** (possibly 2 raw left if roasting 4 on Thu, or all used)
-- **1 coconut curry** (not used, stored)
-- **Frozen grapes, frozen bananas** (backup)
-
----
-
-## 🌟 Meal ideas unlocked by remaining stock (next week planning, Oct 25–31)
-- **1 ribeye** (steak night)
-- **~3.5 lb ground beef** (burger night, chili, tacos, bolognese)
-- **9 lamb chops** (2 lamb chop nights, Mediterranean theme)
-- **0–4 lb chicken quarters** (depends on Thu roast usage; if raw remain, roast + soup)
-- **1 coconut curry** (dinner night quick, if storing)
-- **Banked frozen fish:** none currently (all used this week Mon–Sun)
-
-## ⚠️ ITEMS TO VERIFY BEFORE COOKING THIS WEEK
-1. **Olive oil + ghee levels** — heavy roasting + sautéing (roast 4 squashes, sear paneer, cook 6 dinners)
-2. **Thyme + dried herbs** — multiple dinners + roasted veg
-3. **Lemon juice (fresh or bottled)** — needed for pan-sears
-4. **Egg count:** 5 on hand + 24 to buy = 29 total (K: 14 breakfasts, cooking/binding: ~10, muffins if baking: 1 = 25 used, ~4 remain OK)
-5. **Protein bar count** — restock if <6 (Khalid: 7 bars × 1/day = 1 box recommended)
+## 🌟 Ideas for next week
+- Freezer bank = 2 "no-cook" nights (birria + pasta bake)
+- ~1 lb ground beef → turkey-or-beef meatball bake, or stuffed peppers
+- Unused sauces to try: pizza sauce (GF crust protein pizza bake), tangy black pepper sauce (if it's GF)
