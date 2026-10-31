@@ -85,6 +85,18 @@ Chia, flax, Ritual protein (need ~11 scoops), K protein bars (need 4), baking po
 - **~1 lb ground beef**
 - **No fish, lamb or steak left.** Next week's grocery needs a protein restock (salmon/cod for TTC DHA, chicken, maybe another ribeye or lamb).
 
+## 🍅→🌿 LOW-HISTAMINE TRANSITION (Tati decision 10/31)
+Goal: **use up the tomato products first, then go low-histamine.**
+- **Being used up Nov 1–7:** birria sauce (~half left after Sun) · rustic pasta sauce (~half left after Fri) · sun-dried tomatoes
+- **Still to finish after that:** pizza sauce · leftover birria + pasta sauce → plan 1–2 meals the week of Nov 8 to clear them
+- **After the tomatoes are gone, the low-histamine rules are:**
+  - Fresh meat or fish cooked the same day, or frozen fresh. **No leftover fish.**
+  - Cool batch food fast and freeze it right away.
+  - No tomato, spinach, eggplant, avocado, citrus, vinegar, fermented foods (miso, soy, yogurt, aged cheese), cured meats or bone broth.
+  - Lean on fresh chicken, fresh-frozen fish, eggs, rutabaga, squash, broccoli, zucchini, carrots, sweet potato, quinoa, rice, GF oats, olive oil and fresh herbs.
+  - Dairy swaps: fresh mozzarella, ricotta and paneer are generally better tolerated than yogurt or aged cheese.
+  - ⚠️ TTC/Wegovy check: protein will need new sources (more eggs, fresh chicken, egg whites, Ritual) since Greek yogurt and cottage cheese are a big chunk of it now. Worth running the plan by your OB or dietitian.
+
 ## 🌟 Ideas for next week
 - Freezer bank = 2 "no-cook" nights (birria + pasta bake)
 - ~1 lb ground beef → turkey-or-beef meatball bake, or stuffed peppers
